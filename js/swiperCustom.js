@@ -25,7 +25,7 @@ responsiveControl();
 cont2Swiper();
 function cont2Swiper(){
   var swiper = new Swiper(".cont2_swiper", {
-    spaceBetween: 0,
+    spaceBetween: 2,
     centeredSlides: true,
     autoplay: {
       delay: 2500,
