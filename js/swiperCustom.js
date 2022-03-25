@@ -25,25 +25,6 @@ responsiveControl();
 cont2Swiper();
 function cont2Swiper(){
   var swiper = new Swiper(".cont2_swiper", {
-    spaceBetween: 2,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-}
-
-// cont4 스와이퍼
-cont4Swiper();
-function cont4Swiper(){
-  var swiper = new Swiper(".cont4_swiper", {
-    spaceBetween: 2,
-    centeredSlides: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -53,4 +34,20 @@ function cont4Swiper(){
       clickable: true,
     },
   });
+}
+
+// cont4 스와이퍼
+cont4Swiper();
+function cont4Swiper(){
+  var swiper = new Swiper(".cont4_swiper", {
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination2",
+      clickable: true,
+    },
+  });
+  
 }
