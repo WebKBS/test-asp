@@ -375,7 +375,7 @@
             flex-direction: row;
   }
   .cont1_inner .menu_list li {
-    width: 20.3125vw;
+    width: 21.3125vw !important;
     height: 10.625vw;
   }
   .cont1_inner .menu_list li button {
