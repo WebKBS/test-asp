@@ -35,31 +35,3 @@
 
 
 
-function responsiveControl() { 
-        
-  if ( window.innerWidth < 767 ) {
-      // 스와이퍼 모바일 슬라이드
-      var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
-      spaceBetween: 6,
-      freeMode: true,
-      pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-
-      autoplay: {
-        delay:4000,// 하나의 슬라이드에서 다음 슬라이드 또는 이전 슬라이드 이동 시 소요 시간
-        disableOnInteraction: false
-      },
-      },
-    });
-  } 
-  
-  
-}
-
-window.addEventListener('resize', responsiveControl, false);
-responsiveControl();   
-
-
-
