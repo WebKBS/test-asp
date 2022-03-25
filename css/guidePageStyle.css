@@ -587,7 +587,10 @@
     background-repeat: no-repeat;
     background-position: center 0;
     background-attachment: fixed;
-    background-size: 100vmax auto;
+    background-size: cover;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
     z-index: -1;
   }
   /* 공통 값 */
