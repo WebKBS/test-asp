@@ -41,7 +41,7 @@ function responsiveControl() {
       // 스와이퍼 모바일 슬라이드
       var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
-      spaceBetween: 30,
+      spaceBetween: 6,
       freeMode: true,
       pagination: {
       el: ".swiper-pagination",
