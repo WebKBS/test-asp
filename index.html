@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigToc</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/guidePageStyle.css">
+  <link rel="stylesheet" href="css/swiper.css">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/header.js" defer></script>
+  <script src="js/guidePageJs.js" defer></script>
+  <script src="js/swiper.js"></script>
+  
+</head>
+<body>
+  <div id="wrap">
+      <!-- header 영역 -->
+      <div id="header">
+          <a href="#" class="start_btn">
+              <img src="images/common/game_start_btn_mobile.png" alt="start_btn">
+          </a>
+          <div class="headerIn">
+              <button type="button" class="menu_btn">
+                  <span class="line"></span>
+              </button>
+              <h1 class="logo">
+                  <a href="index.html">
+                      <img src="images/common/digtoc_logo(white).svg" alt="DigToc">
+                  </a>
+              </h1>
+              <nav class="gnb">
+                  <ul>
+                      <li class="on"><a href="#">Home</a></li>
+                      <li><a href="#">Game</a></li>
+                      <li class="comming"><a href="#">Market</a></li>
+                      <li class="comming"><a href="#">Guide</a></li>
+                      <li><a href="#">Notice</a></li>
+                  </ul>
+              </nav>
+              <div class="login_btn">
+                  <a href="#">
+                      Login
+                  </a>
+              </div>
+          </div><!-- .headerIn -->
+          <div class="mobi_side">
+              <div class="side_inner">
+                  <div class="overlay"></div>
+                  <div class="side_bg">
+                      <nav class="side_gnb">
+                          <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="#">Game</a></li>
+                              <li><a href="#" class="comming">Market</a></li>
+                              <li><a href="#">Guide</a></li>
+                              <li><a href="#">Notice</a></li>
+                          </ul>
+                      </nav>
+                      <div class="side_sns">
+                          <ul>
+                              <li>
+                                  <a href="#">
+                                      <img src="images/icon/insta_icon.png" alt="instagram">
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img src="images/icon/twitter_icon.png" alt="twitter">
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img src="images/icon/telegram_icon.png" alt="telegram">
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img src="images/icon/facebook_icon.png" alt="facebook">
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img src="images/icon/discord_icon.png" alt="discord">
+                                  </a>
+                              </li>
+                          </ul>
+                          <span class="comming">Comming Soon</span>
+                      </div>
+                  </div>
+              </div>
+              
+          </div><!-- mobi_side -->
+      </div><!-- #header -->
+      <div id="container">
+        <div class="container_bg"></div>
+        <section class="cont1">
+          <div class="cont1_inner">
+            <h2>Main Content</h2>
+            <div class="content">
+              <div class="menu_list swiper mySwiper">
+                <ul class="swiper-wrapper">
+                  <li class="on swiper-slide">
+                    <button type="button">Basic</button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button type="button">VIP System</button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button type="button">My Resource</button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button type="button">Mining Speed</button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button type="button">Room Ranking</button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button type="button">Item Gauge</button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button type="button">Leave the Room</button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button type="button">Inventory</button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button type="button">Shop</button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button type="button">Global Ranking</button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button type="button">Wear Equipment</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu_content">
+                <ul class="text_wrap">
+                  <li class="on">
+                    <p>
+                      This is the game screen of DigToc. It turns into a pickaxe when you hover your mouse cursor over the vein, and you can mine once by left-clicking.
+                    </p>
+                    <p>
+                      Mobile does not implement a cursor, it is mined upon touch.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      DigToc has a VIP system that greatly affects mining volume. Currently, it is divided into Gold / Silver grades, and items are provided at regular intervals.
+                    </p>
+                    <p>
+                      Buy VIP and aim for the top of the rankings!
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      It indicates the amount of Gem Stone, which is the DigToc resource you have. Collect Tocs to collect and upgrade various equipment!
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      A number that shows how passionately you are mining Toc, and it represents the amount of mining per second.
+                    </p>
+                    <p>
+                      How many Tocs can you mine per second? Test your limits!
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      This is a ranking that shows the ranking among players in the mining room you are playing.
+                    </p>
+                    <p>
+                      Toc acquisition amount is updated every 24 hours, and you can compare the mining speed of players in real time, check the equipment worn by the player, and compare it with your own equipment.
+                    </p>
+                    <p>
+                      You can toggle the window on/off via the crown icon at the top.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Displays the remaining time of boosters and autoclicks, which are items of DigToc.
+                    </p>
+                    <p>
+                      These items are available for purchase in the Shop.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      If you click this icon, you will leave the currently connected mining room and move to a random mining room.
+                    </p>
+                    <p>
+                      The game background and background music change randomly when moving rooms.
+                    </p>
+                    <p>
+                      If playing DigToc becomes boring, enjoy a different sensibility by moving to a mining room!
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Click this icon to switch to the inventory window where you can check equipment and items.
+                    </p>
+                    <p>
+                      Equipment upgrades, repairs, and minting are possible within the inventory.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      If you click this icon, it will be converted to a shop where you can proceed with VIP goods, items, and equipment draws.
+                    </p>
+                    <p>
+                      Increase your Toc mining by purchasing the right items!
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      If you click this icon, you can check the weekly global ranking by mining amount / play time.
+                    </p>
+                    <p>
+                      It is updated once a week, and rewards are given to top players.
+                    </p>
+                    <p>
+                      Also, you can check my ranking.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      It shows the equipment I'm currently wearing, and you can check the real-time durability status and mining amount information with one click.
+                    </p>
+                  </li>
+                </ul>
+                <ul class="gif_wrap">
+                  <li class="on">
+                    <img src="images/guide_gif/guide1.gif" alt="">
+                  </li>
+                  <li>
+                    <img src="images/guide_gif/guide2.gif" alt="">
+                  </li>
+                  <li>
+                    <img src="images/guide_gif/guide3.gif" alt="">
+                  </li>
+                  <li>
+                    <img src="images/guide_gif/guide4.gif" alt="">
+                  </li>
+                  <li>
+                    <img src="images/guide_gif/guide5.gif" alt="">
+                  </li>
+                  <li>
+                    <img src="images/guide_gif/guide6.gif" alt="">
+                  </li>
+                  <li>
+                    <img src="images/guide_gif/guide7.gif" alt="">
+                  </li>
+                  <li>
+                    <img src="images/guide_gif/guide8.gif" alt="">
+                  </li>
+                  <li>
+                    <img src="images/guide_gif/guide9.gif" alt="">
+                  </li>
+                  <li>
+                    <img src="images/guide_gif/guide10.gif" alt="">
+                  </li>
+                  <li>
+                    <img src="images/guide_gif/guide11.gif" alt="">
+                  </li>
+                </ul>
+              </div><!-- menu_content -->
+            </div><!-- content -->
+          </div>
+        </section><!-- cont1 -->
+        <section class="cont2">
+          <div class="cont2_inner">
+            <p></p>
+          </div>
+        </section><!-- cont2 -->
+        <section class="cont3">
+          <div class="cont3_inner">
+
+          </div>
+        </section><!-- cont3 -->
+        <section class="cont4">
+          <div class="cont4_inner">
+
+          </div>
+        </section><!-- cont4 -->
+      </div><!-- #container -->
+      <div id="footer">
+          <div class="footerIn">
+              <p class="year">
+                  2021 DigToc Project
+              </p>
+              <p class="flogo">
+                  <a href="#">
+                      <img src="images/common/digtoc_logo(black).svg" alt="DigTocLogo">
+                  </a>
+              </p>
+              <p class="email">
+                  <span>contact@digtoc.com</span>
+              </p>
+          </div><!-- footerIn -->
+      </div><!-- #footer -->
+  </div><!-- #wrap -->
+</body>
+</html>
