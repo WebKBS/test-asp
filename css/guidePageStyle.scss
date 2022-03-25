@@ -510,8 +510,8 @@ $main-color: #00ffa8;
   }
 
   .container_bg{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     background-image: url(../images/mobile_guide/back1.jpg);
     background-repeat: no-repeat;
