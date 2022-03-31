@@ -1,411 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DigToc</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/guidePageStyle.css">
-  <link rel="stylesheet" href="css/swiper.css">
-
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/swiper.js"></script>
-  <script src="js/header.js" defer></script>
-  <script src="js/guidePageJs.js" defer></script>
-  <script src="js/swiperCustom.js" defer></script>
-  
-</head>
-<body>
-  <div id="wrap">
-      <!-- header 영역 -->
-      <div id="header">
-          <a href="#" class="start_btn">
-              <img src="images/common/game_start_btn_mobile.png" alt="start_btn">
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TERATTO</title>
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <address class="web_sns">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/terattoofficial/" target="_blank">
+              <img src="images/main/icon/facebook_icon.svg" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/terattoofficial" target="_blank">
+              <img src="images/main/icon/twitter_icon.svg" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/teratto_official" target="_blank">
+              <img src="images/main/icon/telegram_icon.svg" alt="telegram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/teratto_official" target="_blank">
+              <img src="images/main/icon/reddit_icon.svg" alt="reddit" />
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@teratto" target="_blank">
+              <img src="images/main/icon/medium_icon.svg" alt="medium" />
+            </a>
+          </li>
+        </ul>
+      </address>
+      <header id="header">
+        <button type="button" class="menu_btn">메뉴 버튼<span class="line"></span></button>
+        <h1 class="logo">
+          <a href="#">
+            <img src="images/main/common/terrato_logo.svg" alt="logo" />
           </a>
-          <div class="headerIn">
-              <button type="button" class="menu_btn">
-                  <span class="line"></span>
-              </button>
-              <h1 class="logo">
-                  <a href="index.html">
-                      <img src="images/common/digtoc_logo(white).svg" alt="DigToc">
-                  </a>
-              </h1>
-              <nav class="gnb">
-                  <ul>
-                      <li class="on"><a href="#">Home</a></li>
-                      <li><a href="#">Game</a></li>
-                      <li class="comming"><a href="#">Market</a></li>
-                      <li class="comming"><a href="#">Guide</a></li>
-                      <li><a href="#">Notice</a></li>
-                  </ul>
-              </nav>
-              <div class="login_btn">
-                  <a href="#">
-                      Login
-                  </a>
-              </div>
-          </div><!-- .headerIn -->
-          <div class="mobi_side">
-              <div class="side_inner">
-                  <div class="overlay"></div>
-                  <div class="side_bg">
-                      <nav class="side_gnb">
-                          <ul>
-                              <li><a href="index.html">Home</a></li>
-                              <li><a href="#">Game</a></li>
-                              <li><a href="#" class="comming">Market</a></li>
-                              <li><a href="#">Guide</a></li>
-                              <li><a href="#">Notice</a></li>
-                          </ul>
-                      </nav>
-                      <div class="side_sns">
-                          <ul>
-                              <li>
-                                  <a href="#">
-                                      <img src="images/icon/insta_icon.png" alt="instagram">
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      <img src="images/icon/twitter_icon.png" alt="twitter">
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      <img src="images/icon/telegram_icon.png" alt="telegram">
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      <img src="images/icon/facebook_icon.png" alt="facebook">
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      <img src="images/icon/discord_icon.png" alt="discord">
-                                  </a>
-                              </li>
-                          </ul>
-                          <span class="comming">Comming Soon</span>
-                      </div>
-                  </div>
-              </div>
-              
-          </div><!-- mobi_side -->
-      </div><!-- #header -->
-      <div id="container">
-        <div class="container_bg"></div>
+        </h1>
+        <div class="headerIn">
+          <nav class="gnb">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Tokenomics</a></li>
+              <li><a href="#">Metaverse</a></li>
+              <li><a href="#">NFT</a></li>
+              <li><a href="#">Event</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="whitepaper">
+            <span>WHITEPAPER</span>
+          </div>
+        </div>
+        <div class="lang">
+          <ul>
+            <li><a href="#">EN</a></li>
+            <li class="on"><a href="#">KR</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- header 끝 -->
+      <main id="container">
         <section class="cont1">
-          <div class="cont1_inner">
-            <h2>Main Content</h2>
-            <div class="content">
-              <div class="menu_list swiper mySwiper">
-                <ul class="swiper-wrapper">
-                  <li class="on swiper-slide">
-                    <button type="button">Basic</button>
-                  </li>
-                  <li class="swiper-slide">
-                    <button type="button">VIP System</button>
-                  </li>
-                  <li class="swiper-slide">
-                    <button type="button">My Resource</button>
-                  </li>
-                  <li class="swiper-slide">
-                    <button type="button">Mining Speed</button>
-                  </li>
-                  <li class="swiper-slide">
-                    <button type="button">Room Ranking</button>
-                  </li>
-                  <li class="swiper-slide">
-                    <button type="button">Item Gauge</button>
-                  </li>
-                  <li class="swiper-slide">
-                    <button type="button">Leave the Room</button>
-                  </li>
-                  <li class="swiper-slide">
-                    <button type="button">Inventory</button>
-                  </li>
-                  <li class="swiper-slide">
-                    <button type="button">Shop</button>
-                  </li>
-                  <li class="swiper-slide">
-                    <button type="button">Global Ranking</button>
-                  </li>
-                  <li class="swiper-slide">
-                    <button type="button">Wear Equipment</button>
-                  </li>
-                </ul>
-              </div>
-              <div class="menu_content">
-                <ul class="text_wrap">
-                  <li class="on">
-                    <p>
-                      This is the game screen of DigToc. It turns into a pickaxe when you hover your mouse cursor over the vein, and you can mine once by left-clicking.
-                    </p>
-                    <p>
-                      Mobile does not implement a cursor, it is mined upon touch.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      DigToc has a VIP system that greatly affects mining volume. Currently, it is divided into Gold / Silver grades, and items are provided at regular intervals.
-                    </p>
-                    <p>
-                      Buy VIP and aim for the top of the rankings!
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      It indicates the amount of Gem Stone, which is the DigToc resource you have. Collect Tocs to collect and upgrade various equipment!
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      A number that shows how passionately you are mining Toc, and it represents the amount of mining per second.
-                    </p>
-                    <p>
-                      How many Tocs can you mine per second? Test your limits!
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      This is a ranking that shows the ranking among players in the mining room you are playing.
-                    </p>
-                    <p>
-                      Toc acquisition amount is updated every 24 hours, and you can compare the mining speed of players in real time, check the equipment worn by the player, and compare it with your own equipment.
-                    </p>
-                    <p>
-                      You can toggle the window on/off via the crown icon at the top.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Displays the remaining time of boosters and autoclicks, which are items of DigToc.
-                    </p>
-                    <p>
-                      These items are available for purchase in the Shop.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      If you click this icon, you will leave the currently connected mining room and move to a random mining room.
-                    </p>
-                    <p>
-                      The game background and background music change randomly when moving rooms.
-                    </p>
-                    <p>
-                      If playing DigToc becomes boring, enjoy a different sensibility by moving to a mining room!
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Click this icon to switch to the inventory window where you can check equipment and items.
-                    </p>
-                    <p>
-                      Equipment upgrades, repairs, and minting are possible within the inventory.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      If you click this icon, it will be converted to a shop where you can proceed with VIP goods, items, and equipment draws.
-                    </p>
-                    <p>
-                      Increase your Toc mining by purchasing the right items!
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      If you click this icon, you can check the weekly global ranking by mining amount / play time.
-                    </p>
-                    <p>
-                      It is updated once a week, and rewards are given to top players.
-                    </p>
-                    <p>
-                      Also, you can check my ranking.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      It shows the equipment I'm currently wearing, and you can check the real-time durability status and mining amount information with one click.
-                    </p>
-                  </li>
-                </ul>
-                <ul class="gif_wrap">
-                  <li class="on">
-                    <img src="images/guide_gif/guide1.gif" alt="">
-                  </li>
-                  <li>
-                    <img src="images/guide_gif/guide2.gif" alt="">
-                  </li>
-                  <li>
-                    <img src="images/guide_gif/guide3.gif" alt="">
-                  </li>
-                  <li>
-                    <img src="images/guide_gif/guide4.gif" alt="">
-                  </li>
-                  <li>
-                    <img src="images/guide_gif/guide5.gif" alt="">
-                  </li>
-                  <li>
-                    <img src="images/guide_gif/guide6.gif" alt="">
-                  </li>
-                  <li>
-                    <img src="images/guide_gif/guide7.gif" alt="">
-                  </li>
-                  <li>
-                    <img src="images/guide_gif/guide8.gif" alt="">
-                  </li>
-                  <li>
-                    <img src="images/guide_gif/guide9.gif" alt="">
-                  </li>
-                  <li>
-                    <img src="images/guide_gif/guide10.gif" alt="">
-                  </li>
-                  <li>
-                    <img src="images/guide_gif/guide11.gif" alt="">
-                  </li>
-                </ul>
-              </div><!-- menu_content -->
-            </div><!-- content -->
+          <div class="inner">
+            <p class="sub_title">The first Digital Healthcare Metaverse</p>
+            <h2>TERATTO</h2>
+            <p class="text tab_none">
+              TERATTO는 메타버스 기반의 디지털 헬스케어 인프라를 구축하는 서비스로<br />
+              메디컬, 헬스, 뷰티 등 다양한 업체가 입점하여 자신의 서비스와 상품을 고객에게 제공합니다.
+            </p>
+            <p class="text pc_none">TERATTO는 메디컬, 헬스, 뷰티 등 다양한 업체가 입점하여 자신의 서비스와 상품을 제공할 수 있는 플랫폼입니다.</p>
           </div>
-        </section><!-- cont1 -->
+          <!-- cont1 inner -->
+        </section>
+        <!-- cont1 -->
         <section class="cont2">
-          <div class="cont2_inner">
-            <h2 class="mobile_h2">Item Trading</h2>
-            <div class="flex_wrap">
-              <h2>Item Trading</h2>
-              <div class="content_text">
-                <p>
-                  When requesting a transaction from the other party, it is converted to a one-to-one transaction screen, allowing for a secret conversation, and both non-minted equipment and minted NFT equipment can be traded. (Item exchange x)
-                </p>
-                <p>
-                  All are traded with Gem Stone, and in the case of NFT equipment, it is linked in your wallet after item transaction and NFT is automatically traded, so please trade with confidence.
-                </p>
-              </div>
+          <div class="inner">
+            <span class="top_point"></span>
+            <div class="title_wrap">
+              <h2>
+                Digital<br class="pc_none" />
+                Health Care Platform,
+                <strong>TERATTO</strong>
+              </h2>
+              <p class="context">
+                TERATTO는 전세계 각지의 헬스케어 업체가 자유롭게 입점하여 서비스를 전세계 모든 고객에게 제공하고 판매할 수 있는 신개념 디지털<br class="tab_br" />
+                헬스케어 플랫폼 입니다.
+              </p>
             </div>
-            <div class="gif_wrap">
-              <img src="images/common_guide/item_trading_img.png" alt="">
-            </div>
-          </div><!-- cont2_inner -->
-        </section><!-- cont2 -->
-        <section class="cont3">
-          <div class="cont3_inner">
-            <h2 class="mobile_h2">Shop</h2>
-            <div class="flex_wrap">
-              <h2>Shop</h2>
-              <div class="content_text">
-                <p>
-                  In the shop, you can use the booster for a week by purchasing the gold and silver package, you can auto-click by purchasing the items individually, and you can purchase a mining tool to synthesize equipment to level up.
-                </p>
-                <p>
-                  No cost at all!! You can save it with the Jam Stones you have collected.
-                </p>
-              </div>
-            </div>
-            <div class="gif_wrap">
-              <div class="swiper cont2_swiper">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <img src="images/common_guide/shop1.png" alt="">
+            <div class="content_wrap">
+              <img class="ele_img pc" src="images/main/web/session1_ele.png" alt="terrato platform" />
+              <img class="ele_img tablet" src="images/main/common/session1_ele_mobile.png" alt="terrato platform" />
+              <div class="content_list">
+                <ul>
+                  <li>
+                    <div class="icon_wrap">
+                      <span>Metaverse</span>
+                    </div>
+                    <div class="text">
+                      <span> 메타버스 내 다양한 헬스케어 업체 입점 </span>
+                    </div>
                   </li>
-                  <li class="swiper-slide">
-                    <img src="images/common_guide/shop2.png" alt="">
+                  <li>
+                    <div class="icon_wrap">
+                      <span>NFT Sale</span>
+                    </div>
+                    <div class="text">
+                      <span>
+                        메타버스 및<br class="tab_br_none" />
+                        헬스케어 서비스,<br class="tab_br_none" />
+                        상품을 NFT로 판매
+                      </span>
+                    </div>
                   </li>
-                  <li class="swiper-slide">
-                    <img src="images/common_guide/shop3.png" alt="">
+                  <li>
+                    <div class="icon_wrap">
+                      <span>Big Data</span>
+                    </div>
+                    <div class="text">
+                      <span>
+                        TERATTO 데이터를 가공하여 빅데이터<br class="tab_br_none" />
+                        판매<br class="tab_br" />
+                        및 수익 배분
+                      </span>
+                    </div>
                   </li>
-                  <li class="swiper-slide">
-                    <img src="images/common_guide/shop4.png" alt="">
+                  <li>
+                    <div class="icon_wrap">
+                      <span>API</span>
+                    </div>
+                    <div class="text">
+                      <span>
+                        자사 서비스를<br class="tab_br_none" />
+                        연동할 수 있는<br class="tab_br_none" />
+                        API 시스템 제공
+                      </span>
+                    </div>
                   </li>
                 </ul>
               </div>
-              <div class="swiper-pagination1"></div>
+              <div class="arrow_list">
+                <span class="arrow_icon"></span>
+                <ul>
+                  <li>
+                    <div class="back_icon">
+                      <span>병원</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="back_icon">
+                      <span>건강</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="back_icon">
+                      <span>뷰티샵</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="back_icon">
+                      <span>대학</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="back_icon">
+                      <span>연구기관</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="back_icon">
+                      <span>기업</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </section><!-- cont3 -->
-        <!-- cont4는 cont2랑 동일 해서 css 재사용 -->
-        <section class="cont4 cont2">
-          <div class="cont4_inner cont2_inner">
-            <h2 class="mobile_h2">Item Combine</h2>
-            <div class="flex_wrap">
-              <h2>Item Combine</h2>
-              <div class="content_text">
-                <p>
-                  You can level up by synthesizing equipment obtained through equipment draws and user-to-user transactions.
-                </p>
-                <p>
-                  You can level up by synthesizing 3 pieces of equipment of the same grade and level.
-                </p>
-                <p>
-                  It is possible to combine game items and NFT items, so please be careful when selecting materials!
-                </p>
-              </div>
+          <!-- cont2 inner -->
+        </section>
+        <!-- cont2 -->
+        <section class="cont3">
+          <div class="inner">
+            <span class="top_point"></span>
+            <h2>TERATTO Core Value</h2>
+            <div class="content_wrap">
+              <ul>
+                <li>
+                  <div class="title">
+                    <span><i class="icon"></i>METAVERSE</span>
+                  </div>
+                  <ul class="in_ul">
+                    <li>
+                      <span><i></i>필요한 서비스 공간을 자유롭게 구성</span>
+                    </li>
+                    <li>
+                      <span><i></i>구매한 토지 / 건물 / 아이템 소유, 판매, 임대</span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="title">
+                    <span><i class="icon"></i>FREE</span>
+                  </div>
+                  <ul class="in_ul">
+                    <li>
+                      <span><i></i>입점 시 기본 공간 무료 제공 (소유권 포함)</span>
+                    </li>
+                    <li>
+                      <span><i></i>입점 시 기본 서비스 기능 무료 제공 (소유권 포함)</span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="title">
+                    <span><i class="icon"></i>EXPANSION</span>
+                  </div>
+                  <ul class="in_ul">
+                    <li>
+                      <span><i></i>토지, 건물 구매를 통해 공간 확장</span>
+                    </li>
+                    <li>
+                      <span><i></i>필요한 공간에 대해 NFT를 구매하여 공간 구성</span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="title">
+                    <span><i class="icon"></i>SERVICE</span>
+                  </div>
+                  <ul class="in_ul">
+                    <li>
+                      <span><i></i>상담, 예약 등 CRM, OCS등 프로그램 제공</span>
+                    </li>
+                    <li>
+                      <span><i></i>서비스 및 상품 판매 / API 연동을 통한 자사 비즈니스 서비스 활용</span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="title">
+                    <span><i class="icon"></i>BIG DATA</span>
+                  </div>
+                  <ul class="in_ul">
+                    <li>
+                      <span><i></i>입점사는 TERATTO 빅데이터 활용 (무료)</span>
+                    </li>
+                    <li>
+                      <span><i></i>빅데이터 판매에 따른 수익 배분 (개인)</span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="title">
+                    <span><i class="icon"></i>NFT</span>
+                  </div>
+                  <ul class="in_ul">
+                    <li>
+                      <span><i></i>필요한 기능에 대한 NFT 직접 발행 가능</span>
+                    </li>
+                    <li>
+                      <span><i></i>서비스, 상품을 NFT로 판매 (상품권)</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <div class="gif_wrap">
-              <video muted autoplay loop playsinline>
-                <source src="images/common_guide/item_combine.mp4">
-              </video>
-            </div>
-          </div><!-- cont4_inner -->
-        </section><!-- cont4 -->
-        <section class="cont5 cont3">
-          <div class="cont5_inner cont3_inner">
-            <h2 class="mobile_h2">Make NFT</h2>
-            <div class="flex_wrap">
-              <h2>Make NFT</h2>
-              <div class="content_text">
-                <p>
-                  Game users can mint their equipment with NFT and sell them in the market.
-                </p>
-                <p>
-                  Only equipment of Rare class or higher can be minted.
-                </p>
-                <p>
-                  The generated NFT equipment can be sold for cryptocurrency on the marketplace.
-                </p>
-              </div>
-            </div>
-            <div class="gif_wrap">
-              <div class="swiper cont4_swiper">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <img src="images/common_guide/make_nft_img1.png" alt="">
-                  </li>
-                  <li class="swiper-slide">
-                    <img src="images/common_guide/make_nft_img2.png" alt="">
-                  </li>
-                  <li class="swiper-slide">
-                    <img src="images/common_guide/make_nft_img3.png" alt="">
-                  </li>
-                  <li class="swiper-slide">
-                    <img src="images/common_guide/make_nft_img4.png" alt="">
-                  </li>
-                </ul>
-              </div>
-              <div class="swiper-pagination2"></div>
-            </div>
-          </div><!-- cont5_inner -->
-        </section><!-- cont5 -->
-      </div><!-- #container -->
-      <div id="footer">
-          <div class="footerIn">
-              <p class="year">
-                  2021 DigToc Project
-              </p>
-              <p class="flogo">
-                  <a href="#">
-                      <img src="images/common/digtoc_logo(black).svg" alt="DigTocLogo">
-                  </a>
-              </p>
-              <p class="email">
-                  <span>contact@digtoc.com</span>
-              </p>
-          </div><!-- footerIn -->
-      </div><!-- #footer -->
-  </div><!-- #wrap -->
-</body>
+          </div>
+          <!-- cont3 inne -->
+        </section>
+        <!-- cont3 -->
+        <section class="cont4"></section>
+        <section class="cont5"></section>
+        <section class="cont6"></section>
+      </main>
+      <!-- container 끝 -->
+      <footer id="footer"></footer>
+      <!-- #footer 끝 -->
+    </div>
+    <!-- #wrap 끝 -->
+  </body>
 </html>
