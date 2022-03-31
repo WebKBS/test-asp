@@ -14,3 +14,21 @@ button{border: none; background: none; font-family: "sebang"; cursor: pointer; l
 
 input{-webkit-appearance: none; background: none; border: none;}
 
+
+#load{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  overflow: hidden;
+}
+.load_msg{
+  color: #ff0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
