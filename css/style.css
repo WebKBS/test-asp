@@ -373,6 +373,7 @@
   background-image: url(../images/main/icon/session1_icon10.png);
 }
 
+/* web cont3 */
 .cont3 {
   width: 100%;
   max-width: 1920px;
@@ -469,6 +470,67 @@
   position: absolute;
   top: 13px;
   left: -14px;
+}
+
+/* web cont4 */
+.cont4 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: url(../images/main/web/back4.jpg) no-repeat center 0/1920px auto;
+}
+.cont4 .inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 166px 20px 112px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.cont4 h2 {
+  width: 280px;
+  font-size: 48px;
+  font-family: "rajdhani-medium";
+  line-height: 1.1;
+  margin-bottom: 27px;
+}
+.cont4 h2 strong {
+  font-family: "rajdhani-bold";
+  display: block;
+}
+.cont4 .context {
+  width: 270px;
+  font-size: 18px;
+  font-family: "NotoSansKR-Medium";
+  line-height: 1.5;
+}
+.cont4 .context p {
+  margin-bottom: 30px;
+}
+.cont4 .content_list {
+  width: 770px;
+}
+.cont4 .content_list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.cont4 .content_list ul li {
+  width: 377px;
+  height: 324px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 13px 13px 16px 1.3px rgba(20, 21, 39, 0.22);
+}
+.cont4 .content_list ul li p {
+  text-align: center;
+  background: linear-gradient(to right, #7c40e7, #729fff);
+  line-height: 62px;
+}
+.cont4 .content_list ul li p span {
+  font-size: 22px;
+  color: #fff;
+  font-family: "NotoSansKR-Bold";
 }
 
 /* =============== 태블릿 시작 =============== */
@@ -603,7 +665,7 @@
   }
   .cont2 .inner {
     width: 100%;
-    padding: 19.27083vw 3.645833333vw 10.4166vw;
+    padding: 19.27083vw 2.645833333vw 10.4166vw;
     justify-content: space-between;
     flex-direction: column;
     gap: 3.90625vw;
@@ -810,7 +872,7 @@
   }
   .cont3 .inner {
     width: 100%;
-    padding: 19.27083vw 3.64583vw 8.333333vw;
+    padding: 19.27083vw 2.64583vw 8.333333vw;
   }
   .cont3 h2 {
     font-size: 6.25vw;
@@ -851,6 +913,57 @@
   .cont3 .content_wrap .in_ul li i {
     top: 1.6927vw;
     left: -1.822916vw;
+  }
+
+  /* 태블릿 cont4 시작 */
+  .cont4 {
+    width: 100%;
+    max-width: none;
+    background: url(../images/main/tablet/back4.jpg) no-repeat 0 0/cover;
+  }
+  .cont4 .inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 18.75vw 3.64583vw 13.02083vw;
+    flex-direction: column;
+  }
+  .cont4 h2 {
+    width: 100%;
+    font-size: 8.072916vw;
+    line-height: 1.1;
+    margin-bottom: 6.119791vw;
+  }
+  .cont4 h2 strong {
+    display: inline-block;
+  }
+  .cont4 h2 .pc_br {
+    display: none;
+  }
+  .cont4 .context {
+    width: 100%;
+    font-size: 2.864583vw;
+    margin-bottom: 5.20833vw;
+  }
+  .cont4 .context p {
+    margin-bottom: 2.60416vw;
+  }
+  .cont4 .content_list {
+    width: 100%;
+  }
+  .cont4 .content_list ul {
+    gap: 3.125vw;
+  }
+  .cont4 .content_list ul li {
+    width: 44.79166vw;
+    height: 38.28125vw;
+    border-radius: 28px;
+    box-shadow: 1.692708vw 1.692708vw 2.08333vw 1.3px rgba(20, 21, 39, 0.22);
+  }
+  .cont4 .content_list ul li p {
+    line-height: 6.77083vw;
+  }
+  .cont4 .content_list ul li p span {
+    font-size: 2.864583vw;
   }
 }
 @media (max-width: 767px) {
@@ -1098,6 +1211,47 @@
     height: 5px;
     top: 2.03125vw;
     left: -2.64375vw;
+  }
+
+  /* 모바일 cont4 시작 */
+  .cont4 {
+    background: url(../images/main/mobile/back4.jpg) no-repeat 0 0/cover;
+  }
+  .cont4 .inner {
+    padding: 23.75vw 4.6875vw 23.125vw;
+  }
+  .cont4 h2 {
+    font-size: 8.75vw;
+    line-height: 1.1;
+    margin-bottom: 5.3125vw;
+  }
+  .cont4 .context {
+    width: 100%;
+    font-size: 3.59375vw;
+    margin-bottom: 7.8125vw;
+  }
+  .cont4 .context p {
+    margin-bottom: 3.125vw;
+  }
+  .cont4 .content_list {
+    width: 100%;
+    border-radius: 6.875vw;
+  }
+  .cont4 .content_list ul {
+    gap: 10px;
+  }
+  .cont4 .content_list ul li {
+    width: 90.625vw;
+    height: 76.5625vw;
+    margin: 0 auto;
+    border-radius: 44px;
+    box-shadow: 2.03125vw 2.03125vw 2.5vw 1.3px rgba(20, 21, 39, 0.22);
+  }
+  .cont4 .content_list ul li p {
+    line-height: 13.75vw;
+  }
+  .cont4 .content_list ul li p span {
+    font-size: 4.84375vw;
   }
 }
 

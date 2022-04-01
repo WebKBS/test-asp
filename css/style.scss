@@ -462,6 +462,7 @@ $orbitron_bold: "orbitron-bold";
 
 }
 
+/* web cont3 */
 .cont3{
   width: 100%;
   max-width: 1920px;
@@ -579,6 +580,79 @@ $orbitron_bold: "orbitron-bold";
     }
   }
 }
+
+/* web cont4 */
+.cont4{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: url(../images/main/web/back4.jpg) no-repeat center 0 / 1920px auto;
+
+  .inner{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 166px 20px 112px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  h2{
+    width: 280px;
+    font-size: 48px;
+    font-family: $rajd_medium;
+    line-height: 1.1;
+    margin-bottom: 27px;
+
+    strong{
+      font-family: $rajd_bold;
+      display: block;
+    }
+  }
+
+  .context{
+    width: 270px;
+    font-size: 18px;
+    font-family: $noto_medium;
+    line-height: 1.5;
+
+    p{
+      margin-bottom: 30px;
+    }
+  }
+
+  .content_list{
+    width: 770px;
+
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      li{
+        width: 377px;
+        height: 324px;
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 13px 13px 16px 1.3px rgba(20, 21, 39, 0.22);
+
+        p{
+          text-align: center;
+          background: linear-gradient(to right, #7c40e7, #729fff);;
+          line-height: 62px;
+
+          span{
+            font-size: 22px;
+            color: #fff;
+            font-family: $noto_Bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 
 
@@ -722,7 +796,7 @@ $orbitron_bold: "orbitron-bold";
   
     .inner{
       width: 100%;
-      padding: 19.27083vw 3.645833333vw 10.4166vw;
+      padding: 19.27083vw 2.645833333vw 10.4166vw;
       justify-content: space-between;
       flex-direction: column;
       gap: 3.90625vw;
@@ -982,7 +1056,7 @@ $orbitron_bold: "orbitron-bold";
   
     .inner{
       width: 100%;
-      padding: 19.27083vw 3.64583vw 8.333333vw;
+      padding: 19.27083vw 2.64583vw 8.333333vw;
     }
   
     h2{
@@ -1042,6 +1116,65 @@ $orbitron_bold: "orbitron-bold";
     }
   }
 
+  /* 태블릿 cont4 시작 */
+  .cont4{
+    width: 100%;
+    max-width: none;
+    background: url(../images/main/tablet/back4.jpg) no-repeat 0 0 / cover;
+
+    .inner{
+      width: 100%;
+      margin: 0 auto;
+      padding: 18.75vw 3.64583vw 13.02083vw;
+      flex-direction: column;
+    }
+
+    h2{
+      width: 100%;
+      font-size: 8.072916vw;
+      line-height: 1.1;
+      margin-bottom: 6.119791vw;
+
+      strong{
+        display: inline-block;
+      }
+
+      .pc_br{display: none;}
+    }
+
+    .context{
+      width: 100%;
+      font-size: 2.864583vw;
+      margin-bottom: 5.20833vw;
+
+      p{
+        margin-bottom: 2.60416vw;
+      }
+    }
+
+    .content_list{
+      width: 100%;
+
+      ul{
+        gap: 3.125vw;
+
+        li{
+          width: 44.79166vw;
+          height: 38.28125vw;
+          border-radius: 28px;
+          box-shadow: 1.692708vw 1.692708vw 2.08333vw 1.3px rgba(20, 21, 39, 0.22);
+
+          p{
+            line-height: 6.77083vw;
+
+            span{
+              font-size: 2.864583vw;
+            }
+          }
+        }
+      }
+    }
+  }
 
 
 
@@ -1396,6 +1529,58 @@ $orbitron_bold: "orbitron-bold";
     }
   }
 
+
+  /* 모바일 cont4 시작 */
+  .cont4{
+    background: url(../images/main/mobile/back4.jpg) no-repeat 0 0 / cover;
+
+    .inner{
+      padding: 23.75vw 4.6875vw 23.125vw;
+    }
+
+    h2{
+      font-size: 8.75vw;
+      line-height: 1.1;
+      margin-bottom: 5.3125vw;
+
+
+    }
+
+    .context{
+      width: 100%;
+      font-size: 3.59375vw;
+      margin-bottom: 7.8125vw;
+
+      p{
+        margin-bottom: 3.125vw;
+      }
+    }
+
+    .content_list{
+      width: 100%;
+      border-radius: 6.875vw;
+
+      ul{
+        gap: 10px;
+
+        li{
+          width: 90.625vw;
+          height: 76.5625vw;
+          margin: 0 auto;
+          border-radius: 44px;
+          box-shadow: 2.03125vw 2.03125vw 2.5vw 1.3px rgba(20, 21, 39, 0.22);
+
+          p{
+            line-height: 13.75vw;
+
+            span{
+              font-size: 4.84375vw;
+            }
+          }
+        }
+      }
+    }
+  }
 
 
 
