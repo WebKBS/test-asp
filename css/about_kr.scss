@@ -1,0 +1,176 @@
+@charset "utf-8";
+@import "./settingScss.scss";
+
+
+/* web cont1 */
+.cont1{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  max-height: 940px;
+  height: 940px;
+  background-image: url(../teratto_about_img/web/back1.jpg);
+
+  .inner{
+    padding: 144px 20px 400px;
+  }
+
+  h2{
+    font-size: 46px;
+    line-height: 1.15;
+    font-family: $noto_Bold;
+    margin-bottom: 30px;
+
+    strong{
+      color: #7c40e7;
+    }
+  }
+
+  
+  .sub_text{
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .target{
+    display: inline-block;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-family: $noto_Bold;
+    background-color: #7c40e7;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-right: 10px;
+  }
+
+  .text_point{
+    color: #7c40e7;
+    font-family: $noto_black;
+  }
+
+  .sub_title{
+    font-size: 20px;
+    font-family: $rajd_semibold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    &::after{
+      content: "";
+      display: block;
+      width: 350px;
+      height: 1px;
+      background: #000;
+      position: absolute;
+      top: 50%;
+      left: -360px;
+      transform: translateY(-50%);
+    }
+  }
+
+}
+/* ===== web 끝 ===== */
+
+
+/* ===== 태블릿 시작 ===== */
+@include tablet{
+
+  /* 태블릿 cont1 */
+  .cont1{
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    height: auto;
+    background: url(../teratto_about_img/tablet/back1.jpg) no-repeat 0 0 / cover;
+  
+    .inner{
+      width: 100%;
+      padding: 8.33333vw 3.645833vw 75.78125vw;
+    }
+  
+    h2{
+      font-size: 5.72916vw;
+      line-height: 1.15;
+      margin-bottom: 2.34375vw;
+  
+    }
+  
+    
+    .sub_text{
+      font-size: 2.60416vw;
+      margin-bottom: 1.30208vw;
+    }
+    
+    .target{
+      padding: 1.5625vw 2.60416vw;
+      border-radius: 50px; /* no */
+      text-align: center;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+      margin-right: 1.30208vw;
+    }
+
+    .sub_title{
+      font-size: 2.604166vw;
+      bottom: 3.90625vw;
+      left: auto;
+      right: 3.64583vw;
+  
+      &::after{
+        width: 100%;
+        height: 1px;
+        left: -61.71875vw;
+      }
+    }
+  
+  }
+
+
+}
+
+
+/* ====== 모바일 시작 ====== */
+@include mobile{
+  /* 모바일 cont1 */
+  .cont1{
+    background: url(../teratto_about_img/mobile/back1.jpg) no-repeat 0 0 / cover;
+  
+    .inner{
+      width: 100%;
+      padding: 12.8125vw 4.6875vw 101.5625vw;
+    }
+  
+    h2{
+      font-size: 7.1875vw;
+      line-height: 1.15;
+      margin-bottom: 5vw;
+  
+    }
+  
+    
+    .sub_text{
+      font-size: 3.125vw;
+      margin-bottom: 2.5vw;
+    }
+    
+    .target{
+      padding: 1.875vw 3.125vw;
+      border-radius: 50px; /* no */
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+      margin-right: 2.5vw;
+    }
+
+    .sub_title{
+      font-size: 3.125vw;
+      bottom: 5.46875vw;
+      left: auto;
+      right: 4.6875vw;
+  
+      &::after{
+        left: -74.0625vw;
+      }
+    }
+  
+  }
+
+}
