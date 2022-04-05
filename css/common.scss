@@ -5,6 +5,10 @@
 
 #wrap{position: relative;}
 
+.side_menu{
+  display: none;
+}
+
 #header{
   position: sticky;
   box-sizing: border-box;
@@ -364,6 +368,16 @@
     }
   }
 
+  /* talbet container */
+  .cont1,
+  .cont2,
+  .cont3,
+  .cont4,
+  .cont5{
+    max-width: none;
+  }
+
+
   /* ========== 태블릿 footer 영역 ========== */
   #footer{
     width: 100%;
@@ -458,6 +472,137 @@
 
   }
   
+
+  /* =================== 태블릿 사이드 메뉴 ============== */
+
+  .side_menu{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    
+  }
+  .side_menu.on{
+    display: block;
+  }
+
+  .side_bg{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+    opacity: 0;
+  }
+
+  .side_inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46.875vmin;
+    height: 100vh;
+    background: #fff;
+    overflow-y: scroll;
+    padding: 3.125vmin;
+    transform: translateX(-100%);
+    transition: transform .5s;
+
+    .close{
+      width: 40px;
+      height: 40px;
+      position: relative;
+      margin-bottom: 16px;
+      
+      &::after,
+      &::before{
+        content: "";
+        display: block;
+        width: 32px;
+        height: 2px;
+        background-color: #7c42e7;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+
+      &::after{
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      &::before{
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+    
+    .side_gnb{
+      margin-bottom: 4.427083vmin;
+
+      ul{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+      }
+
+      li{
+        width: 39.0625vmin;
+        border: 3px solid #aeaed6;
+        border-radius: 16px;
+        text-align: center;
+        line-height: 10vmin;
+        
+        a{
+          display: block;
+          height: 9.63541vmin;
+          font-size: 3.90625vmin;
+          font-family: $rajd_bold;
+        }
+      }
+
+      li.on a{
+        color: #7c42e7;
+      }
+    }
+
+    .side_sns{
+      margin-bottom: 4.81770vmin;
+
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.864583vmin;
+      }
+
+      li{
+        
+        a{
+          display: block;
+          width: 11.328125vmin;
+        }
+      }
+    }
+
+    .side_whitepaper{
+      width: 39.0625vmin;
+      height: 8.85416vmin;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 3.25520vmin;
+      line-height: 7.8125vmin;
+      border: 3px solid #bfbfbf;
+      border-radius: 40px;
+
+      span{
+        padding-left: 4.42708vmin;
+        background: url(../images/main/icon/document_icon_mobile.svg) no-repeat 0 center / auto 3.90625vmin;
+      }
+    }
+
+  }
+  .side_inner.on{
+    transform: translateX(0);
+  }
+
 
 
 
@@ -588,5 +733,84 @@
 
   }
 
+
+  /* =================== 모바일 사이드 메뉴 ============== */
+
+
+  // .side_inner{
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 360px;
+  //   height: 100vh;
+  //   background: #fff;
+  //   overflow-y: scroll;
+  //   padding: 24px;
+    
+  //   .side_gnb{
+  //     margin-bottom: 34px;
+
+  //     ul{
+  //       display: flex;
+  //       flex-direction: column;
+  //       gap: 8px;
+  //       align-items: center;
+  //     }
+
+  //     li{
+  //       width: 300px;
+  //       border: 3px solid #aeaed6;
+  //       border-radius: 16px;
+  //       text-align: center;
+  //       line-height: 70px;
+        
+  //       a{
+  //         display: block;
+  //         height: 74px;
+  //         font-size: 30px;
+  //         font-family: $rajd_bold;
+  //       }
+  //     }
+
+  //     li.on a{
+  //       color: #7c42e7;
+  //     }
+  //   }
+
+  //   .side_sns{
+  //     margin-bottom: 37px;
+
+  //     ul{
+  //       display: flex;
+  //       flex-wrap: wrap;
+  //       gap: 22px;
+  //     }
+
+  //     li{
+        
+  //       a{
+  //         display: block;
+  //         width: 87px;
+  //       }
+  //     }
+  //   }
+
+  //   .side_whitepaper{
+  //     width: 300px;
+  //     height: 68px;
+  //     margin: 0 auto;
+  //     text-align: center;
+  //     font-size: 25px;
+  //     line-height: 60px;
+  //     border: 3px solid #bfbfbf;
+  //     border-radius: 40px;
+
+  //     span{
+  //       padding-left: 34px;
+  //       background: url(../images/main/icon/document_icon_mobile.svg) no-repeat 0 center / auto 30px;
+  //     }
+  //   }
+
+  // }
 
 }
