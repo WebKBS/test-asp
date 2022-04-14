@@ -28,6 +28,12 @@
   position: relative;
   overflow: hidden;
 
+  video{
+    width: 1920px;
+    margin: 0 auto;
+    // height: 100vh;
+  }
+
   .inner{
     padding: 143px 20px 180px;
     position: absolute;
@@ -638,7 +644,7 @@
   }
 
   .cont1{
-    background-image: url(../images/main/tablet/back1.jpg);
+    // background-image: url(../images/main/tablet/back1.jpg);
     
     .inner{
       width: 100%;
@@ -1200,7 +1206,7 @@
   .cont1{
     width: 100%;
     max-width: none;
-    background: url(../images/main/mobile/back1.jpg) no-repeat 0 0 / cover;
+    // background: url(../images/main/mobile/back1.jpg) no-repeat 0 0 / cover;
     
     .inner{
       width: 100%;
