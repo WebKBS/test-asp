@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TERATTO - NFT</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/nft_kr.css" />
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/NftSwiperCustom.js" defer></script>
+  </head>
+  <body>
+    <script>
+      const body = document.querySelector('body');
+      const $div = document.createElement('div');
+      $div.id = 'load';
+      $div.innerHTML = `<img src="./images/loading.gif">`;
+
+      body.appendChild($div);
+    </script>
+    <div id="wrap">
+      <address class="web_sns">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/terattoofficial/" target="_blank">
+              <img src="images/main/icon/facebook_icon.svg" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/terattoofficial" target="_blank">
+              <img src="images/main/icon/twitter_icon.svg" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/teratto_official" target="_blank">
+              <img src="images/main/icon/telegram_icon.svg" alt="telegram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/teratto_official" target="_blank">
+              <img src="images/main/icon/reddit_icon.svg" alt="reddit" />
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@teratto" target="_blank">
+              <img src="images/main/icon/medium_icon.svg" alt="medium" />
+            </a>
+          </li>
+        </ul>
+      </address>
+      <header id="header">
+        <button type="button" class="menu_btn">메뉴 버튼<span class="line"></span></button>
+        <h1 class="logo">
+          <a href="./index.html">
+            <img src="images/main/common/terrato_logo.svg" alt="logo" />
+          </a>
+        </h1>
+        <div class="headerIn">
+          <nav class="gnb">
+            <ul>
+              <li><a href="./about_kr.html">About</a></li>
+              <li><a href="./tokenomics_kr.html">Tokenomics</a></li>
+              <li><a href="./metaverse_kr.html">Metaverse</a></li>
+              <li><a href="./nft_kr.html">NFT</a></li>
+              <li><a href="./event_kr.html">Event</a></li>
+              <li><a href="./contact_kr.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="whitepaper">
+            <span>WHITEPAPER</span>
+          </div>
+        </div>
+        <div class="lang">
+          <ul>
+            <li><a href="#">EN</a></li>
+            <li class="on"><a href="#">KR</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- header 끝 -->
+      <main id="container">
+        <section class="cont1">
+          <div class="inner">
+            <div class="title_wrap">
+              <h2>
+                TERATTO NFT<br class="mobi_br" />
+                to be Released
+              </h2>
+              <p class="context">TERATTO METAVERSE 생태계에서 사용할 회원의 등급, 아바타 및 랜드, 건물 등 NFT를 순차적으로 공개할 예정입니다</p>
+            </div>
+            <div class="pc_wrap">
+              <img src="./teratto_nft_img/common/nft_pc_img.png" alt="" />
+            </div>
+            <div class="mobi_wrap">
+              <div class="img_list swiper nftSwiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <img src="./teratto_nft_img/common/nft_image1.png" alt="" />
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="./teratto_nft_img/common/nft_image2.png" alt="" />
+                  </li>
+                  <!-- <li class="swiper-slide">
+                    <img src="./teratto_nft_img/common/nft_img3.png" alt="" />
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="./teratto_nft_img/common/nft_img4.png" alt="" />
+                  </li> -->
+                </ul>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <!-- cont1 inner -->
+        </section>
+        <!-- cont1 -->
+      </main>
+      <!-- container 끝 -->
+      <footer id="footer">
+        <div class="news">
+          <div class="inner">
+            <h3>뉴스레터를 구독하여 최신 소식을 받아보세요.</h3>
+            <form>
+              <input type="email" placeholder="Enter your email" />
+              <button type="button" class="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <!-- news -->
+        <div class="f-info">
+          <div class="inner">
+            <h3 class="flogo">
+              <a href="#">
+                <img src="images/main/common/terrato_logo(black).svg" alt="" />
+              </a>
+            </h3>
+            <div class="sitemap">
+              <ul>
+                <li>
+                  <p class="sub_nav">PRODUCT</p>
+                  <ul>
+                    <li>Mining</li>
+                    <li>NFT</li>
+                    <li>Marketplace</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="sub_nav">NFT DROPS</p>
+                  <ul>
+                    <li>출시예정</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="sub_nav">GAME</p>
+                  <ul>
+                    <li>출시예정</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="sub_nav">INFO</p>
+                  <ul>
+                    <li>About</li>
+                    <li>Whitepaper</li>
+                    <li>Team</li>
+                    <li>Docs</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- inner -->
+        </div>
+      </footer>
+      <!-- #footer 끝 -->
+      <div class="side_menu">
+        <div class="side_bg"></div>
+        <div class="side_inner">
+          <button type="button" class="close"></button>
+          <div class="side_gnb">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about_kr.html">About</a></li>
+              <li><a href="./tokenomics_kr.html">Tokenomics</a></li>
+              <li><a href="./metaverse_kr.html">Metaverse</a></li>
+              <li class="on"><a href="./nft_kr.html">NFT</a></li>
+              <li><a href="./event_kr.html">Event</a></li>
+              <li><a href="./contact_kr.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="side_sns">
+            <p>FOLLOW US</p>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/terattoofficial/" target="_blank">
+                  <img src="images/main/icon/facebook_icon_mobile.png" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/terattoofficial" target="_blank">
+                  <img src="images/main/icon/twitter_icon_mobile.png" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/teratto_official" target="_blank">
+                  <img src="images/main/icon/telegram_icon_mobile.png" alt="telegram" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.reddit.com/user/teratto_official" target="_blank">
+                  <img src="images/main/icon/reddit_icon_mobile.png" alt="reddit" />
+                </a>
+              </li>
+              <li>
+                <a href="https://medium.com/@teratto" target="_blank">
+                  <img src="images/main/icon/medium_icon_mobile.png" alt="medium" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="side_whitepaper">
+            <span>WHITEPAPER</span>
+          </div>
+        </div>
+      </div>
+      <!-- 사이드 메뉴 -->
+    </div>
+    <!-- #wrap 끝 -->
+  </body>
+</html>

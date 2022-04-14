@@ -1,0 +1,675 @@
+@charset "UTF-8";
+/* web 슬라이더 */
+#main-slider {
+  width: 100%;
+  max-width: 1920px;
+  height: 920px;
+  margin: 0 auto;
+  background-image: url(../teratto_metaverse_img/web/back1.jpg);
+  background-repeat: no-repeat;
+  background-size: 1920px auto;
+  background-position: center 0;
+}
+#main-slider .mySwiper {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+#main-slider .swiper-pagination {
+  bottom: 100px;
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#main-slider .swiper-button-next {
+  display: none;
+}
+#main-slider .swiper-pagination span.swiper-pagination-bullet-active {
+  background: #fff;
+}
+#main-slider .swiper-pagination span {
+  display: block;
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+  border: 1px solid #fff;
+}
+
+.slide-inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 0;
+}
+.slide-inner h2 {
+  font-size: 46px;
+  font-family: "orbitron-bold";
+  color: #fff;
+  margin-bottom: 44px;
+  line-height: 1.2;
+}
+.slide-inner .title {
+  width: 280px;
+  font-size: 20px;
+  font-family: "rajdhani-bold";
+  padding: 14px 0 14px 20px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #6c1ff5, #729fff);
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 26px;
+}
+.slide-inner .list li {
+  color: #fff;
+  font-size: 15px;
+  font-family: "NotoSansKR-Regular";
+  margin-bottom: 14px;
+}
+.slide-inner .content1 {
+  margin-bottom: 42px;
+}
+.slide-inner .content2 .list li:nth-child(n+4) {
+  margin-left: 12px;
+}
+
+.slide-inner2 {
+  width: 1200px;
+  height: 920px;
+  margin: 0 auto;
+  padding: 100px 20px 0;
+}
+.slide-inner2 h3 {
+  color: #fff;
+  font-size: 48px;
+  font-family: "rajdhani-bold";
+  margin-bottom: 30px;
+}
+.slide-inner2 .explan {
+  width: 277px;
+  font-size: 16px;
+  font-family: "NotoSansKR-Regular";
+  line-height: 1.5;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.slide-inner2 .explan strong {
+  color: #8846ff;
+}
+.slide-inner2 .list1 {
+  margin-bottom: 60px;
+}
+.slide-inner2 .list1 li {
+  font-size: 18px;
+  color: #fff;
+  font-family: "rajdhani-bold";
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.slide-inner2 .list1 li span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c40e7, #729fff);
+  text-align: center;
+  line-height: 30px;
+}
+.slide-inner2 .list1 li p {
+  padding-top: 4px;
+}
+.slide-inner2 .list2 {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.slide-inner2 .list2 li {
+  width: 90px;
+  line-height: 30px;
+  border-radius: 40px;
+  border: double 2px transparent;
+  background-image: linear-gradient(#000, #000), linear-gradient(to right, #7c40e7, #729fff);
+  text-align: center;
+  font-family: "rajdhani-semibold";
+  font-size: 12px;
+  color: #fff;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+#container {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* web cont1 */
+.cont1 {
+  background-color: #1d1c30;
+}
+.cont1 .inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 109px;
+  padding: 0 28px;
+}
+.cont1 .title_wrap h2 {
+  font-size: 48px;
+  color: #fff;
+  font-family: "rajdhani-bold";
+  padding-top: 130px;
+  margin-bottom: 30px;
+}
+.cont1 .title_wrap .context {
+  width: 280px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "NotoSansKR-Regular";
+  line-height: 1.7;
+}
+.cont1 .content_wrap {
+  min-width: 1171px;
+}
+.cont1 .content_wrap li .image_wrap {
+  width: 1171px;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 0;
+}
+.cont1 .content_wrap li .text_wrap {
+  width: 100%;
+  height: 230px;
+  background-color: #0d0d25;
+  padding: 52px 0 0 56px;
+}
+.cont1 .content_wrap li .text_wrap h3 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "rajdhani-medium";
+  margin-bottom: 22px;
+}
+.cont1 .content_wrap li .text_wrap .text {
+  width: 690px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "NotoSansKR-Regular";
+  line-height: 1.6;
+  padding-left: 30px;
+}
+.cont1 .content_wrap li:nth-of-type(2) .image_wrap {
+  background-image: url(../teratto_metaverse_img/web/session1_img1.jpg);
+}
+.cont1 .content_wrap li:nth-of-type(3) .image_wrap {
+  background-image: url(../teratto_metaverse_img/web/session1_img2.jpg);
+}
+.cont1 .content_wrap li:nth-of-type(4) .image_wrap {
+  background-image: url(../teratto_metaverse_img/web/session1_img3.jpg);
+}
+.cont1 .content_wrap li:nth-of-type(5) .image_wrap {
+  background-image: url(../teratto_metaverse_img/web/session1_img4.jpg);
+}
+.cont1 .content_wrap li:nth-of-type(6) .image_wrap {
+  background-image: url(../teratto_metaverse_img/web/session1_img1.jpg);
+}
+.cont1 .content_wrap .swiper-pagination {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 40px;
+  right: 400px;
+  z-index: 20;
+}
+.cont1 .content_wrap .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.cont1 .content_wrap .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+/* web cont2 */
+.cont2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: url(../teratto_metaverse_img/web/back2.jpg) no-repeat center 0/1920px auto;
+}
+.cont2 .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 20px 48px;
+}
+.cont2 .title_wrap {
+  width: 386px;
+}
+.cont2 h2 {
+  color: #fff;
+  font-size: 48px;
+  font-family: "rajdhani-bold";
+  margin-bottom: 40px;
+}
+.cont2 .context {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+  font-family: "NotoSansKR-Regular";
+}
+.cont2 .image_wrap {
+  width: 712px;
+}
+
+/* ========== 태블릿 시작 ========== */
+@media (max-width: 1199px) {
+  /* 태블릿 슬라이더 */
+  #main-slider {
+    width: 100%;
+    max-width: none;
+    height: 122.65625vw;
+    background-image: url(../teratto_metaverse_img/tablet/back1.jpg);
+    background-size: cover;
+    /* xxxxx */
+  }
+  #main-slider .mySwiper {
+    width: 100%;
+  }
+  #main-slider .swiper-button-next {
+    display: block;
+    width: 6.510416vw;
+    height: 13.0208vw;
+    background: url(../teratto_metaverse_img/common/main_scroll_btn.png) no-repeat 0 0/contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    right: 0;
+    cursor: pointer;
+    z-index: 20;
+  }
+  #main-slider .swiper-pagination {
+    bottom: auto;
+    top: 8.33333vw;
+    left: auto;
+    right: 3.90625vw;
+    gap: 2.60416vw;
+  }
+  #main-slider .swiper-pagination span {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .slide-inner {
+    width: 100%;
+    padding: 9.114583vw 3.64583vw 0;
+  }
+  .slide-inner h2 {
+    font-size: 6.51041vw;
+    margin-bottom: 2.60416vw;
+    line-height: 1.2;
+  }
+  .slide-inner .title {
+    width: 38.54166vw;
+    font-size: 2.60416vw;
+    padding: 1.30208vw 0 1.30208vw 2.86458vw;
+    margin-bottom: 2.08333vw;
+  }
+  .slide-inner .list li {
+    font-size: 2.08333vw;
+    margin-bottom: 1.5625vw;
+  }
+  .slide-inner .flex_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .slide-inner .content1 {
+    margin-bottom: 0;
+  }
+  .slide-inner .content2 .list li:nth-child(n+4) {
+    margin-left: 1.5625vw;
+  }
+
+  .slide-inner2 {
+    width: 100%;
+    height: 122.65625vw;
+    padding: 9.114583vw 3.64583vw 0;
+  }
+  .slide-inner2 h3 {
+    font-size: 5.98958vw;
+    margin-bottom: 3.90625vw;
+  }
+  .slide-inner2 .explan {
+    width: 100%;
+    font-size: 2.34375vw;
+    margin-bottom: 3.90625vw;
+  }
+  .slide-inner2 .list1 {
+    margin-bottom: 3.90625vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.30208vw 0;
+  }
+  .slide-inner2 .list1 li {
+    width: 33.33333%;
+    font-size: 2.213541vw;
+    display: flex;
+    gap: 1.30208vw;
+    margin-bottom: 0;
+  }
+  .slide-inner2 .list1 li span {
+    width: 3.90625vw;
+    height: 3.90625vw;
+    line-height: 3.90625vw;
+  }
+  .slide-inner2 .list1 li p {
+    padding-top: 0.52083vw;
+  }
+  .slide-inner2 .list2 {
+    width: 65.10416vw;
+    flex-wrap: wrap;
+    gap: 1.5625vw;
+  }
+  .slide-inner2 .list2 li {
+    width: 17.70833vw;
+    font-size: 1.953125vw;
+    line-height: 5.20833vw;
+    border-radius: 40px;
+    /* x */
+    border: double 1px transparent;
+  }
+
+  #container {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* 태블릿 cont1 */
+  .cont1 {
+    background-color: #1d1c30;
+  }
+  .cont1 .pc_br {
+    display: none;
+  }
+  .cont1 .inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0;
+  }
+  .cont1 .title_wrap {
+    padding: 70px 30px 60px;
+  }
+  .cont1 .title_wrap h2 {
+    font-size: 46px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .cont1 .title_wrap .context {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  .cont1 .content_wrap {
+    min-width: auto;
+    padding: 0 3.64583vw;
+    margin: 0;
+    background-color: #0d0d25;
+  }
+  .cont1 .content_wrap .swiper-wrapper {
+    flex-direction: column;
+  }
+  .cont1 .content_wrap li {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5.20833vw;
+  }
+  .cont1 .content_wrap li .image_wrap {
+    width: 100%;
+    height: 75.52083vw;
+    background-position: 0 0;
+    order: 2;
+  }
+  .cont1 .content_wrap li .text_wrap {
+    width: 100%;
+    height: auto;
+    padding: 9.11458vw 0 4.6875vw;
+    order: 1;
+  }
+  .cont1 .content_wrap li .text_wrap h3 {
+    font-size: 5.46875vw;
+    margin-bottom: 2.86458vw;
+  }
+  .cont1 .content_wrap li .text_wrap .text {
+    width: 100%;
+    font-size: 2.34375vw;
+    padding-left: 0;
+  }
+  .cont1 .content_wrap li:nth-of-type(1) .image_wrap {
+    background-image: url(../teratto_metaverse_img/tablet/session1_img1.jpg);
+  }
+  .cont1 .content_wrap li:nth-of-type(2) .image_wrap {
+    background-image: url(../teratto_metaverse_img/tablet/session1_img2.jpg);
+  }
+  .cont1 .content_wrap li:nth-of-type(3) .image_wrap {
+    background-image: url(../teratto_metaverse_img/tablet/session1_img3.jpg);
+  }
+  .cont1 .content_wrap li:nth-of-type(4) .image_wrap {
+    background-image: url(../teratto_metaverse_img/tablet/session1_img4.jpg);
+  }
+  .cont1 .content_wrap li:nth-of-type(5) .image_wrap {
+    background-image: none;
+  }
+  .cont1 .content_wrap li:nth-of-type(6) .image_wrap {
+    background-image: none;
+  }
+  .cont1 .content_wrap .swiper-pagination {
+    display: none;
+  }
+  .cont1 .content_wrap .swiper-pagination .swiper-pagination-bullet {
+    display: none;
+  }
+
+  /* 태블릿 cont2 */
+  .cont2 {
+    max-width: none;
+    background: url(../teratto_metaverse_img/tablet/back2.jpg) no-repeat 0 0/cover;
+  }
+  .cont2 .pc_br {
+    display: none;
+  }
+  .cont2 .inner {
+    width: 100%;
+    flex-direction: column;
+    padding: 11.97916vw 3.64583vw 7.8125vw;
+    gap: 6.25vw;
+  }
+  .cont2 .title_wrap {
+    width: 100%;
+  }
+  .cont2 h2 {
+    font-size: 5.98958vw;
+    margin-bottom: 4.16666vw;
+  }
+  .cont2 .context {
+    font-size: 2.34375vw;
+    line-height: 1.5;
+  }
+  .cont2 .image_wrap {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  /* 모바일 슬라이더 */
+  #main-slider {
+    height: 191.5625vw;
+    background-image: url(../teratto_metaverse_img/mobile/back1.jpg);
+    /* xxxxx */
+  }
+  #main-slider .swiper-pagination {
+    bottom: auto;
+    top: 10vw;
+    left: auto;
+    right: 0;
+    gap: 3.125vw;
+  }
+  #main-slider .swiper-button-next {
+    top: 34%;
+  }
+
+  .slide-inner {
+    padding: 10.9375vw 4.6875vw 0;
+  }
+  .slide-inner h2 {
+    font-size: 8.125vw;
+    margin-bottom: 7.8125vw;
+    line-height: 1.2;
+  }
+  .slide-inner .title {
+    width: 100%;
+    font-size: 3.125vw;
+    padding: 2.1875vw 0 2.1875vw;
+    text-align: center;
+    margin-bottom: 3.75vw;
+  }
+  .slide-inner .list li {
+    line-height: 1.4;
+    font-size: 2.5vw;
+    margin-bottom: 1.875vw;
+  }
+  .slide-inner .flex_wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 4.375vw;
+  }
+  .slide-inner .content1 {
+    margin-bottom: 0;
+  }
+  .slide-inner .content2 .list li:nth-child(n+4) {
+    margin-left: 1.875vw;
+  }
+
+  .slide-inner2 {
+    width: 100%;
+    height: 191.5625vw;
+    padding: 10.9375vw 4.6875vw 0;
+  }
+  .slide-inner2 h3 {
+    font-size: 7.1875vw;
+    margin-bottom: 4.6875vw;
+  }
+  .slide-inner2 .explan {
+    font-size: 2.65625vw;
+    margin-bottom: 4.6875vw;
+  }
+  .slide-inner2 .list1 {
+    margin-bottom: 7.8125vw;
+    gap: 2.1875vw 0;
+  }
+  .slide-inner2 .list1 li {
+    width: 50%;
+    font-size: 2.65625vw;
+    display: flex;
+    gap: 1.5625vw;
+    margin-bottom: 0;
+  }
+  .slide-inner2 .list1 li span {
+    width: 4.6875vw;
+    height: 4.6875vw;
+    line-height: 4.6875vw;
+  }
+  .slide-inner2 .list1 li p {
+    padding-top: 0.625vw;
+  }
+  .slide-inner2 .list2 {
+    width: 78.125vw;
+    gap: 1.875vw;
+  }
+  .slide-inner2 .list2 li {
+    width: 21.25vw;
+    font-size: 2.34375vw;
+    line-height: 6.25vw;
+    border-radius: 6.25vw;
+    /* x */
+  }
+
+  /* 모바일 cont1 */
+  .cont1 .pc_br {
+    display: block;
+  }
+  .cont1 .title_wrap {
+    padding: 10.9375vw 4.6875vw 9.375vw;
+  }
+  .cont1 .title_wrap h2 {
+    font-size: 7.1875vw;
+    margin-bottom: 4.6875vw;
+  }
+  .cont1 .title_wrap .context {
+    font-size: 2.8125vw;
+  }
+  .cont1 .content_wrap {
+    padding: 0 4.6875vw;
+  }
+  .cont1 .content_wrap li {
+    padding-bottom: 5.625vw;
+  }
+  .cont1 .content_wrap li .image_wrap {
+    height: 90.625vw;
+  }
+  .cont1 .content_wrap li .text_wrap {
+    padding: 10.9375vw 0 5.625vw;
+  }
+  .cont1 .content_wrap li .text_wrap h3 {
+    font-size: 6.5625vw;
+    margin-bottom: 3.4375vw;
+  }
+  .cont1 .content_wrap li .text_wrap .text {
+    font-size: 2.8125vw;
+  }
+  .cont1 .content_wrap li:nth-of-type(1) .image_wrap {
+    background-image: url(../teratto_metaverse_img/mobile/session1_img1.jpg);
+  }
+  .cont1 .content_wrap li:nth-of-type(2) .image_wrap {
+    background-image: url(../teratto_metaverse_img/mobile/session1_img2.jpg);
+  }
+  .cont1 .content_wrap li:nth-of-type(3) .image_wrap {
+    background-image: url(../teratto_metaverse_img/mobile/session1_img3.jpg);
+  }
+  .cont1 .content_wrap li:nth-of-type(4) .image_wrap {
+    background-image: url(../teratto_metaverse_img/mobile/session1_img4.jpg);
+  }
+  .cont1 .content_wrap li:nth-of-type(5) .image_wrap {
+    background-image: none;
+  }
+  .cont1 .content_wrap li:nth-of-type(6) .image_wrap {
+    background-image: none;
+  }
+
+  /* 모바일 cont2 */
+  .cont2 {
+    background: url(../teratto_metaverse_img/mobile/back2.jpg) no-repeat 0 0/cover;
+  }
+  .cont2 .pc_br {
+    display: block;
+  }
+  .cont2 .inner {
+    padding: 14.375vw 4.6875vw 9.375vw;
+    gap: 7.5vw;
+  }
+  .cont2 h2 {
+    font-size: 7.1875vw;
+    margin-bottom: 4.6875vw;
+  }
+  .cont2 .context {
+    font-size: 2.8125vw;
+    line-height: 1.5;
+  }
+}
+
+/*# sourceMappingURL=metaverse_kr.css.map */

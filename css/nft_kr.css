@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.cont1 {
+  width: 100%;
+  max-width: 1920px;
+  background: url(../teratto_nft_img/web/back.jpg) no-repeat center 0/1920px auto;
+  margin: 0 auto;
+}
+.cont1 .mobi_br {
+  display: none;
+}
+.cont1 .inner {
+  padding: 126px 20px 112px;
+}
+.cont1 .inner .title_wrap {
+  margin-bottom: 60px;
+}
+.cont1 .inner h2 {
+  color: #fff;
+  font-size: 46px;
+  font-family: "orbitron-bold";
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cont1 .inner .context {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  font-family: "NotoSansKR-Regular";
+  line-height: 1.5;
+}
+.cont1 .inner .mobi_wrap {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  /* 태블릿 cont1 */
+  .cont1 {
+    max-width: none;
+    background: url(../teratto_nft_img/tablet/back.jpg) no-repeat 0 0/cover;
+  }
+  .cont1 .mobi_br {
+    display: block;
+  }
+  .cont1 .inner {
+    width: 100%;
+    padding: 10.9375vw 3.64583vw 16.14583vw;
+  }
+  .cont1 .inner .title_wrap {
+    margin-bottom: 5.98958vw;
+  }
+  .cont1 .inner h2 {
+    font-size: 7.29166vw;
+    margin-bottom: 4.166666vw;
+    line-height: 1.2;
+  }
+  .cont1 .inner .context {
+    font-size: 2.604166vw;
+    padding: 0 6.25vw;
+  }
+  .cont1 .inner .pc_wrap {
+    display: none;
+  }
+  .cont1 .inner .mobi_wrap {
+    display: block;
+  }
+  .cont1 .inner .img_list {
+    width: 74.73958vw;
+    margin: 0 auto;
+    height: 74.21875vw;
+  }
+  .cont1 .inner .img_list li {
+    width: 36.19791vw;
+  }
+  .cont1 .inner .swiper-pagination {
+    display: flex;
+    gap: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .cont1 .inner .swiper-pagination span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+  .cont1 .inner .swiper-pagination-bullet-active {
+    background-color: #fff;
+  }
+}
+@media (max-width: 767px) {
+  /* 모바일 cont1 */
+  .cont1 {
+    background: url(../teratto_nft_img/mobile/back1.jpg) no-repeat 0 0/cover;
+  }
+  .cont1 .inner {
+    padding: 18.75vw 4.6875vw 23.4375vw;
+  }
+  .cont1 .inner .title_wrap {
+    margin-bottom: 7.8125vw;
+  }
+  .cont1 .inner h2 {
+    font-size: 8.75vw;
+    margin-bottom: 5vw;
+  }
+  .cont1 .inner .context {
+    font-size: 2.96875vw;
+    padding: 0;
+  }
+  .cont1 .inner .pc_wrap {
+    display: none;
+  }
+  .cont1 .inner .mobi_wrap {
+    display: block;
+  }
+  .cont1 .inner .img_list {
+    width: 100%;
+    margin: 0 auto;
+    height: 91.0625vw;
+  }
+  .cont1 .inner .img_list li {
+    width: 44.0625vw;
+  }
+  .cont1 .inner .swiper-pagination {
+    gap: 18px;
+  }
+  .cont1 .inner .swiper-pagination span {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/*# sourceMappingURL=nft_kr.css.map */

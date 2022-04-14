@@ -1,0 +1,824 @@
+@charset "utf-8";
+@import "./settingScss.scss";
+
+/* web 슬라이더 */
+#main-slider{
+  width: 100%;
+  max-width: 1920px;
+  height: 920px;
+  margin: 0 auto;
+  background-image: url(../teratto_metaverse_img/web/back1.jpg);
+  background-repeat: no-repeat;
+  background-size: 1920px auto;
+  background-position: center 0;
+  // background-attachment: fixed;
+
+  .mySwiper{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .swiper-pagination{
+    bottom: 100px;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .swiper-button-next{
+    display: none;
+  }
+
+  .swiper-pagination span.swiper-pagination-bullet-active{
+    background: #fff;
+  }
+  .swiper-pagination span{display: block; border-radius: 50%; width: 10px !important; height: 10px !important; border: 1px solid #fff;}
+
+  
+}
+.slide-inner{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 0;
+  
+
+  h2{
+    font-size: 46px;
+    font-family: $orbitron_bold;
+    color: #fff;
+    margin-bottom: 44px;
+    line-height: 1.2;
+  }
+
+  .title{
+    width: 280px;
+    font-size: 20px;
+    font-family: $rajd_bold;
+    padding: 14px 0 14px 20px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #6c1ff5, #729fff);
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 26px;
+  }
+
+  .list{
+    
+    li{
+      color: #fff;
+      font-size: 15px;
+      font-family: $noto_Regular;
+      margin-bottom: 14px;
+    }
+  }
+
+  .content1{
+    margin-bottom: 42px;
+  }
+  .content2{
+
+    .list{
+
+      li{
+
+        &:nth-child(n + 4){
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}
+
+.slide-inner2{
+  width: 1200px;
+  height: 920px;
+  margin: 0 auto;
+  padding: 100px 20px 0;
+
+  h3{
+    color: #fff;
+    font-size: 48px;
+    font-family: $rajd_bold;
+    margin-bottom: 30px;
+  }
+  .explan{
+    width: 277px;
+    font-size: 16px;
+    font-family: $noto_Regular;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    color: #fff;
+
+    strong{
+      color: #8846ff;
+    }
+  }
+
+  .list1{
+    margin-bottom: 60px;
+
+    li{
+      font-size: 18px;
+      color: #fff;
+      font-family: $rajd_bold;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+
+      span{
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #7c40e7, #729fff);
+        text-align: center;
+        line-height: 30px;
+      }
+      p{
+        padding-top: 4px;
+      }
+    }
+  }
+  .list2{
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    li{
+      width: 90px;
+      line-height: 30px;
+      border-radius: 40px;
+      border: double 2px transparent;
+      background-image: linear-gradient(#000, #000), linear-gradient(to right, #7c40e7, #729fff);
+      text-align: center;
+      font-family: $rajd_semibold;
+      font-size: 12px;
+      color: #fff;
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+  }
+}
+
+#container{
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* web cont1 */
+.cont1{
+  background-color: #1d1c30;
+
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 109px;
+    padding: 0 28px;
+  }
+
+  .title_wrap{
+    
+    h2{
+      font-size: 48px;
+      color: #fff;
+      font-family: $rajd_bold;
+      padding-top: 130px;
+      margin-bottom: 30px;
+    }
+    .context{
+      width: 280px;
+      color: #fff;
+      font-size: 16px;
+      font-family: $noto_Regular;
+      line-height: 1.7;
+    }
+  }
+
+  .content_wrap{
+    min-width: 1171px;
+
+    li{
+      .image_wrap{
+        width: 1171px;
+        height: 690px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 0;
+      }
+      .text_wrap{
+        width: 100%;
+        height: 230px;
+        background-color: #0d0d25;
+        padding: 52px 0 0 56px;
+
+
+        h3{
+          font-size: 40px;
+          color: #fff;
+          font-family: $rajd_medium;
+          margin-bottom: 22px;
+        }
+        .text{
+          width: 690px;
+          color: #fff;
+          font-size: 16px;
+          font-family: $noto_Regular;
+          line-height: 1.6;
+          padding-left: 30px;
+        }
+        
+      }
+
+      
+
+
+      &:nth-of-type(2) .image_wrap{
+        background-image: url(../teratto_metaverse_img/web/session1_img1.jpg);
+      }
+      &:nth-of-type(3) .image_wrap{
+        background-image: url(../teratto_metaverse_img/web/session1_img2.jpg);
+      }
+      &:nth-of-type(4) .image_wrap{
+        background-image: url(../teratto_metaverse_img/web/session1_img3.jpg);
+      }
+      &:nth-of-type(5) .image_wrap{
+        background-image: url(../teratto_metaverse_img/web/session1_img4.jpg);
+      }
+      &:nth-of-type(6) .image_wrap{
+        background-image: url(../teratto_metaverse_img/web/session1_img1.jpg);
+      }
+    }
+
+    .swiper-pagination{
+      display: flex;
+      gap: 10px;
+      position: absolute;
+      bottom: 40px;
+      right: 400px;
+      z-index: 20;
+
+      .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+      }
+      .swiper-pagination-bullet-active{background-color: #fff;}
+    }
+  }
+}
+
+/* web cont2 */
+.cont2{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: url(../teratto_metaverse_img/web/back2.jpg) no-repeat center 0 / 1920px auto;
+
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 20px 48px;
+  }
+
+  .title_wrap{
+    width: 386px;
+  }
+
+  h2{
+    color: #fff;
+    font-size: 48px;
+    font-family: $rajd_bold;
+    margin-bottom: 40px;
+  }
+  .context{
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    font-family: $noto_Regular;
+  }
+
+  .image_wrap{
+    width: 712px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== 태블릿 시작 ========== */
+@include tablet{
+  /* 태블릿 슬라이더 */
+  #main-slider{
+    width: 100%;
+    max-width: none;
+    height: 122.65625vw;
+    background-image: url(../teratto_metaverse_img/tablet/back1.jpg);
+    background-size: cover;
+    // padding: 0 28px;
+    // background-attachment: fixed;
+
+    .mySwiper{
+      width: 100%;
+    }
+
+    .swiper-button-next{
+      display: block;
+      width: 6.510416vw;
+      height: 13.0208vw;
+      background: url(../teratto_metaverse_img/common/main_scroll_btn.png) no-repeat 0 0 / contain;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+      right: 0;
+      cursor: pointer;
+      z-index: 20;
+    }
+
+    .swiper-pagination{
+      bottom: auto;
+      top: 8.33333vw;
+      left: auto;
+      right: 3.90625vw;
+      gap: 2.60416vw;
+    }/* xxxxx */
+    .swiper-pagination span{width: 14px !important; height: 14px !important;}
+  }
+  .slide-inner{
+    width: 100%;
+    padding: 9.114583vw 3.64583vw 0;
+    
+
+    h2{
+      font-size: 6.51041vw;
+      margin-bottom: 2.60416vw;
+      line-height: 1.2;
+    }
+
+    .title{
+      width: 38.54166vw;
+      font-size: 2.60416vw;
+      padding: 1.30208vw 0 1.30208vw 2.86458vw;
+      margin-bottom: 2.08333vw;
+    }
+
+    .list{
+      
+      li{
+        font-size: 2.08333vw;
+        margin-bottom: 1.5625vw;
+      }
+    }
+    .flex_wrap{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content1{
+      margin-bottom: 0;
+    }
+    .content2{
+
+      .list{
+
+        li{
+
+          &:nth-child(n + 4){
+            margin-left: 1.5625vw;
+          }
+        }
+      }
+    }
+  }
+
+  .slide-inner2{
+    width: 100%;
+    height: 122.65625vw;
+    padding: 9.114583vw 3.64583vw 0;
+
+    h3{
+      font-size: 5.98958vw;
+      margin-bottom: 3.90625vw;
+    }
+    .explan{
+      width: 100%;
+      font-size: 2.34375vw;
+      margin-bottom: 3.90625vw;
+
+    }
+
+    .list1{
+      margin-bottom: 3.90625vw;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.30208vw 0;
+
+      li{
+        width: 33.33333%;
+        font-size: 2.213541vw;
+        display: flex;
+        gap: 1.30208vw;
+        margin-bottom: 0;
+
+        span{
+          width: 3.90625vw;
+          height: 3.90625vw;
+          line-height: 3.90625vw;
+        }
+        p{
+          padding-top: 0.52083vw;
+        }
+      }
+    }
+    .list2{
+      width: 65.10416vw;
+      flex-wrap: wrap;
+      gap: 1.5625vw;
+
+      li{
+        width: 17.70833vw;
+        font-size: 1.953125vw;
+        line-height: 5.20833vw;
+        border-radius: 40px;/* x */
+        border: double 1px transparent;
+      }
+    }
+  }
+
+  #container{width: 100%; max-width: none;}
+  /* 태블릿 cont1 */
+  .cont1{
+    background-color: #1d1c30;
+    
+    .pc_br{
+      display: none;
+    }
+  
+    .inner{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 0;
+      padding: 0;
+    }
+  
+    .title_wrap{
+      padding: 70px 30px 60px;
+
+      h2{
+        font-size: 46px;
+        padding: 0;
+        margin-bottom: 0;
+      }
+      .context{
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+    }
+  
+    .content_wrap{
+      min-width: auto;
+      padding: 0 3.64583vw;
+      margin: 0;
+      background-color: #0d0d25;
+      
+      .swiper-wrapper{
+        flex-direction: column;
+      }
+      li{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5.20833vw;
+
+        .image_wrap{
+          width: 100%;
+          height: 75.52083vw;
+          background-position: 0 0;
+          order: 2;
+        }
+        .text_wrap{
+          width: 100%;
+          height: auto;
+          padding: 9.11458vw 0 4.6875vw;
+          order: 1;
+  
+  
+          h3{
+            font-size: 5.46875vw;
+            margin-bottom: 2.86458vw;
+          }
+          .text{
+            width: 100%;
+            font-size: 2.34375vw;
+            padding-left: 0;
+          }
+          
+        }
+
+  
+        &:nth-of-type(1) .image_wrap{
+          background-image: url(../teratto_metaverse_img/tablet/session1_img1.jpg);
+        }
+        &:nth-of-type(2) .image_wrap{
+          background-image: url(../teratto_metaverse_img/tablet/session1_img2.jpg);
+        }
+        &:nth-of-type(3) .image_wrap{
+          background-image: url(../teratto_metaverse_img/tablet/session1_img3.jpg);
+        }
+        &:nth-of-type(4) .image_wrap{
+          background-image: url(../teratto_metaverse_img/tablet/session1_img4.jpg);
+        }
+        &:nth-of-type(5) .image_wrap{
+          background-image: none;
+        }
+        &:nth-of-type(6) .image_wrap{
+          background-image: none;
+        }
+      }
+  
+      .swiper-pagination{
+        display: none;
+  
+        .swiper-pagination-bullet{
+          display: none;
+        }
+      }
+    }
+  }
+
+  /* 태블릿 cont2 */
+  .cont2{
+    max-width: none;
+    background: url(../teratto_metaverse_img/tablet/back2.jpg) no-repeat 0 0 / cover;
+
+    .pc_br{
+      display: none;
+    }
+
+    .inner{
+      width: 100%;
+      flex-direction: column;
+      padding: 11.97916vw 3.64583vw 7.8125vw;
+      gap: 6.25vw;
+    }
+
+    .title_wrap{
+      width: 100%;
+    }
+
+    h2{
+      font-size: 5.98958vw;
+      margin-bottom: 4.16666vw;
+    }
+    .context{
+      font-size: 2.34375vw;
+      line-height: 1.5;
+    }
+
+    .image_wrap{
+      width: 100%;
+    }
+    
+  }
+
+
+}
+
+
+@include mobile{
+  /* 모바일 슬라이더 */
+  #main-slider{
+    height: 191.5625vw;
+    background-image: url(../teratto_metaverse_img/mobile/back1.jpg);
+    // padding: 0 28px;
+    // background-attachment: fixed;
+
+    
+
+    .swiper-pagination{
+      bottom: auto;
+      top: 10vw;
+      left: auto;
+      right: 0;
+      gap: 3.125vw;
+    }/* xxxxx */
+    .swiper-button-next{
+      top: 34%;
+    }
+    
+  }
+  .slide-inner{
+    padding: 10.9375vw 4.6875vw 0;
+    
+
+    h2{
+      font-size: 8.125vw;
+      margin-bottom: 7.8125vw;
+      line-height: 1.2;
+    }
+
+    .title{
+      width: 100%;
+      font-size: 3.125vw;
+      padding: 2.1875vw 0 2.1875vw;
+      text-align: center;
+      margin-bottom: 3.75vw;
+    }
+
+    .list{
+      
+      li{
+        line-height: 1.4;
+        font-size: 2.5vw;
+        margin-bottom: 1.875vw;
+      }
+    }
+    .flex_wrap{
+      display: flex;
+      justify-content: space-between;
+      gap: 4.375vw;
+    }
+
+    .content1{
+      margin-bottom: 0;
+    }
+    .content2{
+
+      .list{
+
+        li{
+
+          &:nth-child(n + 4){
+            margin-left: 1.875vw;
+          }
+        }
+      }
+    }
+  }
+
+  .slide-inner2{
+    width: 100%;
+    height: 191.5625vw;
+    padding: 10.9375vw 4.6875vw 0;
+
+    h3{
+      font-size: 7.1875vw;
+      margin-bottom: 4.6875vw;
+    }
+    .explan{
+      font-size: 2.65625vw;
+      margin-bottom: 4.6875vw;
+
+    }
+
+    .list1{
+      margin-bottom: 7.8125vw;
+      gap: 2.1875vw 0;
+
+      li{
+        width: 50%;
+        font-size: 2.65625vw;
+        display: flex;
+        gap: 1.5625vw;
+        margin-bottom: 0;
+
+        span{
+          width: 4.6875vw;
+          height: 4.6875vw;
+          line-height: 4.6875vw;
+        }
+        p{
+          padding-top: 0.625vw;
+        }
+      }
+    }
+    .list2{
+      width: 78.125vw;
+      gap: 1.875vw;
+
+      li{
+        width: 21.25vw;
+        font-size: 2.34375vw;
+        line-height: 6.25vw;
+        border-radius: 6.25vw;/* x */
+      }
+    }
+  }
+
+
+  /* 모바일 cont1 */
+  .cont1{
+    
+    .pc_br{
+      display: block;
+    }
+  
+    .inner{
+    }
+  
+    .title_wrap{
+      padding: 10.9375vw 4.6875vw 9.375vw;
+
+      h2{
+        font-size: 7.1875vw;
+        margin-bottom: 4.6875vw;
+      }
+      .context{
+        font-size: 2.8125vw;
+      }
+    }
+  
+    .content_wrap{
+      padding: 0 4.6875vw;
+      
+
+      li{
+        padding-bottom: 5.625vw;
+
+        .image_wrap{
+          height: 90.625vw;
+        }
+        .text_wrap{
+          padding: 10.9375vw 0 5.625vw;
+  
+  
+          h3{
+            font-size: 6.5625vw;
+            margin-bottom: 3.4375vw;
+          }
+          .text{
+            font-size: 2.8125vw;
+          }
+          
+        }
+  
+        
+  
+  
+        &:nth-of-type(1) .image_wrap{
+          background-image: url(../teratto_metaverse_img/mobile/session1_img1.jpg);
+        }
+        &:nth-of-type(2) .image_wrap{
+          background-image: url(../teratto_metaverse_img/mobile/session1_img2.jpg);
+        }
+        &:nth-of-type(3) .image_wrap{
+          background-image: url(../teratto_metaverse_img/mobile/session1_img3.jpg);
+        }
+        &:nth-of-type(4) .image_wrap{
+          background-image: url(../teratto_metaverse_img/mobile/session1_img4.jpg);
+        }
+        &:nth-of-type(5) .image_wrap{
+          background-image: none;
+        }
+        &:nth-of-type(6) .image_wrap{
+          background-image: none;
+        }
+      }
+    }
+  }
+
+  /* 모바일 cont2 */
+  .cont2{
+    background: url(../teratto_metaverse_img/mobile/back2.jpg) no-repeat 0 0 / cover;
+
+    .pc_br{
+      display: block;
+    }
+
+    .inner{
+      padding: 14.375vw 4.6875vw 9.375vw;
+      gap: 7.5vw;
+    }
+
+
+    h2{
+      font-size: 7.1875vw;
+      margin-bottom: 4.6875vw;
+    }
+    .context{
+      font-size: 2.8125vw;
+      line-height: 1.5;
+    }
+    
+  }
+
+
+
+}

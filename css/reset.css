@@ -18,13 +18,16 @@ input{-webkit-appearance: none; background: none; border: none;}
 #load{
   width: 100vw;
   height: 100vh;
+  background-color: #fff;
   position: fixed;
-  background-color: #000;
   top: 0;
   left: 0;
   z-index: 99999;
-  overflow: hidden;
-  color: #ff0;
-  text-align: center;
-  line-height: 100vh;
+}
+#load img{
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
