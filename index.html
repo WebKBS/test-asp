@@ -21,28 +21,34 @@
     // let active = true;
     // let c = 0;
 
-    // let createAudio = document.createElement('audio');
-    // createAudio.setAttribute('src', './sound2.mp3');
     // console.log(createAudio);
 
-    // document.querySelector('button').addEventListener('touchstart', () => {
-    //   document.querySelector('div').appendChild(createAudio);
-    //   createAudio.play();
-    // });
-
-    // // $audio.muted = true;
-    document.querySelector('button').addEventListener('touchstart', () => {
-      playSound('./sound2.mp3');
+    document.querySelector('button').addEventListener('click', () => {
+      let createAudio = document.createElement('audio');
+      createAudio.setAttribute('src', './sound2.mp3');
+      document.querySelector('div').appendChild(createAudio).play();
+      setTimeout(() => {
+        document.querySelector('div').removeChild(createAudio);
+      }, 340);
     });
 
-    function playSound(url) {
-      let au = new Audio(url);
-      au.play();
+    // // $audio.muted = true;
 
-      setTimeout(() => {
-        au.muted = true;
-      }, 500);
-    }
+    // =======================================================================
+    // document.querySelector('button').addEventListener('touchstart', () => {
+    //   playSound('./sound2.mp3');
+    // });
+
+    // function playSound(url) {
+    //   let au = new Audio(url);
+    //   au.play();
+
+    //   setTimeout(() => {
+    //     au.muted = true;
+    //   }, 500);
+    // }
+
+    // ========================================================================
 
     // // $audio.addEventListener('canplaythrough', (event) => {
     // //   /* the audio is now playable; play it if permissions allow */
