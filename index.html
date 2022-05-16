@@ -13,6 +13,7 @@
     </style>
   </head>
   <body>
+    <div></div>
     <button type="button" class="btn">버튼</button>
   </body>
   <script>
@@ -20,16 +21,25 @@
     // let active = true;
     // let c = 0;
 
-    // // // $audio.muted = true;
+    let createAudio = document.createElement('audio');
+    createAudio.setAttribute('src', './sound2.mp3');
+    console.log(createAudio);
+
     document.querySelector('button').addEventListener('touchstart', () => {
-      setTimeout(() => {
-        playSound('./sound2.mp3');
-      });
+      document.querySelector('div').appendChild(createAudio);
+      createAudio.play();
     });
 
-    function playSound(url) {
-      new Audio(url).play();
-    }
+    // // // $audio.muted = true;
+    // document.querySelector('button').addEventListener('touchstart', () => {
+    //   setTimeout(() => {
+    //     playSound('./sound2.mp3');
+    //   });
+    // });
+
+    // function playSound(url) {
+    //   new Audio(url).play();
+    // }
 
     // // $audio.addEventListener('canplaythrough', (event) => {
     // //   /* the audio is now playable; play it if permissions allow */
