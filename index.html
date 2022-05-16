@@ -7,8 +7,8 @@
     <title>Document</title>
     <style>
       button {
-        width: 100px;
-        height: 100px;
+        width: 100vw;
+        height: 100vh;
       }
     </style>
   </head>
@@ -16,20 +16,28 @@
     <button type="button" class="btn">버튼</button>
   </body>
   <script>
-    let $audio = new Audio('./sound.mp3');
+    let $audio = new Audio('./sound2.mp3');
+    let active = true;
+    let c = 0;
 
-    // $audio.muted = true;
-    document.querySelector('button').addEventListener('click', function () {
-      $audio.currentTime = 0;
-
-      $audio.loop = true;
-
-      $audio.play();
+    // // $audio.muted = true;
+    document.querySelector('button').addEventListener('touchstart', function () {
+      c = 0;
+      playSound(c);
     });
 
     // $audio.addEventListener('canplaythrough', (event) => {
     //   /* the audio is now playable; play it if permissions allow */
     //   $audio.play();
     // });
+
+    function playSound(event) {
+      if (!active) return;
+      switch (event) {
+        case c:
+          $audio.play();
+          break;
+      }
+    }
   </script>
 </html>
