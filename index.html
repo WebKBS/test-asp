@@ -21,6 +21,9 @@
     // $audio.muted = true;
     document.querySelector('button').addEventListener('click', function () {
       $audio.currentTime = 0;
+
+      $audio.loop = true;
+
       $audio.play();
     });
 
