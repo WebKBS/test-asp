@@ -21,25 +21,28 @@
     // let active = true;
     // let c = 0;
 
-    let createAudio = document.createElement('audio');
-    createAudio.setAttribute('src', './sound2.mp3');
-    console.log(createAudio);
+    // let createAudio = document.createElement('audio');
+    // createAudio.setAttribute('src', './sound2.mp3');
+    // console.log(createAudio);
 
-    document.querySelector('button').addEventListener('touchstart', () => {
-      document.querySelector('div').appendChild(createAudio);
-      createAudio.play();
-    });
-
-    // // // $audio.muted = true;
     // document.querySelector('button').addEventListener('touchstart', () => {
-    //   setTimeout(() => {
-    //     playSound('./sound2.mp3');
-    //   });
+    //   document.querySelector('div').appendChild(createAudio);
+    //   createAudio.play();
     // });
 
-    // function playSound(url) {
-    //   new Audio(url).play();
-    // }
+    // // $audio.muted = true;
+    document.querySelector('button').addEventListener('touchstart', () => {
+      playSound('./sound2.mp3');
+    });
+
+    function playSound(url) {
+      let au = new Audio(url);
+      au.play();
+
+      setTimeout(() => {
+        au.muted = true;
+      }, 160);
+    }
 
     // // $audio.addEventListener('canplaythrough', (event) => {
     // //   /* the audio is now playable; play it if permissions allow */
