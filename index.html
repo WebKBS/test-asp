@@ -22,7 +22,9 @@
 
     // // // $audio.muted = true;
     document.querySelector('button').addEventListener('touchstart', () => {
-      playSound('./sound2.mp3');
+      setTimeout(() => {
+        playSound('./sound2.mp3');
+      });
     });
 
     function playSound(url) {
