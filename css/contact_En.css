@@ -1,0 +1,414 @@
+@charset "UTF-8";
+.cont1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.cont1 .inner {
+  padding: 80px 28px 80px;
+}
+.cont1 h2 {
+  font-size: 42px;
+  font-family: "rajdhani-bold";
+  margin-bottom: 24px;
+}
+.cont1 .context {
+  font-size: 18px;
+  font-family: "NotoSansKR-Medium";
+  line-height: 1.5;
+}
+
+/* ======================= 추가부분 */
+.cont1_1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #f5f5f5;
+}
+.cont1_1 .inner {
+  padding: 80px 28px;
+  display: flex;
+  justify-content: space-between;
+}
+.cont1_1 h3 {
+  font-size: 42px;
+  font-family: "rajdhani-bold";
+  margin-bottom: 14px;
+}
+.cont1_1 .title_wrap {
+  width: 300px;
+}
+.cont1_1 .map_wrap {
+  width: 760px;
+  height: 416px;
+}
+.cont1_1 .map_wrap iframe {
+  width: 100%;
+  height: 100%;
+}
+.cont1_1 .sub_text .info_title {
+  font-size: 18px;
+  font-family: "NotoSansKR-Bold";
+  line-height: 1.4;
+}
+.cont1_1 .sub_text .text {
+  font-size: 18px;
+  font-family: "NotoSansKR-Regular";
+  line-height: 1.4;
+}
+
+/* =============================== */
+.cont2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  /* 공통값 */
+}
+.cont2 .inner {
+  padding: 80px 20px 130px;
+  display: flex;
+  justify-content: space-between;
+}
+.cont2 h3 {
+  font-size: 42px;
+  font-family: "rajdhani-bold";
+  margin-bottom: 14px;
+}
+.cont2 .location_wrap {
+  width: 434px;
+}
+.cont2 .location_wrap .contact_text {
+  margin-bottom: 70px;
+}
+.cont2 .location_wrap .info_title {
+  font-size: 18px;
+  font-family: "NotoSansKR-Bold";
+  color: #fff;
+  margin-bottom: 14px;
+}
+.cont2 .location_wrap address {
+  font-size: 18px;
+  font-family: "NotoSansKR-Regular";
+  color: #fff;
+  line-height: 1.4;
+}
+.cont2 .location_wrap .follow ul {
+  display: flex;
+  gap: 12px;
+}
+.cont2 .location_wrap .follow li {
+  width: 57px;
+  height: 57px;
+}
+.cont2 .location_wrap .context {
+  font-size: 18px;
+  font-family: "NotoSansKR-Regular";
+  margin-bottom: 50px;
+  line-height: 1.4;
+  width: 374px;
+}
+.cont2 .contact_wrap {
+  width: 669px;
+  height: 463px;
+  padding: 46px 46px 40px 65px;
+  border: 2px solid #535353;
+}
+.cont2 .contact_wrap h3 {
+  padding-top: 70px;
+  margin-bottom: 16px;
+}
+.cont2 .contact_wrap form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+.cont2 .contact_wrap form > div {
+  display: flex;
+  justify-content: space-between;
+}
+.cont2 .contact_wrap form > div label {
+  font-size: 18px;
+  font-family: "rajdhani-semibold";
+}
+.cont2 .contact_wrap form > div input {
+  width: 428px;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #535353;
+}
+.cont2 .contact_wrap form > div input::placeholder {
+  color: #bfbfbf;
+}
+.cont2 .contact_wrap form > div input::-webkit-outer-spin-button,
+.cont2 .contact_wrap form > div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.cont2 .contact_wrap form > div textarea {
+  width: 428px;
+  height: 114px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #535353;
+}
+.cont2 .contact_wrap form > div textarea::placeholder {
+  color: #bfbfbf;
+}
+.cont2 .contact_wrap form > div input, .cont2 .contact_wrap form > div textarea {
+  font-family: "rajdhani-medium";
+  font-size: 18px;
+}
+.cont2 .contact_wrap form .submit {
+  width: 180px;
+  text-align: center;
+  line-height: 46px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "rajdhani-semibold";
+  margin-left: 126px;
+  background-color: #000;
+}
+
+/* ========== 태블릿 시작 ========== */
+@media (max-width: 1199px) {
+  /* 태블릿 cont1 */
+  .cont1 {
+    max-width: none;
+  }
+  .cont1 .inner {
+    width: 100%;
+    padding: 10.4166vw 3.64583vw;
+  }
+  .cont1 h2 {
+    font-size: 6.25vw;
+    margin-bottom: 5.20833vw;
+  }
+  .cont1 .context {
+    font-size: 2.34375vw;
+  }
+
+  /* ======================= 태블릿 추가부분 */
+  .cont1_1 {
+    width: 100%;
+    max-width: none;
+  }
+  .cont1_1 .inner {
+    width: 100%;
+    padding: 10.41666vw 3.64583vw;
+    flex-direction: column;
+    gap: 6.77083vw;
+  }
+  .cont1_1 h3 {
+    font-size: 5.46875vw;
+    margin-bottom: 2.34375vw;
+  }
+  .cont1_1 .title_wrap {
+    width: auto;
+  }
+  .cont1_1 .map_wrap {
+    width: 100%;
+    height: 57.68229vw;
+  }
+  .cont1_1 .sub_text {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  .cont1_1 .sub_text .info_title {
+    font-size: 2.34375vw;
+  }
+  .cont1_1 .sub_text .text {
+    font-size: 2.34375vw;
+  }
+
+  /* =============================== */
+  /* 태블릿 cont2 */
+  .cont2 {
+    max-width: none;
+    background: none;
+    /* 공통값 */
+  }
+  .cont2 .inner {
+    width: 100%;
+    padding: 10.4166vw 3.64583vw;
+    flex-direction: column;
+  }
+  .cont2 h3 {
+    font-size: 5.46875vw;
+    margin-bottom: 2.34375vw;
+  }
+  .cont2 .follow {
+    display: none;
+  }
+  .cont2 .location_wrap {
+    width: 100%;
+    height: auto;
+    gap: 7.8125vw;
+    padding: 0;
+  }
+  .cont2 .location_wrap .follow {
+    display: none;
+  }
+  .cont2 .location_wrap .contact_text {
+    margin-bottom: 32px;
+  }
+  .cont2 .location_wrap .contact_text .context {
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 2.34375vw;
+  }
+  .cont2 .contact_wrap {
+    width: 100%;
+    height: auto;
+    padding: 40px 46px 39px;
+  }
+  .cont2 .contact_wrap h3 {
+    padding-top: 8.59375vw;
+    margin-bottom: 2.08333vw;
+  }
+  .cont2 .contact_wrap .context {
+    font-size: 2.34375vw;
+    margin-bottom: 6.51041vw;
+  }
+  .cont2 .contact_wrap form {
+    width: 100%;
+    gap: 2.08333vw;
+  }
+  .cont2 .contact_wrap form > div label {
+    font-size: 2.34375vw;
+  }
+  .cont2 .contact_wrap form > div input {
+    width: 63.02083vw;
+    padding: 1.30208vw;
+  }
+  .cont2 .contact_wrap form > div textarea {
+    width: 63.02083vw;
+    height: 14.84375vw;
+    padding: 1.30208vw;
+  }
+  .cont2 .contact_wrap form > div input, .cont2 .contact_wrap form > div textarea {
+    font-size: 2.34375vw;
+  }
+  .cont2 .contact_wrap form > div input::placeholder, .cont2 .contact_wrap form > div textarea::placeholder {
+    font-size: 2.34375vw;
+  }
+  .cont2 .contact_wrap form .submit {
+    width: 20.83333vw;
+    line-height: 5.98958vw;
+    font-size: 2.60416vw;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  /* 모바일 cont1 */
+  .cont1 .inner {
+    width: 100%;
+    padding: 12.5vw 4.6875vw;
+  }
+  .cont1 h2 {
+    font-size: 7.5vw;
+    margin-bottom: 6.25vw;
+  }
+  .cont1 .context {
+    font-size: 2.8125vw;
+  }
+
+  /* ======================= 태블릿 추가부분 */
+  .cont1_1 .inner {
+    padding: 12.5vw 4.6875vw;
+    gap: 8.125vw;
+  }
+  .cont1_1 h3 {
+    font-size: 6.5625vw;
+    margin-bottom: 4.375vw;
+  }
+  .cont1_1 .title_wrap {
+    width: auto;
+  }
+  .cont1_1 .map_wrap {
+    width: 100%;
+    height: 56.25vw;
+  }
+  .cont1_1 .sub_text {
+    gap: 0;
+  }
+  .cont1_1 .sub_text .info_title {
+    width: 100%;
+    font-size: 2.8125vw;
+  }
+  .cont1_1 .sub_text .text {
+    font-size: 2.8125vw;
+  }
+
+  /* =============================== */
+  /* 모바일 cont2 */
+  .cont2 {
+    /* 공통값 */
+  }
+  .cont2 h3 {
+    font-size: 6.5625vw;
+    margin-bottom: 18px;
+  }
+  .cont2 .inner {
+    padding: 12.5vw 4.6875vw;
+  }
+  .cont2 .location_wrap {
+    width: 100%;
+    flex-direction: column;
+    gap: 6.25vw;
+    padding: 0;
+  }
+  .cont2 .location_wrap .location {
+    width: 100%;
+  }
+  .cont2 .location_wrap .info_title {
+    font-size: 2.8125vw;
+    margin-bottom: 2.1875vw;
+  }
+  .cont2 .location_wrap address {
+    font-size: 2.8125vw;
+  }
+  .cont2 .location_wrap .follow {
+    display: none;
+  }
+  .cont2 .location_wrap .context {
+    font-size: 2.8125vw;
+  }
+  .cont2 .contact_wrap {
+    padding: 6.25vw 4.53125vw 6.25vw 5.3125vw;
+  }
+  .cont2 .contact_wrap h3 {
+    padding-top: 10.3125vw;
+    margin-bottom: 2.5vw;
+  }
+  .cont2 .contact_wrap form {
+    gap: 2.5vw;
+  }
+  .cont2 .contact_wrap form > div label {
+    font-size: 2.8125vw;
+  }
+  .cont2 .contact_wrap form > div input {
+    width: 62.5vw;
+    padding: 1.5625vw;
+  }
+  .cont2 .contact_wrap form > div textarea {
+    width: 62.5vw;
+    height: 23.4375vw;
+    padding: 1.5625vw;
+  }
+  .cont2 .contact_wrap form > div input, .cont2 .contact_wrap form > div textarea {
+    font-size: 2.8125vw;
+  }
+  .cont2 .contact_wrap form > div input::placeholder, .cont2 .contact_wrap form > div textarea::placeholder {
+    font-size: 2.8125vw;
+  }
+  .cont2 .contact_wrap form .submit {
+    width: 23.75vw;
+    line-height: 7.1875vw;
+    font-size: 2.8125vw;
+    margin-left: 23.4375vw;
+  }
+}
+
+/*# sourceMappingURL=contact_En.css.map */

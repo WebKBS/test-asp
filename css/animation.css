@@ -1,0 +1,331 @@
+.cont1_bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  pointer-events: none;
+  -webkit-animation: bgAni 2s ease-in forwards;
+          animation: bgAni 2s ease-in forwards;
+}
+
+.shadow_bg {
+  width: 100%;
+  height: 100%;
+  background: url(../images/main/web/cont_blur.png) no-repeat center bottom/contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.translate50 {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0;
+}
+
+.ani2 {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0;
+}
+
+.cont1 .icons li {
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.cont1 .icons li:nth-of-type(1) span {
+  -webkit-animation: iconAni1 3s forwards;
+          animation: iconAni1 3s forwards;
+  display: none;
+}
+
+.cont1 .icons li:nth-of-type(2) span {
+  -webkit-animation: iconAni2 3s forwards;
+          animation: iconAni2 3s forwards;
+  display: none;
+}
+
+.cont1 .icons li:nth-of-type(3) span {
+  -webkit-animation: iconAni3 3s forwards;
+          animation: iconAni3 3s forwards;
+  display: none;
+}
+
+.cont1 .icons li:nth-of-type(4) span {
+  -webkit-animation: iconAni4 3s forwards;
+          animation: iconAni4 3s forwards;
+  display: none;
+}
+
+.cont1 .icons li:nth-of-type(5) span {
+  -webkit-animation: iconAni5 3s forwards;
+          animation: iconAni5 3s forwards;
+  display: none;
+}
+
+.cont1 .icons li:nth-of-type(6) span {
+  -webkit-animation: iconAni6 3s forwards;
+          animation: iconAni6 3s forwards;
+  display: none;
+}
+
+.cont1 .icons li:nth-of-type(7) span {
+  -webkit-animation: iconAni7 3s forwards;
+          animation: iconAni7 3s forwards;
+  display: none;
+}
+
+.cont1 .icons li:nth-of-type(8) span {
+  -webkit-animation: iconAni8 3s forwards;
+          animation: iconAni8 3s forwards;
+  display: none;
+}
+
+.cont1 .icons li:nth-of-type(9) span {
+  -webkit-animation: iconAni9 3s forwards;
+          animation: iconAni9 3s forwards;
+  display: none;
+}
+
+.cont1 .icons li:nth-of-type(10) span {
+  -webkit-animation: iconAni10 3s forwards;
+          animation: iconAni10 3s forwards;
+  display: none;
+}
+
+.cont1 .icons li:nth-of-type(11) span {
+  -webkit-animation: iconAni11 3s forwards;
+          animation: iconAni11 3s forwards;
+  display: none;
+}
+
+@-webkit-keyframes bgAni {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bgAni {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes iconAni1 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 268px;
+  }
+}
+
+@keyframes iconAni1 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 268px;
+  }
+}
+
+@-webkit-keyframes iconAni2 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 268px;
+  }
+}
+
+@keyframes iconAni2 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 268px;
+  }
+}
+
+@-webkit-keyframes iconAni3 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 190px;
+  }
+}
+
+@keyframes iconAni3 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 190px;
+  }
+}
+
+@-webkit-keyframes iconAni4 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 168px;
+  }
+}
+
+@keyframes iconAni4 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 168px;
+  }
+}
+
+@-webkit-keyframes iconAni5 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 208px;
+  }
+}
+
+@keyframes iconAni5 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 208px;
+  }
+}
+
+@-webkit-keyframes iconAni6 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 168px;
+  }
+}
+
+@keyframes iconAni6 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 168px;
+  }
+}
+
+@-webkit-keyframes iconAni7 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 180px;
+  }
+}
+
+@keyframes iconAni7 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 180px;
+  }
+}
+
+@-webkit-keyframes iconAni8 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 138px;
+  }
+}
+
+@keyframes iconAni8 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 138px;
+  }
+}
+
+@-webkit-keyframes iconAni9 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 148px;
+  }
+}
+
+@keyframes iconAni9 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 148px;
+  }
+}
+
+@-webkit-keyframes iconAni10 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 140px;
+  }
+}
+
+@keyframes iconAni10 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 140px;
+  }
+}
+
+@-webkit-keyframes iconAni11 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 134px;
+  }
+}
+
+@keyframes iconAni11 {
+  0% {
+    background-size: auto 0;
+  }
+  100% {
+    background-size: auto 134px;
+  }
+}
+/*# sourceMappingURL=animation.css.map */

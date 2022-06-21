@@ -1,0 +1,369 @@
+@charset "utrf-8";
+@import "./settingScss.scss";
+
+.cont1{
+  background: #f5f5f5;
+  
+  .tab_img{display: none;}
+  
+  .inner{
+    padding: 140px 20px 130px;
+  }
+
+  h2{
+    width: 300px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #bb00c7, #8813ff, #3992ff), linear-gradient(to right, #8b2eff, #8b2eff);
+    font-family: $rajd_bold;
+    font-size: 60px;
+    text-align: center;
+    color: #8b2eff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+  }
+
+  .context{
+    font-size: 20px;
+    text-align: center;
+    font-family: $noto_medium;
+    line-height: 1.4;
+    margin-bottom: 50px;
+  }
+
+/* ========== 공통 값 ========== */
+  .text_wrap{
+    width: 572px;
+
+    h3{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 28px;
+      padding-bottom: 8px;
+      padding-right: 44px;
+      padding-top: 10px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+      // align-items: flex-end;
+    }
+
+    .title_text{
+      font-size: 42px;
+      font-family: $rajd_bold;
+      color: #fff;
+      margin-top: 44px;
+    }
+    .num{
+      font-size: 100px;
+      font-family: $rajd_regular;
+      color: #fff;
+    }
+
+    .cont_text{
+      padding: 30px 30px 20px 26px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+
+  .images_wrap{
+    width: 572px;
+  }
+
+  .content1, 
+  .content2,
+  .content3,
+  .content4{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 7px 7px 18px rgba(0, 0, 0, 0.16);
+    margin-bottom: 50px;
+  }
+
+  .content1{
+
+    h3{
+      background-image: url(../teratto_event_img/common/head_ele.png);
+    }
+  }
+  .content2{
+
+    .text_wrap{
+      order: 2;
+    }
+    .images_wrap{
+      order: 1;
+    }
+    .title_text{
+      order: 2;
+    }
+    .num{
+      order: 1;
+    }
+
+    h3{
+      padding-left: 44px;
+      padding-right: 28px;
+      background-image: url(../teratto_event_img/common/head_ele2.png);
+    }
+  }
+  .content3{
+
+    h3{
+      background-image: url(../teratto_event_img/common/head_ele.png);
+    }
+  }
+  .content4{
+    margin-bottom: 0;
+
+    .text_wrap{
+      order: 2;
+    }
+    .images_wrap{
+      order: 1;
+    }
+    .title_text{
+      order: 2;
+    }
+    .num{
+      order: 1;
+    }
+
+    h3{
+      padding-left: 44px;
+      padding-right: 28px;      
+      background-image: url(../teratto_event_img/common/head_ele2.png);
+    }
+  }
+}
+
+
+/* ============= 태블릿 시작 ============= */
+@include tablet{
+  .cont1{
+    .pc_br{
+      display: none;
+    }
+    .pc_img{
+      display: none;
+    }
+    .tab_img{
+      display: block;
+    }
+  
+    .inner{
+      width: 100%;
+      padding: 15.625vw 3.64583vw 15.625vw;
+    }
+  
+    h2{
+      width: 31.25vw;
+      font-size: 6.51041vw;
+      margin-bottom: 3.90625vw;
+    }
+  
+    .context{
+      font-size: 2.60416vw;
+      margin-bottom: 5.20833vw;
+    }
+  
+  /* ========== 태블릿 공통 값 ========== */
+    .text_wrap{
+      width: 45.57291vw;
+  
+      h3{
+        width: 100%;
+        padding-left: 2.34375vw;
+        padding-bottom: 1.04166vw;
+        padding-right: 3.38541vw;
+        padding-top: 1.04166vw;
+      }
+  
+      .title_text{
+        font-size: 3.64583vw;
+        margin-top: 3.38541vw;
+      }
+      .num{
+        font-size: 8.07291vw;
+      }
+  
+      .cont_text{
+        padding: 3.90625vw 3.90625vw 2.60416vw 2.08333vw;
+        font-size: 2.21354vw;
+        line-height: 1.5;
+      }
+    }
+  
+    .images_wrap{
+      width: 45.57291vw;
+    }
+  
+    .content1, 
+    .content2,
+    .content3,
+    .content4{
+      box-shadow: 1vw 1vw 2.34375vw rgba(0, 0, 0, 0.16);
+      margin-bottom: 5.2vw;
+    }
+  
+    .content2{
+  
+      .text_wrap{
+        order: 2;
+      }
+      .images_wrap{
+        order: 1;
+      }
+      .title_text{
+        order: 2;
+      }
+      .num{
+        order: 1;
+      }
+  
+      h3{
+        padding-left: 3.38541vw;
+        padding-right: 2.34375vw;
+      }
+    }
+
+    .content4{
+  
+      .text_wrap{
+        order: 2;
+      }
+      .images_wrap{
+        order: 1;
+      }
+      .title_text{
+        order: 2;
+      }
+      .num{
+        order: 1;
+      }
+  
+      h3{
+        padding-left: 2.34375vw;
+        padding-right: 3.38541vw;
+      }
+    }
+  }
+
+}
+
+/* ============= 모바일 시작 ============= */
+@include mobile{
+  .cont1{
+    .pc_img{
+      display: block;
+    }
+    .tab_img{
+      display: none;
+    }
+  
+    .inner{
+      padding: 12.5vw 4.6875vw 10.9375vw;
+    }
+  
+    h2{
+      width: 39.0625vw;
+      font-size: 8.75vw;
+      margin-bottom: 4.6875vw;
+    }
+  
+    .context{
+      font-size: 3.125vw;
+      margin-bottom: 7.5vw;
+    }
+  
+  /* ========== 태블릿 공통 값 ========== */
+    .text_wrap{
+      width: 100%;
+  
+      h3{
+        padding-left: 4.375vw;
+        padding-bottom: 1.25vw;
+        padding-right: 8.4375vw;
+        padding-top: 1.875vw;
+      }
+  
+      .title_text{
+        font-size: 6.5625vw;
+        margin-top: 7.1875vw;
+      }
+      .num{
+        font-size: 15.625vw;
+      }
+  
+      .cont_text{
+        padding: 4.375vw 4.6875vw 3.125vw 4.6875vw;
+        font-size: 2.8125vw;
+        line-height: 1.5;
+      }
+    }
+  
+    .images_wrap{
+      width: 100%;
+      padding: 0 4.0625vw 5vw;
+    }
+  
+    .content1, 
+    .content2,
+    .content3,
+    .content4{
+      box-shadow: 1vw 1vw 2.8125vw rgba(0, 0, 0, 0.16);
+      margin-bottom: 8vw;
+      flex-direction: column;
+      
+    }
+  
+    .content2{
+  
+      .text_wrap{
+        order: 1;
+      }
+      .images_wrap{
+        order: 2;
+      }
+      .title_text{
+        order: 1;
+      }
+      .num{
+        order: 2;
+      }
+  
+      h3{
+        padding-left: auto;
+        padding-right: auto;
+        background-image: url(../teratto_event_img/common/head_ele.png);
+      }
+    }
+
+    .content4{
+  
+      .text_wrap{
+        order: 1;
+      }
+      .images_wrap{
+        order: 2;
+      }
+      .title_text{
+        order: 1;
+      }
+      .num{
+        order: 2;
+      }
+  
+      h3{
+        padding-left: auto;
+        padding-right: auto;
+        background-image: url(../teratto_event_img/common/head_ele.png);
+      }
+    }
+  }
+}

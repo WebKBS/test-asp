@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* npx sass --watch css/nft_kr.scss css/nft_kr.css */
+/* 공통 값 */
+.inner {
+  padding: 64px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont1,
+.cont2,
+.cont3,
+.cont4 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.cont1 .inner,
+.cont2 .inner,
+.cont3 .inner,
+.cont4 .inner {
+  border-bottom: 1px solid #ccc;
+}
+.cont1:last-child .inner,
+.cont2:last-child .inner,
+.cont3:last-child .inner,
+.cont4:last-child .inner {
+  border-bottom: none;
+  padding: 64px 20px 94px;
+}
+
+.title_wrap .sub_title {
+  font-size: 23px;
+  font-family: "rajdhani-semibold";
+  color: #7c40e7;
+  margin-bottom: 11px;
+}
+.title_wrap h2 {
+  font-size: 47px;
+  font-family: "rajdhani-bold";
+  margin-bottom: 35px;
+}
+.title_wrap .tab_wrap {
+  margin-bottom: 40px;
+}
+.title_wrap .tab_wrap ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.title_wrap .tab_wrap li {
+  width: 376px;
+  line-height: 50px;
+  border: 1px solid #535353;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 22px;
+  color: #9a49ff;
+  font-family: "rajdhani-semibold";
+}
+.title_wrap .context {
+  width: 376px;
+  font-size: 16px;
+  font-family: "NotoSansKR-Medium";
+  position: relative;
+  padding-top: 20px;
+  line-height: 1.5;
+}
+.title_wrap .context::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: #7c40e7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img_wrap {
+  width: 554px;
+  margin-right: 67px;
+}
+
+/* ====================== 공통 값 끝 */
+.top_title {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.top_title .title_inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 130px 20px 40px;
+}
+.top_title h2 {
+  font-size: 55px;
+  font-family: "rajdhani-bold";
+  margin-bottom: 20px;
+}
+.top_title h2 strong {
+  color: #7c40e7;
+}
+.top_title .sub_title {
+  width: 710px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: "NotoSansKR-Medium";
+}
+.top_title .sub_title strong {
+  color: #7c40e7;
+  font-family: "NotoSansKR-Bold";
+}
+
+/* ============= 태블릿 시작 ============= */
+@media (max-width: 1199px) {
+  /* 태블릿 */
+  /* 공통 값 */
+  .inner {
+    width: 100%;
+    padding: 5.72916vw 3.6458vw;
+    flex-direction: column;
+    gap: 7.8125vw;
+  }
+
+  .cont1,
+.cont2,
+.cont3,
+.cont4 {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+  }
+  .cont1:last-child .inner,
+.cont2:last-child .inner,
+.cont3:last-child .inner,
+.cont4:last-child .inner {
+    padding: 5.72916vw 3.64583vw 6.51041vw;
+  }
+
+  .title_wrap .sub_title {
+    font-size: 2.99479vw;
+    margin-bottom: 1vw;
+  }
+  .title_wrap h2 {
+    font-size: 6.11979vw;
+    margin-bottom: 4.55729vw;
+  }
+  .title_wrap .tab_wrap {
+    margin-bottom: 5.20833vw;
+  }
+  .title_wrap .tab_wrap ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2.08333vw;
+  }
+  .title_wrap .tab_wrap li {
+    width: 29.55729vw;
+    line-height: 6.51041vw;
+    font-size: 2.60416vw;
+  }
+  .title_wrap .context {
+    width: 100%;
+    font-size: 2.34375vw;
+    padding-top: 2.60416vw;
+  }
+
+  .img_wrap {
+    width: auto;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+
+  /* ====================== 공통 값 끝 */
+  .top_title {
+    width: 100%;
+    max-width: none;
+  }
+  .top_title .title_inner {
+    width: 100%;
+    padding: 11.84895vw 3.64583vw 3.90625vw;
+  }
+  .top_title h2 {
+    font-size: 7.16145vw;
+    margin-bottom: 2.60416vw;
+  }
+  .top_title .sub_title {
+    width: 100%;
+    font-size: 2.60416vw;
+  }
+
+  .cont1 .img_wrap {
+    width: 46.875vw;
+  }
+
+  .cont2 .img_wrap {
+    width: 63.41145vw;
+  }
+
+  .cont3 .img_wrap {
+    width: 61.328125vw;
+  }
+
+  .cont4 .img_wrap {
+    width: 70.83333vw;
+  }
+}
+/* ============= 모바일 시작 ============= */
+@media (max-width: 767px) {
+  /* 모바일 */
+  /* 공통 값 */
+  .inner {
+    padding: 7.5vw 4.6875vw;
+    gap: 12.5vw;
+  }
+
+  .cont1:last-child .inner,
+.cont2:last-child .inner,
+.cont3:last-child .inner,
+.cont4:last-child .inner {
+    padding: 7.5vw 4.6875vw 12.5vw;
+  }
+
+  .title_wrap .sub_title {
+    font-size: 3.59375vw;
+    margin-bottom: 1vw;
+  }
+  .title_wrap h2 {
+    font-size: 7.34375vw;
+    margin-bottom: 5.46875vw;
+  }
+  .title_wrap .tab_wrap {
+    margin-bottom: 6.25vw;
+  }
+  .title_wrap .tab_wrap ul {
+    gap: 2.8125vw;
+  }
+  .title_wrap .tab_wrap li {
+    width: 28.4375vw;
+    line-height: 7.8125vw;
+    font-size: 3.125vw;
+  }
+  .title_wrap .context {
+    font-size: 2.8125vw;
+    padding-top: 3.125vw;
+  }
+
+  /* ====================== 공통 값 끝 */
+  .top_title .title_inner {
+    padding: 13.28125vw 4.6875vw 4.6875vw;
+  }
+  .top_title h2 {
+    font-size: 7.5vw;
+    margin-bottom: 3.75vw;
+  }
+  .top_title .sub_title {
+    font-size: 3.125vw;
+  }
+
+  .cont1 .img_wrap {
+    width: 63.90625vw;
+  }
+
+  .cont2 .img_wrap {
+    width: 76.09375vw;
+  }
+
+  .cont3 .img_wrap {
+    width: 74.0625vw;
+  }
+
+  .cont4 .img_wrap {
+    width: 85vw;
+  }
+}
+
+/*# sourceMappingURL=nft_En.css.map */

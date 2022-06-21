@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TERATTO - About</title>
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="/images/favi.png" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/about_kr.css" />
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-base64@3.6.1/base64.min.js"></script>
+    <script src="../js/Tracking.js"></script>
+
+    <!-- Sweet alert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+  </head>
+  <body>
+    <script>
+      const body = document.querySelector('body');
+      const $div = document.createElement('div');
+      $div.id = 'load';
+      $div.innerHTML = `<img src="../images/loading.gif">`;
+
+      body.appendChild($div);
+    </script>
+    <div id="wrap">
+      <address class="web_sns">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/terattoofficial/" target="_blank">
+              <img src="../images/main/icon/facebook_icon.svg" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/terattoofficial" target="_blank">
+              <img src="../images/main/icon/twitter_icon.svg" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/teratto_official" target="_blank">
+              <img src="../images/main/icon/telegram_icon.svg" alt="telegram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/teratto_official" target="_blank">
+              <img src="../images/main/icon/reddit_icon.svg" alt="reddit" />
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@teratto" target="_blank">
+              <img src="../images/main/icon/medium_icon.svg" alt="medium" />
+            </a>
+          </li>
+        </ul>
+      </address>
+      <header id="header">
+        <button type="button" class="menu_btn">메뉴 버튼<span class="line"></span></button>
+        <h1 class="logo">
+          <a href="../kr_index.html">
+            <img src="../images/main/common/terrato_logo.svg" alt="logo" />
+          </a>
+        </h1>
+        <div class="headerIn">
+          <nav class="gnb">
+            <ul>
+              <li><a href="./about_kr.html">About</a></li>
+              <li><a href="./tokenomics_kr.html">Tokenomics</a></li>
+              <li><a href="./metaverse_kr.html">Metaverse</a></li>
+              <li><a href="./nft_kr.html">NFT</a></li>
+              <li><a href="./event_kr.html">Event</a></li>
+              <li><a href="./contact_kr.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="whitepaper">
+            <span>WHITEPAPER</span>
+          </div>
+        </div>
+        <div class="lang">
+          <ul>
+            <li><a href="../en/about_En.html">EN</a></li>
+            <li class="on"><a href="./about_kr.html">KR</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- header 끝 -->
+      <main id="container">
+        <section class="cont1">
+          <div class="inner">
+            <h2>
+              <strong>TERATTO</strong>에서<br class="pc_br" /><br class="mobi_br" />
+              디지털 헬스케어의<br />
+              모든 것을<br class="mobi_br" />
+              만나보세요!
+            </h2>
+            <div class="sub_text">
+              <span class="target">고객</span>에게는 헬스케어와 관련한
+              <span class="text_point">가격,</span>
+              <span class="text_point">상담,</span>
+              <span class="text_point">정보</span>를 즉시!
+            </div>
+            <div class="sub_text">
+              <span class="target">입점사</span>에게는 무료공간과 다양한
+              <span class="text_point">프로그램</span>
+              지원을!
+            </div>
+            <div class="sub_title">The First Digital Metaverse Healthcare Platform, TERATTO</div>
+          </div>
+          <!-- cont1 inner -->
+        </section>
+        <!-- cont1 -->
+        <section class="cont2">
+          <div class="inner">
+            <div class="title_wrap">
+              <h2>
+                <strong>TERATTO</strong><br />
+                무료 입점으로<br class="pc_br" />
+                받는 혜택
+              </h2>
+              <div class="context">
+                <p class="sub_title">공간 + 시설 + 프로그램</p>
+                <p class="sub_text">병원, 헬스업체, 뷰티샵, 대학교, 연구기관 등 헬스케어 관련한 모든 업체는 TERATTO에 무료로 입점할 수 있습니다.</p>
+              </div>
+            </div>
+            <div class="content_wrap">
+              <img class="content_img" src="../teratto_about_img/common/session1_img.png" alt="" />
+              <div class="text">
+                입점사에게는 일정한 공간과 기본적인 상담실, 진료실, 판매실 등의 시설을 NFT로 지급하며, 선착순으로 자신이 원하는 층에 입점하여 설치할 수 있습니다. 각 시설은 상담, 고객관리, 차트기록 등
+                다양한 프로그램을 통해 영상, 이미지, 문서, 대화(음성, 텍스트)를 할 수 있는 기본적인 모듈을 지원합니다. 지급된 NFT는 언제라도 타인에게 판매할 수 있으며, 임대를 통해 수익을 얻을 수
+                있습니다.
+                <br /><br />
+                향후 TERATTO 메타버스 오픈전에 사전예약을 통해 입점사를 모집할 예정입니다.
+              </div>
+            </div>
+          </div>
+          <!-- cont2 inner -->
+        </section>
+        <!-- cont2 -->
+        <section class="cont3">
+          <div class="inner">
+            <div class="title_wrap">
+              <h2>
+                <span>공간 확장</span>으로<br />
+                넓혀나가는<br class="pc_br" />
+                나의 Business!
+              </h2>
+              <div class="context">
+                <p class="sub_title">1. 토지 / 건물 구매</p>
+                <p class="sub_title">2. 공간 구매 / 임대</p>
+                <p class="sub_title">3. 시설 구매</p>
+              </div>
+            </div>
+            <div class="content_wrap">
+              <div class="content_list">
+                <ul>
+                  <li>
+                    <img src="../teratto_about_img/common/session2_img1.png" alt="" />
+                    <div class="list_text">
+                      <p class="title">LAND & BUILDING</p>
+                      <p class="text">자신만의 건물을 만들기 위해서는 땅과 건물을 동시에 구매해야 합니다.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="../teratto_about_img/common/session2_img2.png" alt="" />
+                    <div class="list_text">
+                      <p class="title">SPACE</p>
+                      <p class="text">공간을 확장하기 위해서는 공간을 구매 또는 임대하여 여러 시설을 늘릴 수 있습니다.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="../teratto_about_img/common/session2_img3.png" alt="" />
+                    <div class="list_text">
+                      <p class="title">FACILITY</p>
+                      <p class="text">필요한 기능을 검색하여 NFT 구입 후 설치 버튼을 누르면 새로운 시설이 적용됩니다.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="text">
+                입점사는 공간 임대 및 구매를 통하여 자신의 공간을 확장할 수 있습니다. 또한 땅을 구매하여 자신만의 건물을 지을 수도 있습니다.
+                <br /><br />
+                공간 시설은 각 기능별로 완성된 NFT를 구매하여 자신의 공간에 맞게 설치하면 됩니다. 각 NFT에서 제시된 기능은 사전에 프로그램이 개발되어 레고와 같이 붙이기만 하면 호환이 되며, 이외에
+                메디컬, 헬스, 뷰티 등 필요한 오브젝트를 여유 공간에 배치하여 사용할 수도 있습니다.
+                <br /><br />
+                땅과 건물은 제한적이기 때문에 TERATTO에서 새로운 땅을 만들기 전까지는 계속 가치가 오를 수 있습니다. 그러나 시설은 TERATTO에서 일괄적으로 판매하기 때문에 매우 저렴한 가격으로 이용할 수
+                있습니다.
+              </div>
+            </div>
+          </div>
+          <!-- cont3 inne -->
+        </section>
+        <!-- cont3 -->
+        <section class="cont4">
+          <div class="inner">
+            <div class="title_wrap">
+              <h2>
+                <span>무료 시스템</span>을<br />
+                활용하여<br class="pc_br" />
+                편하고, 빠르게!
+              </h2>
+              <div class="context">
+                <p class="sub_title">고객관리 / 처방전달 / 상품판매 / 서비스 제공 시스템</p>
+                <p class="sub_title">호환성 검토 완료된 다양한 프로그램 제공</p>
+              </div>
+            </div>
+            <div class="content_wrap">
+              <div class="system_content">
+                <p class="title">TERATTO SYSTEM</p>
+                <div class="box">
+                  <p class="num">01</p>
+                  <p class="subject">MANAGEMENT SYSTEM</p>
+                  <p class="box_text">CRM ∙ OCS ∙ PACS ∙ EMR 등 핵심 프로그램 제공</p>
+                </div>
+                <div class="box">
+                  <p class="num">02</p>
+                  <p class="subject">SALE<br />SYSTEM</p>
+                  <p class="box_text">서비스 및 상품을 NFT로 제작하여 NFT 마켓에서 판매 (자체판매 가능)</p>
+                </div>
+                <div class="box">
+                  <p class="num">03</p>
+                  <p class="subject">MARKETING SYSTEM</p>
+                  <p class="box_text">VR ∙ AR, 빅데이터, AI 기반 헬스케어 게임 및 맞춤형 메이크업 / 화장품 구매</p>
+                </div>
+              </div>
+              <div class="text">
+                TERATTO에서는 병원, 헬스, 뷰티 등 헬스케어와 관련한 업체가 비용을 들여서 시스템을 구매하거나 개발하지 않아도 기본적인 고객관리, 처방전달, 헬스케어 서비스 및 상품판매 등 다양한 서비스를
+                무료로 이용할 수 있습니다.
+                <br /><br />
+                또한 자신의 업체를 메타버스 내에서 홍보할 수 있는 간판, 영상 및 고객을 모을 수 있는 상담 및 마케팅 툴을 제공합니다. 호환성 검토가 완료된 다양한 프로그램을 모듈화 하여 판매하기 때문에
+                규모가 큰 업체라도 저렴한 비용으로 구매할 수 있습니다.
+                <br /><br />
+                새롭게 개업을 하거나 기존 시스템에 문제가 있을 때 TERATTO를 사용해보세요. 기본적인 시스템은 모두 무료이며, 필요한 것만 골라서 시스템을 확장할 수 있습니다.
+              </div>
+            </div>
+          </div>
+          <!-- cont4 inner -->
+        </section>
+        <!-- cont4 -->
+        <section class="cont5">
+          <div class="inner">
+            <div class="title_wrap">
+              <h2>
+                <strong>API</strong>
+                <span>시스템</span><br />
+                지원으로<br class="pc_br" />
+                폭넓은 사업지원
+              </h2>
+              <div class="context">
+                <p class="sub_title">입점사 서비스 제공 지원</p>
+              </div>
+            </div>
+            <div class="content_wrap">
+              <div class="round_content">
+                <ul>
+                  <li>
+                    <p class="title">
+                      OWN<br class="mobi_br" />
+                      SERVICE
+                    </p>
+                    <p class="content_text">
+                      입점사가 직접<br />
+                      개발한 서비스
+                    </p>
+                  </li>
+                  <li>
+                    <p class="title">
+                      TERATTO<br class="mobi_br" />
+                      API
+                    </p>
+                    <p class="content_text">
+                      TERATTO VR∙AR,<br />
+                      영상, 이미지, 대화 등<br />
+                      모듈을 API와 연동
+                    </p>
+                  </li>
+                  <li>
+                    <p class="title">CUSTOMER</p>
+                    <p class="content_text">
+                      고객에게<br />
+                      자사 서비스 제공 및<br />
+                      직접 운영관리
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="text">
+                TERATTO에는 없지만 병원, 대학, 연구기관, 기업, 통신회사 등에서 개발한 자사 서비스를 고객에게 제공하고 싶을 때, 쉽게 서비스 할 수 있도록 API로 연동할 수 있는 시스템을 지원합니다.
+                <br /><br />
+                이때 프로그램은 각 입점사에서 운영하고 관리하며 TERATTO에서는 고객에게 영상, 이미지, 음성, 텍스트만을 보여줄 수 있습니다. 직접 제작한 프로그램을 판매하고 싶다면 TERATTO와 상의하여
+                NFT로 제작하여 TARATTO에서 서비스를 할 수 있습니다. 일정 수수료를 제외한 모든 수익은 NFT를 제작한 입점사에게 지급됩니다.
+              </div>
+            </div>
+          </div>
+          <!-- cont5 inner -->
+        </section>
+      </main>
+      <!-- container 끝 -->
+      <footer id="footer">
+        <div class="news">
+          <div class="inner">
+            <h3>뉴스레터를 구독하여 최신 소식을 받아보세요.</h3>
+            <div class="form">
+              <input id="email" type="email" placeholder="Enter your email" />
+              <button id="submit" type="button" class="submit">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <!-- news -->
+        <div class="f-info">
+          <div class="inner">
+            <p class="flogo">
+              <a href="#">
+                <img src="../images/main/common/terrato_logo(black).svg" alt="" />
+              </a>
+            </p>
+            <div class="sitemap">
+              <ul>
+                <li>
+                  <p class="sub_nav">PRODUCT</p>
+                  <ul>
+                    <li>Mining</li>
+                    <li>NFT</li>
+                    <li>Marketplace</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="sub_nav">NFT DROPS</p>
+                  <ul>
+                    <li>출시예정</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="sub_nav">GAME</p>
+                  <ul>
+                    <li>출시예정</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="sub_nav">INFO</p>
+                  <ul>
+                    <li>About</li>
+                    <li>Whitepaper</li>
+                    <li>Team</li>
+                    <li>Docs</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- inner -->
+        </div>
+      </footer>
+      <!-- #footer 끝 -->
+      <div class="side_menu">
+        <div class="side_bg"></div>
+        <div class="side_inner">
+          <button type="button" class="close"></button>
+          <div class="side_gnb">
+            <ul>
+              <li class="on"><a href="./about_kr.html">About</a></li>
+              <li><a href="./tokenomics_kr.html">Tokenomics</a></li>
+              <li><a href="./metaverse_kr.html">Metaverse</a></li>
+              <li><a href="./nft_kr.html">NFT</a></li>
+              <li><a href="./event_kr.html">Event</a></li>
+              <li><a href="./contact_kr.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="side_sns">
+            <p>FOLLOW US</p>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/terattoofficial/" target="_blank">
+                  <img src="../images/main/icon/facebook_icon_mobile.png" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/terattoofficial" target="_blank">
+                  <img src="../images/main/icon/twitter_icon_mobile.png" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/teratto_official" target="_blank">
+                  <img src="../images/main/icon/telegram_icon_mobile.png" alt="telegram" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.reddit.com/user/teratto_official" target="_blank">
+                  <img src="../images/main/icon/reddit_icon_mobile.png" alt="reddit" />
+                </a>
+              </li>
+              <li>
+                <a href="https://medium.com/@teratto" target="_blank">
+                  <img src="../images/main/icon/medium_icon_mobile.png" alt="medium" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="side_whitepaper">
+            <span>WHITEPAPER</span>
+          </div>
+        </div>
+      </div>
+      <!-- 사이드 메뉴 -->
+    </div>
+    <!-- #wrap 끝 -->
+    <script>
+      window.onload = function () {
+        const load = document.getElementById('load');
+        load.style.display = 'none';
+
+        Tracking_MoveScreen('about_kr');
+        $(window).bind('beforeunload', function () {
+          Tracking_MoveScreen('about_kr');
+        });
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,553 @@
+@charset "utf-8";
+@import "./settingScss.scss";
+
+/* ======================== 공통 부분 */
+#container{
+  background-color: #f5f5f5;
+}
+.title_wrap{
+  width: 268px;
+
+  h2{
+    font-size: 42px;
+    color: #7c40e7;
+    margin-bottom: 29px;
+    line-height: 0.8;
+
+    strong{
+      font-family: $rajd_bold;
+    }
+    span{
+      font-size: 34px;
+      font-family: $digital_bold;
+      color: #222;
+    }
+  }
+  
+  .context{
+    font-size: 16px;
+    font-family: $noto_medium;
+    line-height: 1.4;
+
+    strong{
+      color: #8846ff;
+      font-family: $noto_Bold;
+    }
+  }
+}
+
+.inner{
+  padding: 40px 20px 80px;
+}
+
+.cont2,
+.cont3,
+.cont4,
+.cont5{
+
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 20px 80px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+.cont2{
+  .inner{
+
+    padding: 130px 20px 80px;;
+  }
+}
+
+.cont5{
+  
+  .inner{
+
+    border-bottom: none;
+  }
+}
+
+.cont2,
+.cont4{
+  .content_wrap{
+    width: 768px;
+    
+    .img_wrap{
+      margin-bottom: 50px;
+    }
+
+    .abc_list{
+      margin-bottom: 34px;
+      
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 0;
+      }
+
+      li{
+        width: 33.33333%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .abc{
+          display: block;
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background-image: linear-gradient(135deg, #7c40e7, #729fff);
+          color: #fff;
+          font-size: 18px;
+          text-align: center;
+          line-height: 28px;
+          font-family: $rajd_bold;
+        }
+        .text{
+          font-size: 16px;
+          font-family: $noto_medium;
+        }
+      }
+    }
+
+    .tag_list{
+
+      ul{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      li{
+        font-family: $rajd_semibold;
+        font-size: 16px;
+        text-align: center;
+        width: 180px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 40px;
+        border: double 1px transparent;
+        background-image: linear-gradient(#f5f5f5, #f5f5f5), linear-gradient(to right, #7c40e7, #729fff);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+      }
+    }
+  }
+}
+
+.cont3,
+.cont5{
+  .content_wrap{
+      width: 768px;
+
+    .card_list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 34px;
+    }
+
+    li{
+      width: 366px;
+      height: 430px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    .text_wrap{
+      padding: 0 24px 30px;
+      
+      .subject{
+        font-size: 24px;
+        text-align: center;
+        color: #7c40e7;
+        padding-top: 26px;
+        margin-bottom: 26px;
+        font-family: $rajd_semibold;
+      }
+      
+      .text{
+        font-size: 15px;
+        text-align: center;
+        font-family: $noto_medium; 
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+/* 공통 값 끝 =============================== */
+
+.cont1{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: url(../teratto_metaverse_img/web/back1.jpg) no-repeat center 0 / 1920px auto;
+  image-rendering: pixelated;
+
+  .inner{
+    padding: 122px 20px 260px;
+  }
+
+  h2{
+    font-size: 54px;
+    font-family: $rajd_bold;
+
+    strong{
+      color: #893aff;
+    }
+    margin-bottom: 60px;
+  }
+
+  .sub_title{
+    font-size: 28px;
+    font-family: $rajd_bold;
+    color: #893aff;
+    margin-bottom: 4px;
+
+    .middle_line{
+      display: block;
+      width: 30%;
+      height: 2px;
+      background: #893aff;
+    }
+  }
+
+  .box{
+    margin-bottom: 46px;
+
+    li{
+      font-size: 16px;
+      font-family: $noto_medium;
+      line-height: 1.4; 
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+/* ============== 태블릿 영역 ============== */
+@include tablet{
+  .title_wrap{
+    width: 100%;
+  
+    h2{
+      font-size: 5.46875vw;
+      margin-bottom: 3.38541vw;
+      line-height: 0.8;
+  
+      span{
+        font-size: 4.42708vw;
+      }
+    }
+    
+    .context{
+      font-size: 2.34375vw;
+      margin-bottom: 7.55208vw;
+    }
+  }
+  
+  .inner{
+    width: 100%;
+    padding: 5.20833vw 3.64583vw 10.41666vw;
+  }
+  
+  .cont2,
+  .cont3,
+  .cont4,
+  .cont5{
+  
+    .inner{
+      display: flex;
+      flex-direction: column;
+      padding: 5.20833vw 3.64583vw 10.41666vw;
+    }
+  }
+  
+  .cont2,
+  .cont4{
+    .content_wrap{
+      width: 100%;
+      
+      .img_wrap{
+        margin-bottom: 6.51041vw;
+      }
+  
+      .abc_list{
+        margin-bottom: 4.42708vw;
+        
+        ul{
+          gap: 1.43229vw 0;
+        }
+  
+        li{
+          width: 33.33333%;
+          gap: 1.04166vw;
+  
+          .abc{
+            width: 3.90625vw;
+            height: 3.90625vw;
+            font-size: 2.34375vw;
+            line-height: 3.64583vw;
+          }
+          .text{
+            font-size: 2.08333vw;
+          }
+        }
+      }
+  
+      .tag_list{
+  
+        li{
+          font-size: 2.08333vw;
+          width: 20.83333vw;
+          height: 5.20833vw;
+          line-height: 5.20833vw;
+          border-radius: 5.20833vw;
+        }
+      }
+    }
+  }
+  
+  .cont3,
+  .cont5{
+    .content_wrap{
+        width: 100%;
+  
+      .card_list{
+        // flex-wrap: nowrap;
+        gap: 3.125vw;
+      }
+  
+      li{
+        width: 44.79166vw;
+        height: 55.98958vw;
+      }
+  
+      .text_wrap{
+        padding: 0 3.125vw 3.64583vw;
+        
+        .subject{
+          font-size: 3.125vw;
+          text-align: center;
+          padding-top: 3.125vw;
+          margin-bottom: 3.125vw;
+        }
+        
+        .text{
+          font-size: 1.95312vw;
+        }
+      }
+    }
+  }
+  
+  /* 공통 값 끝 =============================== */
+  
+  .cont1{
+    max-width: none;
+    background: url(../teratto_metaverse_img/tablet/back1.jpg) no-repeat 0 0 / cover;
+  
+    .inner{
+      padding: 11.45833vw 3.64583vw 72.65625vw;
+    }
+  
+    h2{
+      font-size: 7.03125vw;
+  
+      margin-bottom: 6.77083vw;
+    }
+  
+    .sub_title{
+      font-size: 3.64583vw;
+      margin-bottom: 2.86458vw;
+
+      .middle_line{
+        width: 92%;
+      }
+    }
+
+    .flex_box{
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .box{
+      width: 50%;
+      margin-bottom: 0;
+  
+      li{
+        font-size: 2.34375vw;
+      }
+    }
+  }
+
+
+
+
+
+}
+
+
+
+/* ============== 모바일 영역 ============== */
+@include mobile{
+  .title_wrap{
+    width: 100%;
+  
+    h2{
+      font-size: 6.5625vw;
+      margin-bottom: 4.53125vw;
+  
+      span{
+        font-size: 5.3125vw;
+      }
+    }
+    
+    .context{
+      font-size: 2.8125vw;
+      margin-bottom: 6.5625vw;
+    }
+  }
+  
+  .inner{
+    padding: 6.25vw 4.6875vw 12.5vw;
+  }
+  
+  .cont2,
+  .cont3,
+  .cont4,
+  .cont5{
+  
+    .inner{
+      padding: 6.25vw 4.6875vw 12.5vw;
+    }
+  }
+
+  .cont2,
+  .cont4{
+    .content_wrap{
+      
+      .img_wrap{
+        margin-bottom: 7.8125vw;
+      }
+  
+      .abc_list{
+        margin-bottom: 5.3125vw;
+        
+        ul{
+          gap: 1.875vw 0;
+        }
+  
+        li{
+          width: 50%;
+          gap: 1.25vw;
+  
+          .abc{
+            width: 5.15625vw;
+            height: 5.15625vw;
+            font-size: 3.125vw;
+            line-height: 5.15625vw;
+          }
+          .text{
+            font-size: 2.5vw;
+          }
+        }
+      }
+  
+      .tag_list{
+  
+        li{
+          font-size: 2.1875vw;
+          width: 21.40625vw;
+          height: 6.25vw;
+          line-height: 6.25vw;
+          border-radius: 6.25vw;
+        }
+      }
+    }
+  }
+  
+  .cont3,
+  .cont5{
+    .content_wrap{
+      width: 71.875vw;
+      min-height: 100.75vw;
+
+      .card_list{
+        gap: 0;
+        flex-wrap: nowrap;
+      }
+  
+      li{
+        width: 71.875vw;
+        margin: 0 auto;
+        height: 94.4375vw;
+      }
+  
+      .text_wrap{
+        padding: 0 3.75vw 5.625vw;
+        
+        .subject{
+          font-size: 4.375vw;
+          padding-top: 4.6vw;
+          margin-bottom: 4.6vw;
+        }
+        
+        .text{
+          font-size: 2.5vw;
+        }
+      }
+    }
+
+    .swiper-pagination {
+      display: flex;
+      gap: 18px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .swiper-pagination span {
+      display: block;
+      width: 2.34375vw;
+      height: 2.34375vw;
+      border-radius: 50%;
+      border: 1px solid #8643ff;
+    }
+    .swiper-pagination-bullet-active{
+      background-color: #8643ff;
+    }
+  }
+  
+  /* 공통 값 끝 =============================== */
+  
+  .cont1{
+    max-width: none;
+    background: url(../teratto_metaverse_img/mobile/back1.jpg) no-repeat 0 0 / cover;
+  
+    .inner{
+      padding: 14.0625vw 4.6875vw 78.0625vw;
+    }
+  
+    h2{
+      font-size: 7.5vw;
+  
+      margin-bottom: 3.8125vw;
+    }
+  
+    .sub_title{
+      font-size: 3.75vw;
+      margin-bottom: 2vw;
+    }
+  
+    .box{
+  
+      li{
+        font-size: 2.34375vw;
+      }
+    }
+  }
+  .cont2 .inner{padding: 12.5vw 4.6875vw;}
+}
