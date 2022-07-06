@@ -242,4 +242,14 @@ body {
   height: 30px;
 }
 
+/* 셀렉트 박스 */
+select {
+  width: 82px;
+  height: 31px;
+  border-color: #bdbdbd;
+  border-radius: 4px;
+  padding: 0 10px;
+  background: url(../images/main/main_drop_arrow.svg) no-repeat right 10px center/auto 7px;
+}
+
 /*# sourceMappingURL=common.css.map */

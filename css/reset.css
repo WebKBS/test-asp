@@ -20,7 +20,7 @@ button{border: none; background: none; font-family: "SCDream_Regular"; cursor: p
 
 input{-webkit-appearance: none; background: none; border: none; box-sizing: border-box;}
 
-
+select{background-color: #fff; -webkit-appearance: none; appearance: none; color: #424242;}
 
 #load{
   width: 100vw;
