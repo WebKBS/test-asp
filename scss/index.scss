@@ -75,7 +75,6 @@
 .recommend_box{
 
   > .flex_box{
-    padding: 0 22px;
     margin-bottom: 17px;
   }
   
@@ -84,6 +83,11 @@
     height: 31px;
     border-color: $gray2;
     border-radius: 4px;
+    background-color: #fff;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0 10px;
+    background: url(../images/main/main_drop_arrow.svg) no-repeat right 10px center / auto 7px;
   }
   
   .title{
