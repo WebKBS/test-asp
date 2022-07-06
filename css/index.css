@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* 폰트 패밀리 */
+/* 컬러 */
+/* 폰트 색상 */
+.c_main {
+  color: #fa5858;
+}
+
+.c_gray1 {
+  color: #848484;
+}
+
+.c_alert2 {
+  color: #0174df;
+}
+
+/* 타이포그래피 */
+.ft_splash {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: "SCDream_Bold";
+}
+
+.ft_title1 {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: "SCDream_Medium";
+}
+
+.ft_title2 {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "SCDream_Medium";
+}
+
+.ft_sub1 {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "SCDream_Medium";
+}
+
+.ft_sub2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "SCDream_Medium";
+}
+
+.ft_sub3 {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "SCDream_Medium";
+}
+
+.ft_body1 {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "SCDream_Regular";
+}
+
+.ft_body2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "SCDream_Regular";
+}
+
+.ft_txt1 {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "SCDream_Regular";
+}
+
+.ft_txt2 {
+  font-size: 11px;
+  line-height: 16px;
+  font-family: "SCDream_Regular";
+}
+
+#container {
+  padding-bottom: 113px;
+}
+
+.top_box {
+  width: 100%;
+  padding: 26px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.top_box .price_wrap:nth-of-type(1) {
+  margin-bottom: 34px;
+}
+.top_box .price_wrap:nth-of-type(2) {
+  margin-bottom: 26px;
+}
+.top_box .price_wrap .flex_box {
+  margin-bottom: 14px;
+}
+
+.middle_box {
+  width: 100%;
+  padding: 26px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.middle_box ul {
+  display: flex;
+}
+.middle_box li {
+  width: 33.33333%;
+  border-right: 1px solid #D8D8D8;
+}
+.middle_box li:last-child {
+  border-right: none;
+}
+.middle_box li a {
+  display: flex;
+  width: 40px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.middle_box li a img {
+  width: auto;
+  height: 38px;
+}
+
+.slide_box {
+  padding-bottom: 26px;
+  margin-bottom: 20px;
+}
+.slide_box a {
+  display: block;
+}
+
+.recommend_box > .flex_box {
+  padding: 0 22px;
+  margin-bottom: 17px;
+}
+.recommend_box select {
+  width: 82px;
+  height: 31px;
+  border-color: #bdbdbd;
+  border-radius: 4px;
+}
+.recommend_box .title {
+  margin-bottom: 4px;
+}
+
+.recommend_slide li {
+  text-align: center;
+}
+.recommend_slide li img {
+  margin-bottom: 14px;
+}
+
+/*# sourceMappingURL=index.css.map */

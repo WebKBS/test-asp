@@ -1,626 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="apple-mobile-web-app-title" content="Teratto" />
-    <meta name="description" content="Teratto is a metaverse-based digital healthcare platform." />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta property="og:title" content="TERATTO" />
-    <meta property="og:image" content="images/og_symbol.png" />
-    <meta property="og:description" content="Teratto is a metaverse-based digital healthcare platform." />
-    <title>TERATTO</title>
-    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="/images/favi.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=2.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <!-- <meta name="keyword" content=""> -->
+    <!-- <meta name="format-detection" content="telephone=no,address=no,email=no"> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="apple-mobile-web-app-title" content="" /> -->
+
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta property="og:title" content="" /> -->
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+    <title>키오스크</title>
+    <!-- <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="" /> -->
+    <!-- <link rel="apple-touch-icon" href="" /> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="" /> -->
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/swiper.css" />
-    <link rel="stylesheet" href="./css/style_En.css" />
-    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/common.js" defer></script>
-    <!-- <script src="js/swiper.js" defer></script> -->
-    <!-- <script src="js/IndexSwiperCustom.js" defer></script> -->
-    <script src="js/animation.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-base64@3.6.1/base64.min.js"></script>
-    <script src="js/Tracking.js" defer></script>
-
-    <!-- Sweet alert -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+    <script src="./js/load.js"></script>
+    <script src="./js/swiper.js"></script>
   </head>
   <body>
-    <script>
-      const body = document.querySelector('body');
-      const $div = document.createElement('div');
-      $div.id = 'load';
-      $div.innerHTML = `<img src="./images/loading.gif">`;
-
-      body.appendChild($div);
-    </script>
+    <div id="load">
+      <div class="sk-three-bounce">
+        <div class="sk-child sk-bounce1"></div>
+        <div class="sk-child sk-bounce2"></div>
+        <div class="sk-child sk-bounce3"></div>
+      </div>
+    </div>
     <div id="wrap">
-      <address class="web_sns">
+      <header id="header">
+        <div class="headerIn">
+          <button class="side_btn">
+            <span></span>
+          </button>
+          <h1 class="logo">
+            <a href="#">
+              <img src="./images/common/ordernine_logo(black).png" alt="키오스크" />
+            </a>
+          </h1>
+          <button class="alarm_btn">
+            <img src="./images/common/bell_icon(active).svg" alt="알람버튼" />
+          </button>
+        </div>
+      </header>
+      <main id="container">
+        <div class="cont_inner">
+          <div class="top_box">
+            <!-- 사용가능 적립금 -->
+            <div class="price_wrap">
+              <div class="flex_box between align_center">
+                <p class="c_main ft_sub3">사용가능 적립금</p>
+                <button type="button" class="red_btn ft_txt2">사용하기</button>
+              </div>
+              <p class="ft_title1">
+                <span class="price">9,999,999</span>
+                원
+              </p>
+            </div>
+            <!-- 전환 예정 적립금 -->
+            <div class="price_wrap">
+              <div class="flex_box">
+                <p class="c_gray1 ft_sub3">전환 예정 적립금</p>
+              </div>
+              <p class="ft_title1">
+                <span class="price">9,999,999</span>
+                원
+              </p>
+            </div>
+            <div class="flex_box align_center between">
+              <p class="ft_txt2 c_alert2 alert_icon">보유 가상자산 적립금으로 사용하기</p>
+              <button type="button" class="blue_btn ft_txt2">거래소 연동</button>
+            </div>
+          </div>
+          <!-- 중간 박스 -->
+          <div class="middle_box">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/main/qr_code_icon.svg" alt="QR코드 링크" />
+                  <span class="ft_sub3 c_main">QR코드</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/main/earnings_icon.svg" alt="적립금 링크" />
+                  <span class="ft_sub3 c_main">적립금</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/main/search_market_icon.svg" alt="매장찾기 링크" />
+                  <span class="ft_sub3 c_main">매장찾기</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 슬라이드 박스 -->
+          <div class="slide_box swiper mySwiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner1.png" alt="배너 이미지1" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner2.png" alt="배너 이미지2" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner3.png" alt="배너 이미지3" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner4.png" alt="배너 이미지4" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner5.png" alt="배너 이미지5" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner6.png" alt="배너 이미지6" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner7.png" alt="배너 이미지7" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner8.png" alt="배너 이미지8" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner9.png" alt="배너 이미지9" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner10.png" alt="배너 이미지10" />
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="recommend_box">
+            <div class="flex_box between align_center">
+              <p class="ft_sub1 c_main">Order9 추천 매장</p>
+              <select name="" id="">
+                <option value="">한식</option>
+                <option value="">양식</option>
+                <option value="">일식</option>
+                <option value="">분식</option>
+                <option value="">피자</option>
+                <option value="">치킨</option>
+              </select>
+            </div>
+            <div class="recommend_slide swiper mySwiper2">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./images/main/food_img1.jpg" alt="불맛나는 닭발" />
+                    <div class="text_box">
+                      <p class="title ft_sub3">불맛나는 닭발</p>
+                      <p class="category ft_txt2 c_gray1">야식 / 고기류</p>
+                      <p class="ft_txt2 c_gray1">적립률: 2%</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./images/main/food_img2.jpg" alt="불맛나는 족발" />
+                    <div class="text_box">
+                      <p class="title ft_sub3">불맛나는 족발</p>
+                      <p class="category ft_txt2 c_gray1">야식 / 고기류</p>
+                      <p class="ft_txt2 c_gray1">적립률: 2%</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./images/main/food_img3.jpg" alt="불타는 돈까스" />
+                    <div class="text_box">
+                      <p class="title ft_sub3">불타는 돈까스</p>
+                      <p class="category ft_txt2 c_gray1">외식 / 경양식</p>
+                      <p class="ft_txt2 c_gray1">적립률: 2%</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./images/main/food_img4.jpg" alt="불지옥 떡볶이" />
+                    <div class="text_box">
+                      <p class="title ft_sub3">불지옥 떡볶이</p>
+                      <p class="category ft_txt2 c_gray1">분식 / 분식류</p>
+                      <p class="ft_txt2 c_gray1">적립률: 2%</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- container end -->
+      <footer id="footer"></footer>
+
+      <div class="gnb">
         <ul>
           <li>
-            <a href="https://www.facebook.com/terattoofficial/" target="_blank">
-              <img src="images/main/icon/facebook_icon.svg" alt="facebook" />
+            <a href="#">
+              <img src="./images/common/navigation_icon1.svg" alt="홈 버튼" />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/terattoofficial" target="_blank">
-              <img src="images/main/icon/twitter_icon.svg" alt="twitter" />
+            <a href="#">
+              <img src="./images/common/navigation_icon2.svg" alt="지갑 버튼" />
             </a>
           </li>
           <li>
-            <a href="https://t.me/teratto_official" target="_blank">
-              <img src="images/main/icon/telegram_icon.svg" alt="telegram" />
+            <a href="#">
+              <img src="./images/common/navigation_icon3.svg" alt="스토어 버튼" />
             </a>
           </li>
           <li>
-            <a href="https://www.reddit.com/user/teratto_official" target="_blank">
-              <img src="images/main/icon/reddit_icon.svg" alt="reddit" />
-            </a>
-          </li>
-          <li>
-            <a href="https://medium.com/@teratto" target="_blank">
-              <img src="images/main/icon/medium_icon.svg" alt="medium" />
+            <a href="#">
+              <img src="./images/common/navigation_icon4.svg" alt="설정 버튼" />
             </a>
           </li>
         </ul>
-      </address>
-      <header id="header">
-        <button type="button" class="menu_btn">메뉴 버튼<span class="line"></span></button>
-        <h1 class="logo">
-          <a href="./index.html">
-            <img src="./images/main/common/terrato_logo.svg" alt="logo" />
-          </a>
-        </h1>
-        <div class="headerIn">
-          <nav class="gnb">
-            <ul>
-              <li><a href="./en/about_En.html">About</a></li>
-              <li><a href="./en/tokenomics_En.html">Tokenomics</a></li>
-              <li><a href="./en/metaverse_En.html">Metaverse</a></li>
-              <li><a href="./en/nft_En.html">NFT</a></li>
-              <li><a href="./en/event_En.html">Event</a></li>
-              <li><a href="./en/contact_En.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="whitepaper">
-            <span>WHITEPAPER</span>
-          </div>
-        </div>
-        <div class="lang">
-          <ul>
-            <li class="on"><a href="./index.html">EN</a></li>
-            <li><a href="./kr_index.html">KR</a></li>
-          </ul>
-        </div>
-      </header>
-      <!-- header 끝 -->
-      <main id="container">
-        <section class="cont1">
-          <div class="cont1_bg"></div>
-          <div class="shadow_bg"></div>
-          <video loop autoplay muted playsinline>
-            <source src="./video/mov1.mp4" type="video/mp4" />
-          </video>
-          <div class="inner">
-            <p class="sub_title translate50">The First Digital Healthcare Metaverse</p>
-            <h2 class="translate50">TERATTO</h2>
-            <p class="text ani2">
-              TERATTO is a service that builds a metaverse-based digital healthcare infrastructure,<br />
-              and various companies such as medical, health, and beauty are registered to be able to provide their services<br />
-              and products to customers and to sell to mint as NFT.
-            </p>
-            <!-- <p class="text pc_none ani2">
-              TERATTO는 메디컬, 헬스, 뷰티 등 다양한 업체가 입점하여<br class="mobi_br" />자신의 서비스와 상품을 제공하고 새로운 기술을 NFT로 발행하여<br class="mobi_br" />
-              판매할 수 있습니다.
-            </p> -->
-          </div>
-          <!-- cont1 inner -->
-          <!-- <ul class="icons">
-            <li>
-              <img src="images/main_animation/main_icon1.png" alt="" />
-              <span></span>
-            </li>
-            <li>
-              <img src="images/main_animation/main_icon2.png" alt="" />
-              <span></span>
-            </li>
-            <li>
-              <img src="images/main_animation/main_icon3.png" alt="" />
-              <span></span>
-            </li>
-            <li>
-              <img src="images/main_animation/main_icon4.png" alt="" />
-              <span></span>
-            </li>
-            <li>
-              <img src="images/main_animation/main_icon5.png" alt="" />
-              <span></span>
-            </li>
-            <li>
-              <img src="images/main_animation/main_icon6.png" alt="" />
-              <span></span>
-            </li>
-            <li>
-              <img src="images/main_animation/main_icon7.png" alt="" />
-              <span></span>
-            </li>
-            <li>
-              <img src="images/main_animation/main_icon8.png" alt="" />
-              <span></span>
-            </li>
-            <li>
-              <img src="images/main_animation/main_icon9.png" alt="" />
-              <span></span>
-            </li>
-            <li>
-              <img src="images/main_animation/main_icon10.png" alt="" />
-              <span></span>
-            </li>
-            <li>
-              <img src="images/main_animation/main_icon11.png" alt="" />
-              <span></span>
-            </li>
-          </ul> -->
-        </section>
-        <!-- cont1 -->
-        <section class="cont2">
-          <div class="inner">
-            <span class="top_point"></span>
-            <div class="title_wrap">
-              <h2>
-                Digital<br class="pc_br" />
-                Health Care Platform,
-                <strong>TERATTO</strong>
-              </h2>
-              <p class="context">
-                TERATTO provides the infrastructure of digital healthcare, and global healthcare companies freely register their stores to provide and sell their services to customers.
-              </p>
-            </div>
-            <div class="content_wrap">
-              <img class="ele_img pc" src="images/main/web/session1_img(en).svg" alt="terrato platform" />
-              <img class="ele_img tablet" src="images/main/tablet/session1_img(en).svg" alt="terrato platform" />
-              <img class="ele_img mobile" src="images/main/mobile/session1_img(en).svg" alt="terrato platform" />
-              <!-- <div class="content_list">
-                <ul>
-                  <li>
-                    <div class="icon_wrap">
-                      <span>Metaverse</span>
-                    </div>
-                    <div class="text">
-                      <span> 메타버스 내 다양한 헬스케어 업체 입점 </span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon_wrap">
-                      <span>NFT Sale</span>
-                    </div>
-                    <div class="text">
-                      <span>
-                        메타버스 및<br class="tab_br_none" />
-                        헬스케어 서비스,<br class="tab_br_none" />
-                        상품을 NFT로 판매
-                      </span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon_wrap">
-                      <span>Big Data</span>
-                    </div>
-                    <div class="text">
-                      <span>
-                        TERATTO 데이터를 가공하여 빅데이터<br class="tab_br_none" />
-                        판매<br class="tab_br" />
-                        및 수익 배분
-                      </span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon_wrap">
-                      <span>API</span>
-                    </div>
-                    <div class="text">
-                      <span>
-                        자사 서비스를<br class="tab_br_none" />
-                        연동할 수 있는<br class="tab_br_none" />
-                        API 시스템 제공
-                      </span>
-                    </div>
-                  </li>
-                </ul>
-              </div> -->
-              <!-- <div class="arrow_list">
-                <span class="arrow_icon"></span>
-                <ul>
-                  <li>
-                    <div class="back_icon">
-                      <span>병원</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="back_icon">
-                      <span>건강</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="back_icon">
-                      <span>뷰티샵</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="back_icon">
-                      <span>대학</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="back_icon">
-                      <span>연구기관</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="back_icon">
-                      <span>기업</span>
-                    </div>
-                  </li>
-                </ul>
-              </div> -->
-            </div>
-          </div>
-          <!-- cont2 inner -->
-        </section>
-        <!-- cont2 -->
-        <section class="cont3">
-          <div class="inner">
-            <span class="top_point"></span>
-            <h2>
-              TERATTO
-              <strong>Core Value</strong>
-            </h2>
-            <div class="content_wrap">
-              <ul>
-                <li>
-                  <div class="title">
-                    <span><i class="icon"></i>METAVERSE</span>
-                  </div>
-                  <ul class="in_ul">
-                    <li>
-                      <span><i></i>Configuring the service space that users need as they want</span>
-                    </li>
-                    <li>
-                      <span><i></i>Owns, sells, or leases purchased land, buildings, or items</span>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <div class="title">
-                    <span><i class="icon"></i>FREE</span>
-                  </div>
-                  <ul class="in_ul">
-                    <li>
-                      <span><i></i>Providing basic space in free for the registered store (NFT)</span>
-                    </li>
-                    <li>
-                      <span><i></i>Providing basic service functions in free for the registered store (NFT)</span>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <div class="title">
-                    <span><i class="icon"></i>EXPANSION</span>
-                  </div>
-                  <ul class="in_ul">
-                    <li>
-                      <span><i></i>Expansion of space through land and building purchases</span>
-                    </li>
-                    <li>
-                      <span><i></i>Buy NFT for the space you need, expand the space</span>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <div class="title">
-                    <span><i class="icon"></i>SERVICE</span>
-                  </div>
-                  <ul class="in_ul">
-                    <li>
-                      <span><i></i>Providing CRM and OCS programs for consultation and reservation</span>
-                    </li>
-                    <li>
-                      <span> <i></i>Sales of services and products / Interworking with own service API</span>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <div class="title">
-                    <span><i class="icon"></i>BIG DATA</span>
-                  </div>
-                  <ul class="in_ul">
-                    <li>
-                      <span><i></i>Stores can use TERATTO big data for free</span>
-                    </li>
-                    <li>
-                      <span><i></i>Profit distribution based on big data sales (individuals)</span>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <div class="title">
-                    <span><i class="icon"></i>NFT</span>
-                  </div>
-                  <ul class="in_ul">
-                    <li>
-                      <span><i></i>Directly issue NFTs for required functions</span>
-                    </li>
-                    <li>
-                      <span><i></i>Selling services and goods with NFT (gift certificate)</span>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- cont3 inne -->
-        </section>
-        <!-- cont3 -->
-        <section class="cont4">
-          <div class="inner">
-            <span class="top_point"></span>
-            <div class="title_wrap">
-              <h2>
-                What is<br class="pc_br" />
-                <strong>TERATTO NFT?</strong>
-              </h2>
-              <div class="context">
-                <p>
-                  Most of TERATTO's components, such as avatars to use services·land·buildings·objects (space, equipment) for building healthcare infrastructure, and services and products sold by
-                  stores, are traded with NFTs.
-                </p>
-                <p>In particular, the objects that make up the space have each function already made, so it is a revolutionary service that can be used immediately after purchase.</p>
-                <p>In addition, NFTs sold by stores are sold by directly issuing NFTs with the same function as gift certificates.</p>
-              </div>
-            </div>
-            <div class="content_list">
-              <ul>
-                <li>
-                  <img class="pc_img" src="images/main/web/session2_img1.jpg" alt="" />
-                  <img class="tab_img" src="images/main/tablet/session2_img1.jpg" alt="" />
-                  <img class="mobi_img" src="images/main/mobile/session2_img1.jpg" alt="" />
-                  <p>
-                    <span>Avatar</span>
-                  </p>
-                </li>
-                <li>
-                  <img class="pc_img" src="images/main/web/session2_img2.jpg" alt="" />
-                  <img class="tab_img" src="images/main/tablet/session2_img2.jpg" alt="" />
-                  <img class="mobi_img" src="images/main/mobile/session2_img2.jpg" alt="" />
-                  <p>
-                    <span>Land / Building</span>
-                  </p>
-                </li>
-                <li>
-                  <img class="pc_img" src="images/main/web/session2_img3.jpg" alt="" />
-                  <img class="tab_img" src="images/main/tablet/session2_img3.jpg" alt="" />
-                  <img class="mobi_img" src="images/main/mobile/session2_img3.jpg" alt="" />
-                  <p>
-                    <span>Object(Space, Equipment)</span>
-                  </p>
-                </li>
-                <li>
-                  <img class="pc_img" src="images/main/web/session2_img4.jpg" alt="" />
-                  <img class="tab_img" src="images/main/tablet/session2_img4.jpg" alt="" />
-                  <img class="mobi_img" src="images/main/mobile/session2_img4.jpg" alt="" />
-                  <p>
-                    <span>Services & Products of Stores</span>
-                  </p>
-                </li>
-              </ul>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <!-- cont4 inner -->
-        </section>
-        <!-- cont4 -->
-        <section class="cont5"></section>
-        <section class="cont6"></section>
-        <section class="cont7">
-          <div class="inner">
-            <span class="top_point"></span>
-            <h2>
-              Our
-              <span>Partners</span>
-            </h2>
-            <div class="partner_list">
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/mebion_logo(white).png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/avalanche_logo.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/biolabs_logo.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/tron_logo.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/tezos_logo.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/vstro_logo.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/the_hbar_foundation_logo.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/flow_logo.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/polygon_logo.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/solana_logo.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/digtoc_logo.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/main/common/etherbucks_logo.png" alt="" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- cont5 inner -->
-        </section>
-      </main>
-      <!-- container 끝 -->
-      <footer id="footer">
-        <div class="news">
-          <div class="inner">
-            <h3>Get the latest news through our newsletter.</h3>
-            <div class="form">
-              <input id="email" type="email" placeholder="Enter your email" />
-              <button id="submit" type="button" class="submit">Subscribe</button>
-            </div>
-          </div>
-        </div>
-        <!-- news -->
-        <div class="f-info">
-          <div class="inner">
-            <p class="flogo">
-              <a href="#">
-                <img src="images/main/common/terrato_logo(black).svg" alt="" />
-              </a>
-            </p>
-            <div class="sitemap">
-              <ul>
-                <li>
-                  <p class="sub_nav">PRODUCT</p>
-                  <ul>
-                    <li>Mining</li>
-                    <li>NFT</li>
-                    <li>Marketplace</li>
-                  </ul>
-                </li>
-                <li>
-                  <p class="sub_nav">NFT DROPS</p>
-                  <ul>
-                    <li>To be released</li>
-                  </ul>
-                </li>
-                <li>
-                  <p class="sub_nav">GAME</p>
-                  <ul>
-                    <li>To be released</li>
-                  </ul>
-                </li>
-                <li>
-                  <p class="sub_nav">INFO</p>
-                  <ul>
-                    <li>About</li>
-                    <li>Whitepaper</li>
-                    <li>Team</li>
-                    <li>Docs</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- inner -->
-        </div>
-      </footer>
-      <!-- #footer 끝 -->
-      <div class="side_menu">
-        <div class="side_bg"></div>
-        <div class="side_inner">
-          <button type="button" class="close"></button>
-          <div class="side_gnb">
-            <ul>
-              <li><a href="./en/about_En.html">About</a></li>
-              <li><a href="./en/tokenomics_En.html">Tokenomics</a></li>
-              <li><a href="./en/metaverse_En.html">Metaverse</a></li>
-              <li><a href="./en/nft_En.html">NFT</a></li>
-              <li><a href="./en/event_En.html">Event</a></li>
-              <li><a href="./en/contact_En.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="side_sns">
-            <p>FOLLOW US</p>
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/terattoofficial/" target="_blank">
-                  <img src="images/main/icon/facebook_icon_mobile.png" alt="facebook" />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/terattoofficial" target="_blank">
-                  <img src="images/main/icon/twitter_icon_mobile.png" alt="twitter" />
-                </a>
-              </li>
-              <li>
-                <a href="https://t.me/teratto_official" target="_blank">
-                  <img src="images/main/icon/telegram_icon_mobile.png" alt="telegram" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.reddit.com/user/teratto_official" target="_blank">
-                  <img src="images/main/icon/reddit_icon_mobile.png" alt="reddit" />
-                </a>
-              </li>
-              <li>
-                <a href="https://medium.com/@teratto" target="_blank">
-                  <img src="images/main/icon/medium_icon_mobile.png" alt="medium" />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="side_whitepaper">
-            <span>WHITEPAPER</span>
-          </div>
-        </div>
       </div>
-      <!-- 사이드 메뉴 -->
     </div>
-    <!-- #wrap 끝 -->
-    <script>
-      window.onload = function () {
-        const load = document.getElementById('load');
-        load.style.display = 'none';
+    <!-- #wrap end -->
 
-        Tracking_MoveScreen('Home');
-        $(window).bind('beforeunload', function () {
-          Tracking_MoveScreen('Home');
-        });
-      };
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+      var swiper2 = new Swiper('.mySwiper2', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
     </script>
   </body>
 </html>

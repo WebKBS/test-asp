@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* 폰트 패밀리 */
+/* 컬러 */
+/* 폰트 색상 */
+.c_main {
+  color: #fa5858;
+}
+
+.c_gray1 {
+  color: #848484;
+}
+
+.c_alert2 {
+  color: #0174df;
+}
+
+/* 타이포그래피 */
+.ft_splash {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: "SCDream_Bold";
+}
+
+.ft_title1 {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: "SCDream_Medium";
+}
+
+.ft_title2 {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "SCDream_Medium";
+}
+
+.ft_sub1 {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "SCDream_Medium";
+}
+
+.ft_sub2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "SCDream_Medium";
+}
+
+.ft_sub3 {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "SCDream_Medium";
+}
+
+.ft_body1 {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "SCDream_Regular";
+}
+
+.ft_body2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "SCDream_Regular";
+}
+
+.ft_txt1 {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "SCDream_Regular";
+}
+
+.ft_txt2 {
+  font-size: 11px;
+  line-height: 16px;
+  font-family: "SCDream_Regular";
+}
+
+/*# sourceMappingURL=setting.css.map */
