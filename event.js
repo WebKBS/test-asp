@@ -20,9 +20,9 @@ window.addEventListener('beforeinstallprompt', (e) => {
     // Wait for the user to respond to the prompt
     deferredPrompt.userChoice.then((choiceResult) => {
       if (choiceResult.outcome === 'accepted') {
-        alert.log('설치가 완료되었습니다. 브라우저가 종료됩니다.');
+        alert('설치가 완료되었습니다. 이제 어플리케이션으로 사용하실수 있습니다.');
       } else {
-        alert.log('설치 실패하였습니다.');
+        alert('설치 실패하였습니다.');
       }
       deferredPrompt = null;
     });
