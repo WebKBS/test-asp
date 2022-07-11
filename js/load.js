@@ -5,6 +5,5 @@ window.addEventListener('load', function () {
 
   if (document.getElementById('load').style.opacity === '0') {
     document.getElementById('load').style.display = 'none';
-    console.log('a');
   }
 });
