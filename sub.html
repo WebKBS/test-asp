@@ -7,6 +7,7 @@
     <title>Document</title>
     <style>
       .aaa {
+        display: none;
         width: 300px;
         height: 300px;
         background-color: #ff0;
@@ -16,15 +17,22 @@
         height: 100px;
         background-color: #f00;
       }
+      a {
+        padding: 10px 20px;
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <div class="aaa">실행 하시겠습니까?</div>
+    <div class="aaa">
+      실행 하시겠습니까?
+      <a href="./index.html">눌러보세염</a>
+    </div>
     <div class="sss">안녕하세요</div>
     <script>
       history.pushState(null, null, location.href);
       window.onpopstate = function (event) {
-        document.querySelector('div').style.display = 'none';
+        document.querySelector('div').style.display = 'block';
       };
     </script>
   </body>
