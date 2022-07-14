@@ -1,102 +1,28 @@
 @charset "UTF-8";
- 
+
 /* 폰트 패밀리 */
-$SC_Regular: "SCDream_Regular";
-$SC_Medium: "SCDream_Medium";
-$SC_Bold: "SCDream_Bold";
+$Mont_ExtraBold: "Mont-ExtraBold";
+$Mont_Bold: "Mont-Bold";
+$Mont_SemiBold: "Mont-SemiBold";
+$Mont_Medium: "Mont-Medium";
+
+$Robo_Medium: "Roboto-Medium";
+$Robo_Regular: "Roboto-Regular";
+$Robo_Bold: "Roboto-Bold";
 
 /* 컬러 */
-
-$main_color: #fa5858;
-$sub_color: #ff8000;
-$gradation: linear-gradient(to right, #FF8000, #FE2E64);
-$black: #424242;
-$gray1: #848484;
-$gray2: #bdbdbd;
-$gray3: #D8D8D8;
-$gray4: #f2f2f2;
-$white: #ffffff;
-$whiteAlpha: rgba(255, 255, 255, .5);
-$alert1: #f7819f;
-$alert1_box: #ffeaea;
-$alert1_border: #F7819F;
-$alert2: #0174df;
-$alert2_box: #EFF5FB;
-$alert2_boder: #A9D0F5;
-$point1: #04b45f;
-$point2: #01df3a;
+$keyColor: #40aaf8;
+$c161616: #161616;
+$c353535: #353535;
+$c4b4b4b: #4B4B4B;
+$c5e5e5e: #5E5E5E;
+$c7e7e7e: #7e7e7e;
+$c9e9e9e: #9e9e9e;
+$cA6b5be: #a6b5be;
 
 
-/* 폰트 색상 */
-.c_main{
-  color: $main_color;
-}
 
-.c_gray1{
-  color: $gray1;
-}
 
-.c_alert2{
-  color: $alert2;
-}
 
-/* 타이포그래피 */
-.ft_splash{
-  font-size: 22px;
-  line-height: 28px;
-  font-family: $SC_Bold;
-}
-
-.ft_title1{
-  font-size: 22px;
-  line-height: 28px;
-  font-family: $SC_Medium;
-}
-
-.ft_title2{
-  font-size: 18px;
-  line-height: 28px;
-  font-family: $SC_Medium;
-}
-
-.ft_sub1{
-  font-size: 16px;
-  line-height: 22px;
-  font-family: $SC_Medium;
-}
-
-.ft_sub2{
-  font-size: 14px;
-  line-height: 20px;
-  font-family: $SC_Medium;
-}
-
-.ft_sub3{
-  font-size: 12px;
-  line-height: 18px;
-  font-family: $SC_Medium;
-}
-
-.ft_body1{
-  font-size: 16px;
-  line-height: 22px;
-  font-family: $SC_Regular;
-}
-
-.ft_body2{
-  font-size: 14px;
-  line-height: 20px;
-  font-family: $SC_Regular;
-}
-
-.ft_txt1{
-  font-size: 12px;
-  line-height: 18px;
-  font-family: $SC_Regular;
-}
-
-.ft_txt2{
-  font-size: 11px;
-  line-height: 16px;
-  font-family: $SC_Regular;
-}
+// @media screen and (min-width: 768px) and (max-width: 1023px ) {}
+// @media screen and (max-width: 767px) {}

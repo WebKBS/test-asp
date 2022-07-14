@@ -2,48 +2,44 @@
 
 /* MontserratAlternates */
 @font-face {
-    src: url(../font/SCDream_Thin.otf) format('opentype');
-    font-family: "SCDream_Thin";
+    src: url(../font/Montserrat-ExtraBold.ttf) format('truetype');
+    font-family: "Mont-ExtraBold";
 }
 
-/* SCDream */
+/* noto - sans KR */
 @font-face {
-    src: url(../font/SCDream_ExtraLight.otf) format('opentype');
-    font-family: "SCDream_ExtraLight";
-}
-
-@font-face {
-    src: url(../font/SCDream_Light.otf) format('opentype');
-    font-family: "SCDream_Light";
+    src: url(../font/Montserrat-Bold.ttf) format('truetype');
+    font-family: "Mont-Bold";
 }
 
 @font-face {
-    src: url(../font/SCDream_Regular.otf) format('opentype');
-    font-family: "SCDream_Regular";
+    src: url(../font/Montserrat-SemiBold.ttf) format('truetype');
+    font-family: "Mont-SemiBold";
 }
 
 @font-face {
-    src: url(../font/SCDream_Medium.otf) format('opentype');
-    font-family: "SCDream_Medium";
+    src: url(../font/Montserrat-Medium.ttf) format('truetype');
+    font-family: "Mont-Medium";
 }
 
 @font-face {
-    src: url(../font/SCDream_Bold.otf) format('opentype');
-    font-family: "SCDream_Bold";
+    src: url(../font/Montserrat-Regular.ttf) format('truetype');
+    font-family: "Mont-Regular";
 }
 
-@font-face {
-    src: url(../font/SCDream_ExtraBold.otf) format('opentype');
-    font-family: "SCDream_ExtraBold";
-}
 
-@font-face {
-    src: url(../font/SCDream_Heavy.otf) format('opentype');
-    font-family: "SCDream_Heavy";
-}
 
-@font-face {
-    src: url(../font/SCDream_Black.otf) format('opentype');
-    font-family: "SCDream_Black";
+/* roboto */
+@font-face{
+    src: url(../font/roboto-medium.ttf) format('truetype');
+    font-family: "Roboto-Medium";
+}
+@font-face{
+    src: url(../font/roboto-regular.ttf) format('truetype');
+    font-family: "Roboto-Regular";
+}
+@font-face{
+    src: url(../font/roboto-bold.ttf) format('truetype');
+    font-family: "Roboto-Bold";
 }
 

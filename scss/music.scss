@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import "./Setting.scss";
+
+
+
+
+h2{
+  // width: 388px;
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .35);
+  position: relative;
+  margin-bottom: 25px;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .35);
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+}
+
+.sub_text{
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .35);
+}
+
+
+
+.cont1{
+  background: url(../images/music/music_main_back.jpg) no-repeat center 0 / 1920px auto;
+
+  .inner{
+    padding: 304px 22px 284px;
+  
+  }
+  .sub_text{
+    width: 480px;
+  }
+}
+
+.cont2{
+  background: url(../images/music/music_session1_back.jpg) no-repeat center 0 / 1920px auto;
+
+  .inner{
+    padding: 155px 22px 114px;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+  .sub_text{
+    width: 666px;
+    margin-bottom: 40px;
+
+    span{
+      color: #FFC700;
+    }
+  }
+
+  .learn_more_btn{
+    width: 236px;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: background-color .3s;
+
+    &:hover{
+      background-color: rgba($color: #fff, $alpha: 1);
+      color: #222;
+    }
+  }
+}
+
+.cont3{
+  background: url(../images/music/music_session2_back.jpg) no-repeat center 0 / 1920px auto;
+
+  .inner{
+    padding: 207px 22px 164px;
+  }
+
+  .sub_text{
+    width: 470px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px ) {
+
+  h2{
+    margin-bottom: 2.4437vw;
+
+    &::after{
+      width: 4.8875vw;
+      height: 0.7820vw;
+      top: -2.9325vw;
+    }
+  }
+
+  .cont1{
+    background: url(../images/music/music_main_back.jpg) no-repeat center 0 / 1920px auto;
+
+    .inner{
+      padding: 29.7165vw 2.1505vw 27.7614vw;
+    
+    }
+    .sub_text{
+      width: 46.9208vw;
+    }
+  }
+
+  .cont2{
+    background: url(../images/music/music_session1_back.jpg) no-repeat center 0 / 1920px auto;
+
+    .inner{
+      padding: 15.1515vw 2.1505vw 11.1436vw;
+
+    }
+    .sub_text{
+      width: 65.1026vw;
+      margin-bottom: 3.9100vw;
+    }
+
+    .learn_more_btn{
+      width: 23.0694vw;
+      line-height: 5.8651vw;
+      border-radius: 0.9775vw;
+    }
+  }
+
+  .cont3{
+    background: url(../images/music/music_session2_back.jpg) no-repeat center 0 / 1920px auto;
+
+    .inner{
+      padding: 20.2346vw 2.1505vw 16.0312vw;
+    }
+
+    .sub_text{
+      width: 45.9433vw;
+    }
+  }
+
+
+
+
+
+}
+// @media screen and (max-width: 767px) {}
