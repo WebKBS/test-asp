@@ -147,9 +147,80 @@ h2{
     }
   }
 
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+  h2{
+    // width: 388px;
+    margin-bottom: 2.5vw;
+
+    &::after{
+      width: 4.6875vw;
+      height: 0.7812vw;
+      top: -3.125vw;
+    }
+  }
+
+  .cont1{
+    background: url(../images/mobile/music_back1.jpg) no-repeat center 0 / cover;
+
+    .inner{
+      padding: 14.375vw 4.0625vw 10.3125vw;
+    }
+
+    h2{
+      width: 28.2812vw;
+    }
+
+    .sub_text{
+      width: 44.375vw;
+    }
+  }
+
+  .cont2{
+    background: url(../images/mobile/music_back2.jpg) no-repeat center 0 / cover;
+
+    .inner{
+      padding: 13.125vw 4.0625vw 9.2187vw;
+    }
+
+    h2{
+      width: 49.8437vw;
+      margin-bottom: 4.0625vw;
+    }
+
+    .sub_text{
+      display: none;
+    }
+
+    .learn_more_btn{
+      width: 25.7812vw;
+      line-height: 7.0312vw;
+      border-radius: 1.25vw;
+    }
+  }
+
+  .cont3{
+    background: url(../images/mobile/music_back3.jpg) no-repeat center 0 / cover;
+
+    .inner{
+      padding: 9.8437vw 4.0625vw 5.9375vw;
+    }
+
+    h2{
+      width: 33.2812vw;
+    }
+
+    .sub_text{
+      width: 44.375vw;
+    }
+  }
+
 
 
 
 
 }
-// @media screen and (max-width: 767px) {}

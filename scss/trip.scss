@@ -217,4 +217,113 @@
 
 
 }
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+
+  .scroll_wrap{
+    overflow-x: auto;
+    padding-right: 3.75vw;
+
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+
+  .cont1{
+  
+    background: url(../images/mobile/360_trip_back.jpg) no-repeat center 0 / cover;
+  
+    .inner{
+      padding: 11.875vw 3.4375vw;
+  
+    }
+  
+    h2{
+      width: 60.625vw;
+      margin-bottom: 2.5vw;
+  
+      &::after{
+        width: 4.6875vw;
+        height: 0.78125vw;
+        top: -3.125vw;
+      }
+    }
+  
+    .sub_text{
+      width: 58.125vw;
+    }
+  
+    .img_wrap{
+      width: 104.0625vw;
+      gap: 2.8125vw;
+  
+      img{
+        filter: drop-shadow(1.25vw 1.25vw 1.875vw rgba(0, 0, 0, .40));
+      }
+    }
+  }
+  
+  .cont2{
+  
+    .inner{
+      padding: 4.0625vw 3.4375vw;
+    }
+  
+    .more_btn{
+      padding-right: 2.3437vw;
+      background: url(../images/common/more_btn_icon.svg) no-repeat right center / 1.0937vw auto;
+      top: 4.5312vw;
+      right: 3.75vw;
+      line-height: 2.8125vw;
+      
+    }
+  
+    .content1{
+      border-radius: 3.125vw;
+      padding: 3.125vw 0 3.125vw 3.75vw;
+      margin-bottom: 3.125vw;
+  
+      ul{
+        width: 121.875vw;
+        gap: 3.75vw;
+      }
+  
+      li{
+        width: 37.5vw;
+
+        img{
+          margin-bottom: 3.125vw;
+        }
+      }
+    }
+  
+    h2{
+      margin-bottom: 2.1875vw;
+    }
+  
+    .content2{
+      border-radius: 3.125vw;
+      padding: 3.125vw 0 3.125vw 3.75vw;
+  
+      .more_btn{
+        top: 0.4687vw;
+        right: 3.75vw;
+      }
+  
+      .list1{
+        margin-bottom: 6.25vw;
+      }
+  
+      .list2{
+      }
+      
+      ul{
+        width: 153.9062vw;
+        gap: 4.2187vw;
+      }
+
+      li{
+        width: 35.3125vw;
+      }
+    }
+  }
+}

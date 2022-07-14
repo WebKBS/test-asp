@@ -250,5 +250,123 @@
     margin-bottom: 5.474vw;
   }
 }
+@media screen and (max-width: 767px) {
+  .cont1 {
+    background: url(../images/mobile/ticket_back.jpg) no-repeat center 0/cover;
+  }
+  .cont1 .inner {
+    padding: 12.8125vw 4.0625vw 8.9062vw;
+    gap: 3.125vw;
+  }
+  .cont1 h2 {
+    width: 27.6562vw;
+    margin-bottom: 2.5vw;
+  }
+  .cont1 h2::after {
+    width: 4.6875vw;
+    height: 0.7812vw;
+    top: -3.125vw;
+  }
+  .cont1 .sub_text {
+    width: 44.375vw;
+  }
+  .cont1 .img_wrap {
+    max-width: 666px;
+    gap: 1.09375vw;
+  }
+  .cont1 .img_wrap img {
+    filter: drop-shadow(1.25vw 1.25vw 1.875vw rgba(0, 0, 0, 0.4));
+  }
+
+  .cont2 .inner {
+    padding: 0 4.0625vw 6.25vw;
+  }
+  .cont2 .top_list {
+    padding: 4.6875vw 0 7.8125vw 0;
+  }
+  .cont2 .top_list ul {
+    gap: 1.5625vw;
+  }
+  .cont2 .top_list li {
+    max-width: 42.8125vw;
+  }
+  .cont2 .top_list li .f_sub_title {
+    font-size: 2.5vw;
+  }
+  .cont2 .content {
+    flex-direction: column;
+    padding-top: 0;
+    gap: 6.25vw;
+  }
+  .cont2 .content .f_main4 {
+    font-size: 2.1875vw;
+  }
+  .cont2 .upcoming h2 {
+    margin-bottom: 2.6562vw;
+  }
+  .cont2 .upcoming ul {
+    gap: 3.125vw;
+  }
+  .cont2 .upcoming li {
+    max-width: 824px;
+    border-radius: 2.5vw;
+    padding: 2.5vw 5vw 2.5vw 4.0625vw;
+  }
+  .cont2 .upcoming .img_area {
+    max-width: 134px;
+    margin-right: 2.5vw;
+    padding: 1.5625vw 0;
+  }
+  .cont2 .upcoming .text_area {
+    width: 59.375vw;
+    margin-right: 3.125vw;
+    padding: 1.5625vw 0;
+  }
+  .cont2 .upcoming .text_area h3 {
+    margin-bottom: 1.25vw;
+  }
+  .cont2 .upcoming .text_area .place {
+    margin-bottom: 0.7812vw;
+  }
+  .cont2 .upcoming .text_area .date {
+    margin-bottom: 1.875vw;
+  }
+  .cont2 .upcoming .text_area .text {
+    text-overflow: ellipsis;
+  }
+  .cont2 .upcoming .button_area {
+    width: 13.75vw;
+    padding-left: 4.6875vw;
+    padding: 1.5625vw 0 1.5625vw 4.6875vw;
+  }
+  .cont2 .upcoming .button_area button {
+    width: 13.75vw;
+    height: 13.75vw;
+    border-radius: 1.5625vw;
+  }
+  .cont2 .side_content {
+    width: 100%;
+    padding: 2.8125vw 3.75vw 7.8125vw;
+    border-radius: 2.5vw;
+  }
+  .cont2 .side_content h4 {
+    margin-bottom: 3.125vw;
+  }
+  .cont2 .side_content .flex_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 6.7187vw;
+  }
+  .cont2 .side_content img {
+    margin-bottom: 2.5vw;
+  }
+  .cont2 .side_content .side_cont1 {
+    width: 31.25vw;
+    margin-bottom: 0;
+  }
+  .cont2 .side_content .side_cont2 {
+    width: 31.25vw;
+  }
+}
 
 /*# sourceMappingURL=Ticket.css.map */

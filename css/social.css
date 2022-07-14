@@ -369,5 +369,185 @@
     margin-bottom: 0.5865vw;
   }
 }
+@media screen and (max-width: 767px) {
+  .cont1 {
+    background: url(../images/mobile/social_back.jpg) no-repeat center 0/cover;
+  }
+  .cont1 .inner {
+    padding: 12.8125vw 3.4375vw 8.9062vw;
+  }
+  .cont1 h2 {
+    width: 42.5vw;
+    margin-bottom: 2.5vw;
+  }
+  .cont1 h2::after {
+    width: 7.8125;
+    height: 1.25vw;
+    top: -30px;
+  }
+  .cont1 .sub_text {
+    width: 58.125vw;
+  }
+  .cont1 .img_wrap {
+    width: 104.0625vw;
+    gap: 2.8125vw;
+  }
+  .cont1 .img_wrap img {
+    filter: drop-shadow(1.25vw 1.25vw 1.875vw rgba(0, 0, 0, 0.4));
+  }
+
+  .cont2 .scroll_wrap {
+    overflow-x: auto;
+    padding-right: 3.75vw;
+  }
+  .cont2 .scroll_wrap::-webkit-scrollbar {
+    display: none;
+  }
+  .cont2 .inner {
+    padding: 4.0625vw 3.4375vw;
+  }
+  .cont2 .more_btn {
+    padding-right: 2.3437vw;
+    background: url(../images/common/more_btn_icon.svg) no-repeat right center/auto 1.5625vw;
+  }
+  .cont2 .content1 {
+    border-radius: 3.125vw;
+    padding: 4.0625vw 3.75vw;
+    margin-bottom: 3.125vw;
+  }
+  .cont2 .content1 h2 {
+    margin-bottom: 4.6875vw;
+  }
+  .cont2 .content1 .more_btn {
+    top: 4.5312vw;
+    right: 5.3125vw;
+  }
+  .cont2 .content1 .best_list {
+    gap: 1.5625vw;
+    overflow-x: auto;
+    width: 168.75vw;
+    padding-right: 3.75vw;
+  }
+  .cont2 .content1 .best_list::-webkit-scrollbar {
+    display: none;
+  }
+  .cont2 .content1 .best_list li {
+    max-width: 30.625vw;
+  }
+  .cont2 .content1 .best_list img {
+    margin-bottom: 2.8125vw;
+  }
+  .cont2 .content1 .best_list .subject {
+    margin-bottom: 0.9375vw;
+  }
+  .cont2 .content2 {
+    padding: 3.75vw 0 3.75vw 3.75vw;
+    border-radius: 3.125vw;
+  }
+  .cont2 .content2 .tab_btn_wrap {
+    margin-bottom: 4.6875vw;
+    overflow-x: scroll;
+    padding-right: 3.75vw;
+  }
+  .cont2 .content2 .tab_btn_wrap::-webkit-scrollbar {
+    display: none;
+  }
+  .cont2 .content2 .tab_btn_wrap ul {
+    width: 168.75vw;
+    display: flex;
+  }
+  .cont2 .content2 .tab_btn_wrap li::after {
+    height: 3.125vw;
+    right: -4.375vw;
+  }
+  .cont2 .content2 .tab_btn_wrap li.on button {
+    font-size: 2.5vw;
+    line-height: 3.125vw;
+  }
+  .cont2 .content2 .inner_content {
+    flex-direction: column;
+    gap: 3.125vw;
+  }
+  .cont2 .content2 .inner_content .more_btn {
+    top: 0.7812vw;
+    right: 3.75vw;
+    padding-right: 2.0312vw;
+    background-size: auto 1.25vw;
+  }
+  .cont2 .content2 .left_cont {
+    max-width: 108.125vw;
+    width: 100%;
+  }
+  .cont2 .content2 .clip_wrap {
+    margin-bottom: 6.25vw;
+  }
+  .cont2 .content2 .clip_wrap h2 {
+    margin-bottom: 3.125vw;
+  }
+  .cont2 .content2 .clip_wrap ul {
+    width: 107.5vw;
+    gap: 1.5625vw;
+  }
+  .cont2 .content2 .clip_wrap li {
+    border-radius: 1.5625vw;
+  }
+  .cont2 .content2 .broadcast_wrap h2 {
+    margin-bottom: 3.125vw;
+  }
+  .cont2 .content2 .broadcast_wrap ul {
+    width: 104.0625vw;
+    gap: 1.875vw;
+  }
+  .cont2 .content2 .broadcast_wrap ul li {
+    width: 33.125vw;
+  }
+  .cont2 .content2 .broadcast_wrap .info_wrap {
+    gap: 1.4062vw;
+  }
+  .cont2 .content2 .broadcast_wrap .video_img {
+    margin-bottom: 2.5vw;
+  }
+  .cont2 .content2 .broadcast_wrap .user_img {
+    width: auto;
+    height: 5.625vw;
+  }
+  .cont2 .content2 .broadcast_wrap .title {
+    margin-bottom: 0.625vw;
+  }
+  .cont2 .content2 .side_cont {
+    max-width: none;
+    width: 100%;
+    padding-right: 3.75vw;
+  }
+  .cont2 .content2 .side_cont h2 {
+    margin-bottom: 3.4375vw;
+  }
+  .cont2 .content2 .side_cont ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.75vw;
+  }
+  .cont2 .content2 .side_cont li {
+    width: 40.3125vw;
+    padding: 0 0 2.3437vw;
+  }
+  .cont2 .content2 .side_cont li img {
+    max-width: 7.5vw;
+    max-height: 7.5vw;
+    margin-right: 2.1875vw;
+  }
+  .cont2 .content2 .side_cont li .name_wrap {
+    width: 8.4375vw;
+    margin-right: 1.25vw;
+  }
+  .cont2 .content2 .side_cont li .name_wrap .name {
+    margin-bottom: 0.9375vw;
+  }
+  .cont2 .content2 .side_cont li .info {
+    width: auto;
+  }
+}
 
 /*# sourceMappingURL=social.css.map */

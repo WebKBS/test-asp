@@ -14,6 +14,14 @@
   width: 100%;
 }
 
+.acco_overlay {
+  display: none;
+}
+
+.side_menu_btn {
+  display: none;
+}
+
 .accordion_menu {
   max-width: 286px;
   min-width: 223px;
@@ -252,6 +260,116 @@
   }
   .cont2 .content1 {
     margin-bottom: 2.346vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .accordion_menu {
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  .accordion_menu .title {
+    margin-bottom: 2.8125vw;
+    background: url(../images/common/more_btn_icon3.svg) no-repeat right center/2.0312vw auto;
+  }
+  .accordion_menu .title.active {
+    background: url(../images/common/more_btn_icon2.svg) no-repeat right center/2.0312vw auto;
+  }
+  .accordion_menu > ul > li {
+    margin-bottom: 4.6875vw;
+  }
+  .accordion_menu .sub_list {
+    gap: 1.875vw;
+  }
+  .accordion_menu .sub_list li {
+    padding: 4px;
+  }
+
+  .top_search_wrap {
+    padding: 3.9062vw 0;
+  }
+  .top_search_wrap .input_wrap {
+    display: flex;
+    max-width: 91.875vw;
+    width: 100%;
+    gap: 3.125vw;
+  }
+  .top_search_wrap .input_wrap input {
+    border-radius: 7.8125vw;
+    line-height: 7.5vw;
+    padding: 0 3.5937vw;
+  }
+  .top_search_wrap .input_wrap .submit_btn {
+    width: 3.75vw;
+    right: 3.5937vw;
+  }
+
+  .cont1 .inner {
+    padding: 3.125vw 3.4375vw 0;
+    margin-bottom: 3.75vw;
+  }
+  .cont1 .play_btn {
+    width: 23.125vw;
+    line-height: 6.25vw;
+  }
+  .cont1 .navi {
+    gap: 0.78125vw;
+  }
+  .cont1 .navi li {
+    width: 0.9375vw;
+    height: 0.9375vw;
+  }
+
+  .cont2 .more_btn {
+    padding-right: 2.3437vw;
+    background: url(../images/common/more_btn_icon.svg) no-repeat right center/1.0937vw auto;
+    top: 4.5312vw;
+    right: 5.3125vw;
+    line-height: 2.8125vw;
+  }
+  .cont2 h2 {
+    margin-bottom: 4.6875vw;
+  }
+  .cont2 .inner {
+    padding: 0 3.4375vw 14.0625vw;
+  }
+  .cont2 .inner > div {
+    padding: 4.0625vw 5.1562vw;
+    border-radius: 3.125vw;
+  }
+  .cont2 ul {
+    gap: 4.6875vw 0;
+    justify-content: space-between;
+  }
+  .cont2 ul li {
+    max-width: 39.375vw;
+    width: 100%;
+  }
+  .cont2 ul li img {
+    margin-bottom: 1.875vw;
+  }
+  .cont2 ul li .title {
+    margin-bottom: 0.625vw;
+  }
+  .cont2 .content1 {
+    margin-bottom: 3.75vw;
+  }
+
+  .side_menu_btn {
+    display: block;
+  }
+
+  .acco_overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 5;
   }
 }
 

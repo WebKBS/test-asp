@@ -281,5 +281,114 @@
     border-radius: 0.9775vw;
   }
 }
+@media screen and (max-width: 767px) {
+  .cont1 {
+    background: url(../images/mobile/digital_goods_back1.jpg) no-repeat center 0/cover;
+  }
+  .cont1 .inner {
+    padding: 13.125vw 4.0625vw 9.0625vw;
+    gap: 3.75vw;
+  }
+  .cont1 h2 {
+    width: 54.6875vw;
+    margin-bottom: 3.9062vw;
+  }
+  .cont1 h2::after {
+    width: 4.6875vw;
+    height: 0.7812vw;
+    top: -3.125vw;
+  }
+  .cont1 .sub_text {
+    width: 44.375vw;
+  }
+  .cont1 .img_wrap {
+    width: 104.0625vw;
+    gap: 2.8125vw;
+  }
+  .cont1 .img_wrap img {
+    filter: drop-shadow(1.25vw 1.25vw 1.875vw rgba(0, 0, 0, 0.4));
+  }
+
+  .cont2 {
+    background: url(../images/mobile/digital_goods_back2.jpg) no-repeat center 0/cover;
+  }
+  .cont2 .inner {
+    padding: 7.8125vw 3.4375vw;
+  }
+  .cont2 h2 {
+    margin-bottom: 1.7187vw;
+  }
+  .cont2 .sub_text {
+    margin-bottom: 4.0625vw;
+  }
+  .cont2 .input_wrap {
+    max-width: 74.0625vw;
+    width: 100%;
+    margin-bottom: 4.0625vw;
+  }
+  .cont2 .input_wrap input {
+    line-height: 7.8125vw;
+    border-radius: 7.8125vw;
+    padding: 0 7.8125vw 0 74.0625vw;
+  }
+  .cont2 .input_wrap .search_btn {
+    width: 4.0625vw;
+    height: 4.0625vw;
+    background: url(../images/common/search_icon2.svg) no-repeat center center/4.0625vw auto;
+    right: 3.75vw;
+  }
+  .cont2 .go_btn {
+    width: 38.75vw;
+    padding: 0 2.5vw 0 3.125vw;
+    line-height: 8.4375vw;
+    background: url(../images/common/join_arrow1.svg) no-repeat 30.625vw center/4.375vw auto;
+    border-radius: 1.5625vw;
+  }
+
+  .cont3 .inner {
+    padding: 6.25vw 4.0625vw 12.5vw;
+  }
+  .cont3 h2 {
+    margin-bottom: 2.1875vw;
+  }
+  .cont3 .sub_text {
+    margin-bottom: 5.3125vw;
+  }
+  .cont3 .main_list {
+    padding-bottom: 7.8125vw;
+    gap: 3.125vw;
+  }
+  .cont3 .main_list li {
+    width: 52.1875vw;
+    border-radius: 1.5625vw;
+    padding: 3.125vw 0;
+  }
+  .cont3 .main_list li .name {
+    margin-bottom: 3.125vw;
+  }
+  .cont3 .main_list li img {
+    height: 10vw;
+    margin: 0 auto 3.125vw;
+  }
+  .cont3 .sub_list {
+    padding-top: 7.8125vw;
+    gap: 3.125vw;
+    margin-bottom: 10.9375vw;
+  }
+  .cont3 .sub_list li {
+    width: 37.5vw;
+    border-radius: 1.5625vw;
+    padding: 3.75vw 0 5.3125vw;
+  }
+  .cont3 .sub_list li img {
+    width: 10vw;
+    margin: 0 auto 0.9375vw;
+  }
+  .cont3 .mint_btn {
+    width: 36.875vw;
+    line-height: 9.375vw;
+    border-radius: 1.5625vw;
+  }
+}
 
 /*# sourceMappingURL=DigitalGoods.css.map */

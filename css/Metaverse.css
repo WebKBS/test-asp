@@ -126,4 +126,103 @@
   padding: 60px 22px 80px;
 }
 
+@media screen and (max-width: 767px) {
+  .cont1 {
+    background: url(../images/mobile/metaverse_back.jpg) no-repeat center 0/cover;
+  }
+  .cont1 .inner {
+    padding: 5.7812vw 4.0625vw;
+    display: flex;
+    gap: 6.7187vw;
+  }
+  .cont1 h2 {
+    width: 37.5vw;
+    margin-bottom: 2.5vw;
+  }
+  .cont1 h2::after {
+    width: 4.6875vw;
+    height: 0.7812vw;
+    top: -3.125vw;
+  }
+  .cont1 .sub_text {
+    width: 44.375vw;
+  }
+  .cont1 .img_wrap {
+    width: 88.5937vw;
+  }
+  .cont1 .img_wrap img {
+    filter: drop-shadow(1.875vw 1.875vw 3.125vw rgba(0, 0, 0, 0.3));
+  }
+
+  .cont2 h2 {
+    margin-bottom: 2.1875vw;
+  }
+  .cont2 .sub_text {
+    margin-bottom: 4.6875vw;
+  }
+  .cont2 .content1 .inner {
+    padding: 6.25vw 4.0625vw 9.375vw;
+  }
+  .cont2 .content1 .content_in {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.125vw;
+  }
+  .cont2 .content1 .content_in > img {
+    width: 100%;
+  }
+  .cont2 .content1 .right_cont {
+    display: flex;
+    gap: 3.125vw;
+  }
+  .cont2 .content1 .internal {
+    max-width: none;
+    width: 50%;
+    border-radius: 3.75vw;
+    margin-bottom: 0;
+  }
+  .cont2 .content1 .internal h3 {
+    padding: 3.125vw 3.75vw 2.9687vw 3.75vw;
+  }
+  .cont2 .content1 .internal ul {
+    padding: 3.125vw 3.75vw 3.2812vw 3.75vw;
+    gap: 1.25vw;
+    font-size: 2.5vw;
+  }
+  .cont2 .content1 .internal li {
+    padding-left: 3.4375vw;
+  }
+  .cont2 .content1 .internal li::after {
+    width: 1.875vw;
+    height: 1.5625vw;
+    background: url(../images/metaverse/Polygon1.svg) no-repeat center center/1.875vw 1.5625vw;
+    top: 0.7812vw;
+  }
+  .cont2 .content1 .external {
+    width: 50%;
+    border-radius: 3.75vw;
+  }
+  .cont2 .content1 .external h3 {
+    padding: 3.125vw 3.75vw 2.9687vw 3.75vw;
+  }
+  .cont2 .content1 .external ul {
+    padding: 3.125vw 3.75vw 3.2812vw 3.75vw;
+    gap: 1.25vw;
+    font-size: 2.5vw;
+  }
+  .cont2 .content1 .external li {
+    padding-left: 3.4375vw;
+  }
+  .cont2 .content1 .external li::after {
+    width: 1.875vw;
+    height: 1.5625vw;
+    background: url(../images/metaverse/Polygon2.svg) no-repeat center center/1.875vw 1.5625vw;
+    top: 0.7812vw;
+  }
+  .cont2 .content2 .inner {
+    padding: 0 3.4375vw 12.5vw;
+  }
+}
+
 /*# sourceMappingURL=Metaverse.css.map */

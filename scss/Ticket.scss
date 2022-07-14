@@ -322,4 +322,158 @@
 
 
 @media screen and (max-width: 767px) {
+    
+  .cont1{
+    background: url(../images/mobile/ticket_back.jpg) no-repeat center 0 / cover;
+
+    .inner{
+      padding: 12.8125vw 4.0625vw 8.9062vw;
+      gap: 3.125vw;
+    }
+
+    h2{
+      width: 27.6562vw;
+      margin-bottom: 2.5vw;
+
+      &::after{
+        width: 4.6875vw;
+        height: 0.7812vw;
+        top: -3.125vw;
+      }
+    }
+
+    .sub_text{
+      width: 44.375vw;
+    }
+
+    .img_wrap{
+      max-width: 666px;
+      gap: 1.09375vw;
+
+      img{
+        filter: drop-shadow(1.25vw 1.25vw 1.875vw rgba(0, 0, 0, .40));
+      }
+    }
+  }
+
+  .cont2{
+
+    .inner{
+      padding: 0 4.0625vw 6.25vw;
+    }
+
+    .top_list{
+      padding: 4.6875vw 0 7.8125vw 0;
+
+      ul{
+        gap: 1.5625vw;
+      }
+
+      li{
+        max-width: 42.8125vw;
+
+        .f_sub_title{
+          font-size: 2.5vw;
+        }
+      }
+    }
+
+    .content{
+      flex-direction: column;
+      padding-top: 0;
+      gap: 6.25vw;
+
+      .f_main4{
+        font-size: 2.1875vw;
+      }
+    }
+
+    .upcoming{
+
+      h2{
+        margin-bottom: 2.6562vw;
+      }
+
+      ul{
+        gap: 3.125vw;
+      }
+
+      li{
+        max-width: 824px;
+        border-radius: 2.5vw;
+        padding: 2.5vw 5vw 2.5vw 4.0625vw;
+      }
+
+      .img_area{
+        max-width: 134px;
+        margin-right: 2.5vw;
+        padding: 1.5625vw 0;
+      }
+
+      .text_area{
+        width: 59.375vw;
+        margin-right: 3.125vw;
+        padding: 1.5625vw 0;
+        
+        h3{
+          margin-bottom: 1.25vw;
+        }
+
+        .place{
+          margin-bottom: 0.7812vw;
+        }
+
+        .date{
+          margin-bottom: 1.875vw;
+        }
+
+        .text{
+          text-overflow: ellipsis;
+        }
+      }
+
+      .button_area{
+        width: 13.75vw;
+        padding-left: 4.6875vw;
+        padding: 1.5625vw 0 1.5625vw 4.6875vw;
+        
+        button{
+          width: 13.75vw;
+          height: 13.75vw;
+          border-radius: 1.5625vw;
+        }
+      }
+    }
+
+    .side_content{
+      width: 100%;
+      padding: 2.8125vw 3.75vw 7.8125vw;
+      border-radius: 2.5vw;
+
+      h4{
+        margin-bottom: 3.125vw;
+      }
+
+      .flex_wrap{
+        display: flex;
+        justify-content: center;
+        gap: 6.7187vw;
+      }
+
+      img{
+        margin-bottom: 2.5vw;
+      }
+
+      .side_cont1{
+        width: 31.25vw;
+        margin-bottom: 0;
+      }
+      .side_cont2{
+        width: 31.25vw;
+      }
+    }
+  }
+
+
+
 }

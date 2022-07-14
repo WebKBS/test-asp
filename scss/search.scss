@@ -101,3 +101,72 @@
     }
   }
 }
+
+
+// @media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+//   #header{
+//     padding: 0 24px 0 16px;
+//     height: 150px;
+//   }
+
+//   .search{
+//     padding-top: 35px;
+//     gap: 14px;
+//     margin-bottom: 29px;
+//   }
+
+
+
+//   .logo{
+//     width: 130px;
+//   }
+
+//   .search_wrap{
+//     width: 100%;
+
+//     .search_input{
+//       width: 100%;
+//       border-radius: 45px;
+//       line-height: 46px;
+//       padding: 0 60px 0 24px;
+//     }
+
+//     .search_btn{
+//       width: 26px;
+//       height: 26px;
+//       right: 21px;
+//     }
+//   }
+
+
+
+
+//   .tab_menu{
+//     margin-left: 169px;
+
+//     ul{
+//       gap: 20px;
+//     }
+
+//     li{
+//       height: 35px;
+
+//       &:nth-of-type(1){width: 50px;}
+//       &:nth-of-type(2){width: 80px;}
+//       &:nth-of-type(3){width: 80px;}
+//       &:nth-of-type(4){width: 64px;}
+//       &:nth-of-type(5){width: 64px;}
+
+//       &.on::after{
+//         height: 3px;
+//       }
+//     }
+//   }
+
+
+// }
+
+
+
+// @media screen and (max-width: 767px) {}
