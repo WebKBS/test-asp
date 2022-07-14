@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* 폰트 패밀리 */
+/* 컬러 */
+.cont1 {
+  background: url(../images/metaverse/metaverse_main_back.jpg) no-repeat center 0/1920px auto;
+}
+.cont1 .inner {
+  padding: 98px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cont1 h2 {
+  width: 342px;
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  margin-bottom: 25px;
+}
+.cont1 h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+.cont1 .sub_text {
+  width: 372px;
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cont1 .img_wrap {
+  width: 567px;
+}
+.cont1 .img_wrap img {
+  filter: drop-shadow(12px 12px 20px rgba(0, 0, 0, 0.3));
+}
+
+.cont2 h2 {
+  margin-bottom: 17px;
+}
+.cont2 .sub_text {
+  margin-bottom: 30px;
+}
+.cont2 .content1 .inner {
+  padding: 80px 22px 60px;
+}
+.cont2 .content1 .content_in {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 58px;
+}
+.cont2 .content1 .content_in > img {
+  width: 59%;
+  image-rendering: -webkit-optimize-contrast;
+}
+.cont2 .content1 .internal {
+  max-width: 372px;
+  border: 1px solid #c5d4dd;
+  border-radius: 24px;
+  margin-bottom: 30px;
+}
+.cont2 .content1 .internal h3 {
+  color: #933bff;
+  padding: 20px 24px 19px 24px;
+  border-bottom: 1px solid #c5d4dd;
+}
+.cont2 .content1 .internal ul {
+  padding: 20px 24px 21px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cont2 .content1 .internal li {
+  padding-left: 22px;
+  color: #5E5E5E;
+  position: relative;
+}
+.cont2 .content1 .internal li::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 10px;
+  background: url(../images/metaverse/Polygon1.svg) no-repeat center center/12px 10px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.cont2 .content1 .external {
+  max-width: 372px;
+  border: 1px solid #c5d4dd;
+  border-radius: 24px;
+}
+.cont2 .content1 .external h3 {
+  color: #40aaf8;
+  padding: 20px 24px 19px 24px;
+  border-bottom: 1px solid #c5d4dd;
+}
+.cont2 .content1 .external ul {
+  padding: 20px 24px 21px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cont2 .content1 .external li {
+  padding-left: 22px;
+  color: #5E5E5E;
+  position: relative;
+}
+.cont2 .content1 .external li::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 10px;
+  background: url(../images/metaverse/Polygon2.svg) no-repeat center center/12px 10px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.cont2 .content2 .inner {
+  padding: 60px 22px 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .cont1 {
+    background: url(../images/mobile/metaverse_back.jpg) no-repeat center 0/cover;
+  }
+  .cont1 .inner {
+    padding: 5.7812vw 4.0625vw;
+    display: flex;
+    gap: 6.7187vw;
+  }
+  .cont1 h2 {
+    width: 37.5vw;
+    margin-bottom: 2.5vw;
+  }
+  .cont1 h2::after {
+    width: 4.6875vw;
+    height: 0.7812vw;
+    top: -3.125vw;
+  }
+  .cont1 .sub_text {
+    width: 44.375vw;
+  }
+  .cont1 .img_wrap {
+    width: 88.5937vw;
+  }
+  .cont1 .img_wrap img {
+    filter: drop-shadow(1.875vw 1.875vw 3.125vw rgba(0, 0, 0, 0.3));
+  }
+
+  .cont2 h2 {
+    margin-bottom: 2.1875vw;
+  }
+  .cont2 .sub_text {
+    margin-bottom: 4.6875vw;
+  }
+  .cont2 .content1 .inner {
+    padding: 6.25vw 4.0625vw 9.375vw;
+  }
+  .cont2 .content1 .content_in {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.125vw;
+  }
+  .cont2 .content1 .content_in > img {
+    width: 100%;
+  }
+  .cont2 .content1 .right_cont {
+    display: flex;
+    gap: 3.125vw;
+  }
+  .cont2 .content1 .internal {
+    max-width: none;
+    width: 50%;
+    border-radius: 3.75vw;
+    margin-bottom: 0;
+  }
+  .cont2 .content1 .internal h3 {
+    padding: 3.125vw 3.75vw 2.9687vw 3.75vw;
+  }
+  .cont2 .content1 .internal ul {
+    padding: 3.125vw 3.75vw 3.2812vw 3.75vw;
+    gap: 1.25vw;
+    font-size: 2.5vw;
+  }
+  .cont2 .content1 .internal li {
+    padding-left: 3.4375vw;
+  }
+  .cont2 .content1 .internal li::after {
+    width: 1.875vw;
+    height: 1.5625vw;
+    background: url(../images/metaverse/Polygon1.svg) no-repeat center center/1.875vw 1.5625vw;
+    top: 0.7812vw;
+  }
+  .cont2 .content1 .external {
+    width: 50%;
+    border-radius: 3.75vw;
+  }
+  .cont2 .content1 .external h3 {
+    padding: 3.125vw 3.75vw 2.9687vw 3.75vw;
+  }
+  .cont2 .content1 .external ul {
+    padding: 3.125vw 3.75vw 3.2812vw 3.75vw;
+    gap: 1.25vw;
+    font-size: 2.5vw;
+  }
+  .cont2 .content1 .external li {
+    padding-left: 3.4375vw;
+  }
+  .cont2 .content1 .external li::after {
+    width: 1.875vw;
+    height: 1.5625vw;
+    background: url(../images/metaverse/Polygon2.svg) no-repeat center center/1.875vw 1.5625vw;
+    top: 0.7812vw;
+  }
+  .cont2 .content2 .inner {
+    padding: 0 3.4375vw 12.5vw;
+  }
+}
+
+/*# sourceMappingURL=Metaverse.css.map */
