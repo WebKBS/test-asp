@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import "./setting.scss";
+
+
+
+.inner{
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  h2{
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .ft_body2.gray6{
+    margin-bottom: 42px;
+  }
+  .sub_txt{
+    margin-bottom: 106px;
+  }
+}
+
+
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 18px;
+  margin-bottom: 12px;
+}
+
+progress::-webkit-progress-bar {
+  background: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 10px #ccc;
+}
+progress::-webkit-progress-value {
+  border-radius: 10px;
+  background: $primary;
+}

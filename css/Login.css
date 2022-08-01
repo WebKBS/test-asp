@@ -1,0 +1,44 @@
+.inner {
+  padding: 0 22px;
+}
+
+.top_title {
+  padding-top: 54px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.top_title .logo {
+  width: 162px;
+  margin: 0 auto 14px;
+}
+
+.form_wrap {
+  margin-bottom: 20px;
+}
+.form_wrap input[type=text].user_id,
+.form_wrap input[type=password].user_pw {
+  margin-bottom: 10px;
+}
+.form_wrap .form_write {
+  margin-bottom: 46px;
+  position: relative;
+}
+.form_wrap .auto_check_box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.form_wrap .form_msg {
+  color: #E54939;
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  display: none;
+}
+
+.sign_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=Login.css.map */

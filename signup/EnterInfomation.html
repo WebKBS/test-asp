@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=2.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <!-- <meta name="keyword" content=""> -->
+    <!-- <meta name="format-detection" content="telephone=no,address=no,email=no"> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="apple-mobile-web-app-title" content="" /> -->
+
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta property="og:title" content="" /> -->
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+    <title>Kiosk</title>
+
+    <!-- <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="" /> -->
+    <!-- <link rel="apple-touch-icon" href="" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/setting.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/EnterInfomation.css" />
+
+    <script src="../js/EnterInfomation.js" defer></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <!-- 다음 주소찾기 api -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="container">
+        <div class="top_box">
+          <h1 class="logo">
+            <img src="../images/icon/logo_original.svg" alt="오더나인" />
+          </h1>
+          <div class="navi">
+            <div class="line_wrap">
+              <span class="circle on"></span>
+              <span class="line on"></span>
+              <span class="circle on"></span>
+              <span class="line"></span>
+              <span class="circle"></span>
+            </div>
+            <ul>
+              <li class="ft_body2">
+                <span class="on"></span>
+                약관동의
+              </li>
+              <li class="ft_body2">
+                <span></span>
+                본인인증 / 정보입력
+              </li>
+              <li class="ft_body2">
+                <span></span>
+                가입완료
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="inner">
+          <form>
+            <div class="id_wrap">
+              <p class="ft_sub_t2">아이디</p>
+              <input type="text" id="email" class="info_input" placeholder="자주 쓰는 E-Mail 주소 입력" />
+              <p class="error_msg email_check ft_body2"></p>
+            </div>
+            <div class="pw_wrap">
+              <p class="ft_sub_t2">비밀번호</p>
+              <input type="password" id="pw" class="info_input" placeholder="영문, 숫자, 특수문자 조합, 8~16자리" />
+              <input type="password" id="c_pw" class="info_input" placeholder="비밀번호 재확인" />
+              <p class="error_msg pw_check ft_body2"></p>
+            </div>
+            <div class="name_wrap">
+              <p class="ft_sub_t2">이름</p>
+              <input type="text" class="info_input" readonly />
+            </div>
+            <div class="birth_wrap">
+              <p class="ft_sub_t2">생년월일</p>
+              <div class="flex">
+                <input type="text" class="info_input" readonly />
+                <div class="sexuality">
+                  <input type="radio" id="male" name="sexuality" checked="checked" />
+                  <label for="male" class="ft_sub_t2">남</label>
+                  <input type="radio" id="female" name="sexuality" />
+                  <label for="female" class="ft_sub_t2">여</label>
+                </div>
+              </div>
+            </div>
+            <div class="address_wrap">
+              <p class="ft_sub_t2">주소</p>
+              <div class="flex">
+                <input type="text" id="zonecode" class="info_input" readonly />
+                <button type="button" id="find_ads" class="find_btn ft_sub_t2">주소찾기</button>
+              </div>
+              <input type="text" id="address" class="info_input" readonly />
+              <input type="text" id="ads" class="info_input" placeholder="상세주소" autocomplete="off" />
+            </div>
+            <button type="button" id="complete_btn" class="join_btn ft_sub_t1">회원가입 완료</button>
+          </form>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- wrap -->
+  </body>
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import "./setting.scss";
+
+
+#wrap{
+  background-color: $gray0;
+}
+
+#container{
+  background: $gray0;
+}
+
+.inner{
+  padding: 70px 22px 30px;
+  text-align: center;
+
+  h2{
+    margin-bottom: 30px;
+  }
+
+  .sub_txt{
+    margin-bottom: 30px;
+  }
+
+  input[type=text].info_input{
+    margin-bottom: 20px;
+  }
+}

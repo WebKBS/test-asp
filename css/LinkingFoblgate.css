@@ -1,0 +1,23 @@
+#wrap {
+  background-color: #F5F7FA;
+}
+
+#container {
+  background: #F5F7FA;
+}
+
+.inner {
+  padding: 70px 22px 30px;
+  text-align: center;
+}
+.inner h2 {
+  margin-bottom: 30px;
+}
+.inner .sub_txt {
+  margin-bottom: 30px;
+}
+.inner input[type=text].info_input {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=LinkingFoblgate.css.map */

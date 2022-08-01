@@ -1,45 +1,32 @@
 @charset "utf-8";
 
-/* MontserratAlternates */
 @font-face {
-    src: url(../font/Montserrat-ExtraBold.ttf) format('truetype');
-    font-family: "Mont-ExtraBold";
-}
-
-/* noto - sans KR */
-@font-face {
-    src: url(../font/Montserrat-Bold.ttf) format('truetype');
-    font-family: "Mont-Bold";
+    src: url(../font/roboto-thin.ttf) format('truetype');
+    font-family: "roboto_thin";
 }
 
 @font-face {
-    src: url(../font/Montserrat-SemiBold.ttf) format('truetype');
-    font-family: "Mont-SemiBold";
+    src: url(../font/roboto-light.ttf) format('truetype');
+    font-family: "roboto_light";
 }
 
 @font-face {
-    src: url(../font/Montserrat-Medium.ttf) format('truetype');
-    font-family: "Mont-Medium";
-}
-
-@font-face {
-    src: url(../font/Montserrat-Regular.ttf) format('truetype');
-    font-family: "Mont-Regular";
-}
-
-
-
-/* roboto */
-@font-face{
-    src: url(../font/roboto-medium.ttf) format('truetype');
-    font-family: "Roboto-Medium";
-}
-@font-face{
     src: url(../font/roboto-regular.ttf) format('truetype');
-    font-family: "Roboto-Regular";
+    font-family: "roboto_regular";
 }
-@font-face{
+
+@font-face {
+    src: url(../font/roboto-medium.ttf) format('truetype');
+    font-family: "roboto_medium";
+}
+
+@font-face {
     src: url(../font/roboto-bold.ttf) format('truetype');
-    font-family: "Roboto-Bold";
+    font-family: "roboto_bold";
+}
+
+@font-face {
+    src: url(../font/roboto-black.ttf) format('truetype');
+    font-family: "roboto_black";
 }
 

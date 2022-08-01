@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import "./setting.scss";
+
+#container{
+  padding-top: 20px;
+}
+
+.top_title{
+  text-align: center;
+  margin-bottom: 4px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $gray4;
+}
+
+.inner{
+  padding: 20px 22px;
+}
+
+.box_title{
+  padding-bottom: 7px;
+  border-bottom: 1px solid $gray5;
+}
+
+.box_info{
+  padding: 16px 0 30px;
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .img_wrap{
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      width: auto;
+      height: 100%;
+    }
+  }
+  
+  .text_wrap{
+
+    .text_title{
+      margin-bottom: 4px;
+    }
+  }
+}

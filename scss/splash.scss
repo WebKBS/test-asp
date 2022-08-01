@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "./setting.scss";
+
+.logo{
+  width: 162px;
+  margin: 127px auto 22px;
+
+  img{
+    width: auto;
+    height: 48px;
+  }
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 67px;
+}
+
+.sub_text{
+  text-align: center;
+}
