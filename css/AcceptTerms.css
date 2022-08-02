@@ -20,7 +20,7 @@ html, body, #wrap {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 12px;
-  padding: 0 22px;
+  padding: 0 24px;
 }
 .line_wrap span {
   display: block;
@@ -40,7 +40,7 @@ html, body, #wrap {
 }
 
 .navi {
-  padding: 0 22px;
+  padding: 0 24px;
 }
 .navi ul {
   display: flex;
