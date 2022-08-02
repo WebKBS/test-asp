@@ -1,5 +1,10 @@
+html, body, #wrap {
+  height: 100%;
+}
+
 #container {
   background: #fff;
+  height: 100%;
 }
 
 .inner {

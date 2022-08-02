@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import "./setting.scss";
+
+html, body, #wrap{
+  height: 100%;
+}
+
+#wrap{
+  background-color: $secondary_dark;
+}
+
+#container{
+  background-color: $secondary_dark;
+  height: 100%;
+}
+
+.inner{
+  padding: 30px 38px;
+  height: 100%;
+}
+
+h2{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.sub_text{
+  text-align: center;
+  color: $gray6;
+  margin-bottom: 14px;
+}

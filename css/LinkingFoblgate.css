@@ -1,3 +1,7 @@
+html, body, #wrap {
+  height: 100%;
+}
+
 #wrap {
   background-color: #F5F7FA;
 }

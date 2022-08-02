@@ -14,15 +14,14 @@ LoginBtn.addEventListener('click', () => {
   } else if (pwInput.value === '') {
     errorMsg.style.display = 'block';
     errorMsg.textContent = errorMsgArray[1];
+  } else {
+    // 만족시 index.html 이동
+    window.location.href = './index.html';
   }
 
   setTimeout(() => {
     errorMsg.style.display = 'none';
   }, 3000);
-
-  /* 비밀 번호 일치 하지 않을때 작성 */
-
-  /* 회원정보 일치하지 않을때 작성 */
 });
 
 idInput.addEventListener('click', () => {

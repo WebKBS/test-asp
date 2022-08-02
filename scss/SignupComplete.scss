@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import "./setting.scss";
 
+html, body, #wrap{
+  height: 100%;
+}
+
 #wrap{
   background-color: $gray0;
 }

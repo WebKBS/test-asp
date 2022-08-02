@@ -1,6 +1,15 @@
+html, body, #wrap {
+  height: 100%;
+}
+
+#container {
+  height: 100%;
+}
+
 .logo {
   width: 162px;
-  margin: 127px auto 22px;
+  margin: 0 auto 22px;
+  padding-top: 127px;
 }
 .logo img {
   width: auto;

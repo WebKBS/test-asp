@@ -1,7 +1,13 @@
 @charset "UTF-8";
 @import "./setting.scss";
 
+html, body, #wrap{
+  height: 100%;
+}
 
+#container{
+  height: 100%;
+}
 
 .inner{
   padding: 0 22px;
@@ -9,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 
   h2{
     text-align: center;
