@@ -1,4 +1,13 @@
-import { sayHi } from './modules';
+import { alertModalFunc } from './modules.js';
 
-alert(sayHi); // 함수
-sayHi('John'); // Hello, John!
+const $input = document.querySelector('.normal');
+
+let reg = /(\d)\1\1/i;
+
+/* 연속된 숫자 사용시 */
+$input.addEventListener('change', () => {
+  if (reg.test($input.value)) {
+    alertModalFunc('연속된 숫자를 사용할 수 없습니다.', '');
+    $input.value = '';
+  }
+});
