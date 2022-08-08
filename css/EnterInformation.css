@@ -126,6 +126,7 @@ form > div > p {
   background: #262626;
   color: #fff;
   padding: 0 16px;
+  min-width: 90px;
 }
 
-/*# sourceMappingURL=EnterInfomation.css.map */
+/*# sourceMappingURL=EnterInformation.css.map */

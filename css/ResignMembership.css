@@ -1,0 +1,72 @@
+html, body, #wrap {
+  height: 100%;
+}
+
+#header {
+  background: #262626;
+  height: 54px;
+}
+#header .inner {
+  padding: 0 24px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#header a {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+#container {
+  height: calc(100% - 54px);
+  min-height: 582px;
+}
+
+.inner {
+  height: 100%;
+  padding: 40px 22px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info_box {
+  margin-bottom: 28px;
+}
+
+.id_wrap {
+  margin-bottom: 26px;
+}
+.id_wrap h2 {
+  margin-bottom: 8px;
+}
+
+.text_wrap {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #E4E6EB;
+}
+.text_wrap h2 {
+  margin-bottom: 20px;
+}
+
+.check_wrap {
+  display: flex;
+  align-items: center;
+  padding: 11px 0;
+  gap: 6px;
+}
+
+.button_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/*# sourceMappingURL=ResignMembership.css.map */

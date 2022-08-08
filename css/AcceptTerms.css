@@ -76,8 +76,9 @@ html, body, #wrap {
   gap: 6px;
   padding: 7px 0;
 }
-.inner_box > p button {
+.inner_box > p a {
   margin-left: auto;
+  color: #9b9fa5;
 }
 .inner_box .all_check {
   padding-bottom: 18px;

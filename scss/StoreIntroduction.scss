@@ -1,0 +1,191 @@
+@charset "UTF-8";
+@import "./setting.scss";
+
+html, body, #wrap{
+  height: 100%;
+}
+
+
+#header{
+  background: $secondary;
+  height: 54px;
+  
+  .inner{
+    padding: 0 24px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  a{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+}
+
+#container{
+  min-height: calc(100vh - 128px);
+}
+
+
+.top_box{
+  padding: 20px 22px;
+  border-bottom: 1px solid $gray3;
+  
+  h3{
+    margin-bottom: 6px;
+  }
+
+  .button_wrap{
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+
+    button{
+      padding: 6px 7px;
+      border-radius: 6px;
+
+      span{
+        background-repeat: no-repeat;
+        background-position: 0 center;
+      }
+    }
+
+    .call_btn{
+      background-color: $primary;
+      color: #fff;
+
+      span{
+        padding-left: 22px;
+        background-size: auto 14px;
+        background-image: url(../images/icon/phone_call_icon.svg);
+      }
+    }
+
+    .road_btn{
+      background-color: $primary_dark;
+      color: #fff;
+
+      span{
+        padding-left: 22px;
+        background-size: auto 18px;
+        background-image: url(../images/icon/road_view_icon.svg);
+      }
+    }
+
+    .percent{
+      background-color: $gray4;
+
+      span{}
+    }
+  }
+
+  .slide_box{
+    margin-bottom: 10px;
+  }
+
+  .reference{
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    background: $gray3;
+    
+    span{
+      padding-left: 18px;
+      background: url(../images/icon/notice_icon.svg) no-repeat 0 center / auto 14px;
+    }
+  }
+}
+
+
+.details{
+  border-bottom: 1px solid $gray3;
+  padding: 0 22px;
+
+  .title{
+    padding: 9px 0;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .open_btn{
+    width: 22px;
+    height: 22px;
+    background: url(../images/icon/market_info_drop_btn.svg) no-repeat center   / contain;
+  }
+}
+
+.details_info{
+  padding-bottom: 16px;
+  display: none;
+
+  &.on{
+    display: block;
+  }
+
+  > div{
+    width: 100%;
+    border-radius: 6px;
+    background: $gray3;
+    padding: 14px 12px;
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      li{
+        display: flex;
+        gap: 50px;
+
+        p:first-child{
+          min-width: 60px;
+        }
+      }
+
+    }
+  }
+
+  .box1{
+    margin-bottom: 10px;
+  }
+}
+
+.menu_list{
+  padding: 20px 22px;
+
+  .title{
+    color: $primary;
+    margin-bottom: 4px;
+  }
+
+  ul{}
+
+  li{
+    padding: 14px 0;
+    display: flex;
+    gap: 20px;
+
+    .img_wrap{
+      width: 116px;
+      height: 80px;
+    }
+
+    .price{
+      color: $primary;
+      margin-bottom: 4px;
+    }
+
+    .unit{
+      color: $gray6;
+    }
+  }
+}

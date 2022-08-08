@@ -16,7 +16,7 @@ html, body, #wrap{
 
 .inner{
   padding: 30px 38px;
-  height: 100%;
+  // height: 100%;
 }
 
 h2{
@@ -29,4 +29,56 @@ h2{
   text-align: center;
   color: $gray6;
   margin-bottom: 14px;
+}
+
+// .normal{
+//   margin-bottom: 52px;
+// }
+
+.button_wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cancel_btn{
+  background-color: #000;
+  border: 1px solid #fff;
+}
+
+.set_input{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  
+  &.on{
+    display: flex;
+  }
+}
+
+.confrim_input{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  &.on{
+    display: flex;
+  }
+}
+
+.position{
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  color: #fff;
+}
+
+.input_wrap{
+  margin-bottom: 52px;
+  position: relative;
+
 }

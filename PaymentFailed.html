@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=2.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="keyword" content=""> -->
+    <!-- <meta name="format-detection" content="telephone=no,address=no,email=no"> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="apple-mobile-web-app-title" content="" /> -->
+
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta property="og:title" content="" /> -->
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+    <title>Kiosk</title>
+
+    <!-- <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="" /> -->
+    <!-- <link rel="apple-touch-icon" href="" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/PaymentFailed.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="inner">
+          <a href="./index.html">
+            <img src="./images/icon/header_back_btn.svg" alt="이전버튼" />
+          </a>
+          <p class="ft_body1">결제 실패</p>
+        </div>
+      </header>
+      <main id="container">
+        <div class="inner">
+          <div class="img_wrap">
+            <img src="./images/icon/mileage_use_error_icon.svg" alt="사용 실패 이미지" />
+            <p class="ft_title2">적립금 사용 실패</p>
+            <p class="sub_text ft_body2">
+              적립금 사용이 정상 처리 되지 않았습니다.<br />
+              처음부터 다시 진행해주세요.
+            </p>
+          </div>
+          <div class="table_wrap">
+            <div class="button_wrap">
+              <a href="./QRcodeScan.html" class="cancel_btn ft_sub_t1">QR코드 다시 생성</a>
+              <a href="./index.html" class="join_btn ft_sub_t1">키오스크 결제 후 다시 시작</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- wrap -->
+  </body>
+</html>

@@ -52,3 +52,11 @@ function allCheckStatus() {
     allCheck.checked = false;
   }
 }
+
+joinBtn.addEventListener('click', () => {
+  window.location.href = './EnterInformation.html';
+  checkBox.forEach((e) => {
+    e.checked = false;
+  });
+  allCheck.checked = false;
+});

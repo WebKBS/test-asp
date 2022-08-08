@@ -88,8 +88,9 @@ html, body, #wrap{
     gap: 6px;
     padding: 7px 0;
 
-    button{
+    a{
       margin-left: auto;
+      color: $gray5_5;
     }
   }
 

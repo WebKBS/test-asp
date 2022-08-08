@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=2.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="keyword" content=""> -->
+    <!-- <meta name="format-detection" content="telephone=no,address=no,email=no"> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="apple-mobile-web-app-title" content="" /> -->
+
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta property="og:title" content="" /> -->
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+    <title>Kiosk</title>
+
+    <!-- <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="" /> -->
+    <!-- <link rel="apple-touch-icon" href="" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/Preferences.css" />
+
+    <script src="./js/Preferences.js" type="module"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="inner">
+          <a href="./index.html">
+            <img src="./images/icon/header_back_btn.svg" alt="이전버튼" />
+          </a>
+          <p class="ft_body1">환경설정</p>
+        </div>
+      </header>
+      <main id="container">
+        <div class="set_login">
+          <div class="title_wrap">
+            <h3 class="ft_sub_t1">로그인 설정</h3>
+            <a href="./Login.html" class="white_btn ft_sub_t3">로그아웃</a>
+          </div>
+          <div class="sub_wrap">
+            <p class="ft_body2">내정보관리</p>
+            <a href="./InformationManagement.html" class="white_btn ft_sub_t3">수정하기</a>
+          </div>
+          <div class="sub_wrap">
+            <p class="ft_body2">자동로그인</p>
+            <!-- on off 클래스 -->
+            <button type="button" class="on_off_btn" id="autoLogin">
+              <span></span>
+            </button>
+          </div>
+        </div>
+        <div class="set_qr">
+          <div class="title_wrap">
+            <h3 class="ft_sub_t1">QR코드 인증번호 설정</h3>
+          </div>
+          <div class="sub_wrap">
+            <p class="ft_body2">인증번호 변경</p>
+            <a href="./Certification.html" class="white_btn ft_sub_t3">변경하기</a>
+          </div>
+        </div>
+        <div class="set_alarm">
+          <div class="title_wrap">
+            <h3 class="ft_sub_t1">알림설정</h3>
+          </div>
+          <div class="sub_wrap">
+            <p class="ft_body2">PUSH 알림</p>
+            <button type="button" class="on_off_btn" id="pushAlarm">
+              <span></span>
+            </button>
+          </div>
+          <div class="sub_wrap">
+            <p class="ft_body2">마케팅 / 이벤트 알림</p>
+            <!-- on off 클래스 -->
+            <button type="button" class="on_off_btn" id="marketing">
+              <span></span>
+            </button>
+          </div>
+        </div>
+        <div class="version">
+          <div class="title_wrap">
+            <h3 class="ft_sub_t1">모바일앱 버전</h3>
+            <p class="ft_body2">v1.1.2.1 (최신)</p>
+          </div>
+        </div>
+        <div class="set_location">
+          <div class="title_wrap">
+            <h3 class="ft_sub_t1">위치정보 활용여부</h3>
+            <!-- on off 클래스 -->
+            <button type="button" class="on_off_btn" id="termsBtn">
+              <span></span>
+            </button>
+          </div>
+          <div class="sub_wrap">
+            <p class="ft_body2">위치기반서비스 이용약관</p>
+            <a href="./LocationBasedTerms.html" class="white_btn ft_sub_t3">확인하기</a>
+          </div>
+        </div>
+        <div class="service">
+          <div class="title_wrap">
+            <h3 class="ft_sub_t1">위치정보 활용여부</h3>
+          </div>
+          <div class="sub_wrap">
+            <a href="./ServiceTerms.html">
+              <p class="ft_body2">서비스 이용약관</p>
+              <button type="button" class="next_btn"></button>
+            </a>
+          </div>
+          <div class="sub_wrap">
+            <a href="./PrivacyPolicy.html">
+              <p class="ft_body2">개인정보 처리방침</p>
+              <button type="button" class="next_btn"></button>
+            </a>
+          </div>
+          <div class="sub_wrap">
+            <a href="./License.html">
+              <p class="ft_body2">오픈소스 라이선스</p>
+              <button type="button" class="next_btn"></button>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- wrap -->
+  </body>
+</html>

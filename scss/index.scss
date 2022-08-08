@@ -555,37 +555,3 @@
   }
 }
 
-
-/* 스와이퍼 */
-.slide_box{
-  padding-bottom: 28px;
-  margin-bottom: 32px;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-  bottom: 10px;
-}
-.swiper-pagination-bullet{
-  width: 6px;
-  height: 6px;
-}
-
-.swiper-pagination-bullet-active{
-  background: $primary !important;
-}
-
-/* 셀렉트 박스 */
-select{
-  width: 82px;
-  height: 32px;
-  border: 1px solid $gray2;
-  border-radius: 6px;
-  padding: 0 10px;
-  background: $secondary url(../images/icon/arrow_bottom.svg) no-repeat right 10px center / auto 7px;
-  color: #fff;
-  
-  option{
-    color: #333;
-    padding: 0 20px;
-  }
-}

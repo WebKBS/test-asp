@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=2.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="keyword" content=""> -->
+    <!-- <meta name="format-detection" content="telephone=no,address=no,email=no"> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="apple-mobile-web-app-title" content="" /> -->
+
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta property="og:title" content="" /> -->
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+    <title>Kiosk</title>
+
+    <!-- <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="" /> -->
+    <!-- <link rel="apple-touch-icon" href="" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/ResignMembership.css" />
+
+    <script src="./js/ResignMembership.js" defer></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="inner">
+          <a href="./index.html">
+            <img src="./images/icon/header_back_btn.svg" alt="이전버튼" />
+          </a>
+          <p class="ft_body1">회원탈퇴</p>
+        </div>
+      </header>
+      <main id="container">
+        <div class="inner">
+          <div class="info_box">
+            <div class="id_wrap">
+              <h2 class="ft_sub_t2">아이디</h2>
+              <input type="text" class="info_input" readonly value="the9@order9.co.kr" />
+            </div>
+            <div class="text_wrap">
+              <h2 class="ft_sub_t2">서비스 탈퇴를 진행합니다.</h2>
+              <div class="info_text ft_body2">
+                회원 탈퇴 시 이용 중이거나<br />
+                저장해 놓은 모든 정보가 삭제 됩니다.
+                <br /><br />
+                적립하신 마일리지는 적립일 기준으로 1년간<br />
+                유지됩니다.
+                <br /><br />
+                (단, 동일 휴대폰번호로 재가입시에만 적용됨)
+              </div>
+            </div>
+            <div class="check_wrap">
+              <input type="checkbox" />
+              <span class="ft_sub_txt1">안내 사항을 모두 확인하였으며, 동의합니다.</span>
+            </div>
+          </div>
+          <div class="button_wrap">
+            <button type="button" class="ft_title2 join_btn" disabled>확인</button>
+            <button type="button" class="ft_title2 cancel_btn">취소</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- wrap -->
+  </body>
+</html>

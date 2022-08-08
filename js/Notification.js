@@ -1,3 +1,5 @@
+import { accordionEvent } from './modules.js';
+
 const tabBtn = document.querySelectorAll('.tab_box p');
 const tabContent = document.querySelectorAll('.tab_content');
 const nullContent = document.querySelector('.no_notification');
@@ -27,20 +29,4 @@ for (let i = 0; i < tabBtn.length; i++) {
 const noticeBtn = document.querySelectorAll('.event_wrap .title_wrap');
 const noticeText = document.querySelectorAll('.event_wrap .text');
 
-noticeBtn.forEach((ev) => {
-  ev.addEventListener('click', (event) => {
-    let target = event.currentTarget;
-    let textElement = target.nextElementSibling;
-
-    if (textElement.classList.contains('on')) {
-      textElement.classList.remove('on');
-    } else {
-      noticeText.forEach((ev) => {
-        ev.classList.remove('on');
-      });
-
-      textElement.classList.add('on');
-    }
-    // console.log(textElement);
-  });
-});
+accordionEvent(noticeBtn, noticeText);

@@ -36,16 +36,37 @@
   <body>
     <div id="wrap">
       <main id="container">
-        <div class="inner">
-          <h2 class="ft_title2">QR코드 인증번호 설정</h2>
-          <p class="sub_text ft_sub_txt2">안전한 앱사용을 위한 절차입니다.</p>
-          <input type="number" class="normal ft_body2" pattern="/d*" placeholder="인증번호 6자리를 입력해주세요." />
+        <!-- display class on off -->
+        <div class="inner set_input on">
+          <div>
+            <h2 class="ft_title2">QR코드 인증번호 설정</h2>
+            <p class="sub_text ft_sub_txt2">안전한 앱사용을 위한 절차입니다.</p>
+            <div class="input_wrap">
+              <input type="password" maxlength="6" class="normal ft_body2" id="set_input" pattern="/d*" placeholder="인증번호 6자리를 입력해주세요." />
+            </div>
+          </div>
+          <div class="button_wrap">
+            <button type="button" class="join_btn ft_title2" id="setConfirm">확인</button>
+            <button type="button" class="cancel_btn ft_title2" onclick="window.location.href='./index.html'">취소</button>
+          </div>
+        </div>
+        <!-- display class on off -->
+        <div class="inner confrim_input">
+          <div>
+            <h2 class="ft_title2">인증번호 확인</h2>
+            <p class="sub_text ft_sub_txt2">안전한 앱사용을 위한 절차입니다.</p>
+            <div class="input_wrap">
+              <input type="password" maxlength="6" class="normal ft_body2" id="confrim_input" pattern="/d*" placeholder="인증번호 6자리를 입력해주세요." />
+              <button class="position ft_sub_txt2">인증번호 재설정</button>
+            </div>
+          </div>
+          <div class="button_wrap">
+            <button type="button" class="join_btn ft_title2" id="confirm">확인</button>
+            <button type="button" class="cancel_btn ft_title2" onclick="window.location.href='./index.html'">취소</button>
+          </div>
         </div>
       </main>
     </div>
     <!-- wrap -->
-
-    <!-- alert 모달 -->
-    <div class="alert_modal_wrap"></div>
   </body>
 </html>

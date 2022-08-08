@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1.0,
     maximum-scale=2.0, minimum-scale=1.0, user-scalable=no"
     />
+    <meta name="format-detection" content="telephone=no" />
     <!-- <meta name="keyword" content=""> -->
     <!-- <meta name="format-detection" content="telephone=no,address=no,email=no"> -->
     <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
@@ -27,31 +28,39 @@
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/screen.css" />
+    <link rel="stylesheet" href="./css/ChangeAddress.css" />
+
+    <script src="./js/ChangeAddress.js" type="module"></script>
   </head>
   <body>
     <div id="wrap">
-      <main id="container">
+      <header id="header">
         <div class="inner">
-          <nav>
-            <span class="on"></span>
-            <span></span>
-            <span></span>
-          </nav>
-          <div class="img_wrap">
-            <img src="./images/main/splash_img1.png" alt="스플래쉬 이미지1" />
-          </div>
-          <div class="bubble_text ft_sub_t1">무인 키오스크 전용 적립 서비스</div>
-          <p class="ad_title ft_sub_t1">
-            무인 키오스크에서 결제만 하지말고,
-            <br />
-            적립금 쌓고 혜택 누리자!
-          </p>
-          <button class="next_btn ft_sub_t4">다음으로</button>
+          <a href="./InformationManagement.html">
+            <img src="./images/icon/header_back_btn.svg" alt="이전버튼" />
+          </a>
+          <p class="ft_body1">주소변경</p>
         </div>
-      </main>
+      </header>
+      <div id="container">
+        <div class="inner">
+          <div class="address_wrap">
+            <div class="flex">
+              <input type="text" id="zonecode" class="info_input" readonly />
+              <button type="button" id="find_ads" class="find_btn ft_sub_t2">주소찾기</button>
+            </div>
+            <input type="text" id="address" class="info_input" readonly />
+            <input type="text" id="ads" class="info_input" placeholder="상세주소" autocomplete="off" />
+          </div>
+          <button type="button" id="complete_btn" class="cancel_btn ft_sub_t1">변경하기</button>
+        </div>
+      </div>
     </div>
     <!-- wrap -->
+
+    <!-- 다음 주소찾기 api -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
   </body>
 </html>
