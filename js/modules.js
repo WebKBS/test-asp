@@ -102,15 +102,15 @@ export function textBoxModalFunc(title, text1, date, text2) {
           <p class="modal_title ft_sub_t1">${title}</p>
           <div class="modal_box">
             <p class="ft_sub_txt1">
-              <span>🞄</span>
+              <span>&bull;</span>
               ${text1}
             </p>
             <p class="ft_sub_txt1">
-              <span>🞄</span>
+              <span>&bull;</span>
               ${date}
             </p>
             <p class="ft_sub_txt1">
-              <span>🞄</span>
+              <span>&bull;</span>
               ${text2}
             </p>
           </div>
