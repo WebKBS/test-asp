@@ -1,0 +1,276 @@
+@charset "utf-8";
+@import './setting.scss';
+
+@font-face {
+    src: url(../font/SUIT-Regular.otf) format('OpenType');
+    font-family: 'suit_regular';
+}
+
+@font-face {
+    src: url(../font/SUIT-Medium.otf) format('OpenType');
+    font-family: 'suit_medium';
+}
+
+@font-face {
+    src: url(../font/SUIT-SemiBold.otf) format('OpenType');
+    font-family: 'suit_semibold';
+}
+
+@font-face {
+    src: url(../font/SUIT-Bold.otf) format('OpenType');
+    font-family: 'suit_bold';
+}
+
+/* 타이틀 */
+.h1 {
+    font-family: $font_medium;
+    font-size: 60px;
+    line-height: 170%;
+}
+
+.h2 {
+    font-family: $font_bold;
+    font-size: 52px;
+    line-height: 170%;
+}
+
+.h3 {
+    font-family: $font_semi;
+    font-size: 52px;
+    line-height: 170%;
+}
+
+.h4 {
+    font-family: $font_bold;
+    font-size: 42px;
+    line-height: 170%;
+}
+
+.h5 {
+    font-family: $font_bold;
+    font-size: 40px;
+    line-height: 170%;
+}
+
+.h6 {
+    font-family: $font_bold;
+    font-size: 36px;
+    line-height: 170%;
+}
+
+.h7 {
+    font-family: $font_bold;
+    font-size: 28px;
+    line-height: 150%;
+}
+
+.h8 {
+    font-family: $font_bold;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.h9 {
+    font-family: $font_semi;
+    font-size: 24px;
+    line-height: 170%;
+}
+
+.h10 {
+    font-family: $font_semi;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.h11 {
+    font-family: $font_bold;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.h12 {
+    font-family: $font_semi;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+/* 서브 타이틀 */
+.sub_title1 {
+    font-family: $font_semi;
+    font-size: 32px;
+    line-height: 170%;
+}
+
+.sub_title2 {
+    font-family: $font_medium;
+    font-size: 30px;
+    line-height: 170%;
+}
+
+.sub_title3 {
+    font-family: $font_medium;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.sub_title4 {
+    font-family: $font_bold;
+    font-size: 24px;
+    line-height: 170%;
+}
+
+.sub_title5 {
+    font-family: $font_medium;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.sub_title6 {
+    font-family: $font_regular;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.sub_title7 {
+    font-family: $font_medium;
+    font-size: 18px;
+    line-height: 170%;
+}
+
+.sub_title8 {
+    font-family: $font_semi;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.sub_title9 {
+    font-family: $font_bold;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.sub_title10 {
+    font-family: $font_semi;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.sub_title11 {
+    font-family: $font_semi;
+    font-size: 15px;
+    line-height: 170%;
+}
+
+.sub_title12 {
+    font-family: $font_semi;
+    font-size: 15px;
+    line-height: 170%;
+}
+
+.sub_title13 {
+    font-family: $font_semi;
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.sub_title14 {
+    font-family: $font_bold;
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.sub_title15 {
+    font-family: $font_bold;
+    font-size: 12px;
+    line-height: 170%;
+}
+
+/* 본문 텍스트 */
+.body1 {
+    font-family: $font_medium;
+    font-size: 18px;
+    line-height: 170%;
+}
+
+.body2 {
+    font-family: $font_regular;
+    font-size: 18px;
+    line-height: 170%;
+}
+
+.body3 {
+    font-family: $font_medium;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.body4 {
+    font-family: $font_regular;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.body5 {
+    font-family: $font_medium;
+    font-size: 15px;
+    line-height: 170%;
+}
+
+.body6 {
+    font-family: $font_regular;
+    font-size: 15px;
+    line-height: 170%;
+}
+
+.body7 {
+    font-family: $font_medium;
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.body8 {
+    font-family: $font_regular;
+    font-size: 14px;
+    line-height: 170%;
+}
+
+/* caption */
+.caption1 {
+    font-family: $font_medium;
+    font-size: 13px;
+    line-height: 170%;
+}
+
+.caption2 {
+    font-family: $font_regular;
+    font-size: 13px;
+    line-height: 170%;
+}
+
+.caption3 {
+    font-family: $font_regular;
+    font-size: 11px;
+    line-height: 170%;
+}
+
+.caption4 {
+    font-family: $font_regular;
+    font-size: 10px;
+    line-height: 170%;
+}
+
+.color_withe {
+    color: $white;
+}
+
+.color_theme1 {
+    color: $Theme1;
+}
+
+.color_gray1 {
+    color: $gray1;
+}
+
+.color_gray2{
+    color: $gray2;
+}

@@ -1,0 +1,90 @@
+﻿@charset "utf-8";
+@import "./setting.scss";
+
+
+.cont1 {
+
+    .inner {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 24px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .sub_text {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
+
+.form_wrap {
+
+    .h7 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+form{
+    max-width: 894px;
+    margin: 0 auto;
+
+    .flex_wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+}
+
+.input_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 420px;
+    width: 100%;
+
+
+
+    input {
+        max-width: 420px;
+        border: 1px solid $gray3;
+        font-size: 16px;
+        line-height: 170%;
+        font-family: $font_medium;
+        padding: 8px 16px;
+
+        &::placeholder {
+            color: $gray2;
+        }
+    }
+
+    select {
+        max-width: 420px;
+        border: 1px solid $gray3;
+        font-size: 16px;
+        line-height: 170%;
+        font-family: $font_medium;
+        padding: 8px 16px;
+        background: url(../images/icon/dropdown_btn1.svg) no-repeat right 16px center / 20px auto;
+
+        option {
+            color: initial;
+        }
+
+        &:invalid {
+            color: $gray2;
+        }
+    }
+
+    &.max100 {
+        max-width: 100%;
+
+        input{
+            max-width: 100%;
+        }
+    }
+}

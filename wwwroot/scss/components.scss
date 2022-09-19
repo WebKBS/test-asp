@@ -1,0 +1,70 @@
+﻿@charset "utf-8";
+@import "./setting.scss";
+
+/* 데스크탑 퍼스트 */
+
+/* a 링크 */
+a.start_btn {
+    display: flex;
+    max-width: 260px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    line-height: 57px;
+    margin: 0 auto;
+}
+
+.menu_tab {
+    max-width: 1920px;
+    margin: 0 auto;
+    border-bottom: 1px solid $gray4;
+
+    ul {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+        border-right: 1px solid $gray4;
+        border-left: 1px solid $gray4;
+    }
+
+    li {
+        flex: 1 1 0;
+        width: 100%;
+
+        &.on {
+
+            .tab_btn {
+                color: $white;
+                background: $Theme1;
+            }
+        }
+    }
+
+    .tab_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        line-height: 60px;
+    }
+}
+
+/* 버튼 */
+
+@media screen and (max-width: 768px) {
+    .menu_tab{
+
+        .tab_btn{
+            line-height: 50px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    a.start_btn {
+        max-width: 232px;
+        line-height: 53px;
+    }
+}
