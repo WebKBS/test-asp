@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Royal NFT Club" />
+    <meta property="og:title" content="Royal NFT Club" />
+    <meta property="og:image" content="./images/logo.png" />
+    <meta property="og:description" content="Royal NFT Club" />
     <title>Royal NFT Club</title>
 
     <link rel="stylesheet" href="./css/font.css" />
@@ -22,6 +26,7 @@
               </a>
             </h1>
             <div class="button_wrap">
+              <!-- on 추가시 버튼 활성화 -->
               <button type="button" class="connect_btn">
                 Connect Wallet
                 <span class="state_text">OFF</span>
@@ -30,7 +35,7 @@
           </div>
           <section class="content">
             <div class="mov_wrap">
-              <video muted autoplay loop>
+              <video muted autoplay loop playsinline>
                 <source src="./mov/mov1.mp4" />
               </video>
             </div>
@@ -62,7 +67,7 @@
               <div class="box">
                 <p class="title noto">NFT 판매 수량</p>
                 <div class="text progress_wrap">
-                  <span>1,111</span>
+                  <span class="amount">1,111</span>
                   <div class="progress">
                     <span class="percent"></span>
                   </div>
@@ -92,7 +97,7 @@
           <p class="title">지갑 연결하기</p>
           <ul class="list">
             <li>
-              <a href="#" class="link_btn">
+              <a href="#" class="link_btn klay_btn">
                 <img src="./images/klay_icon.png" alt="클라이튼" class="unit_icon" />
                 <p class="unit">카이카스</p>
               </a>

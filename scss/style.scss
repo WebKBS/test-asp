@@ -180,6 +180,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
+
+    .amount {
+      word-break: keep-all;
+    }
 
     .progress {
       max-width: 444px;
@@ -333,7 +338,14 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
+  html,
+  body {
+    overflow: hidden;
+    touch-action: none;
+  }
   .mobile_infomation {
+    overflow: hidden;
     display: flex;
+    touch-action: none;
   }
 }
