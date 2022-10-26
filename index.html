@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal NFT Club</title>
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- contaienr on 클래스 추가시 blur -->
+      <main class="container">
+        <div class="inner">
+          <div class="top_header">
+            <h1 class="logo">
+              <a href="https://www.royalnftclub.com/">
+                <img src="./images/logo.png" alt="" />
+              </a>
+            </h1>
+            <div class="button_wrap">
+              <button type="button" class="connect_btn">
+                Connect Wallet
+                <span class="state_text">OFF</span>
+              </button>
+            </div>
+          </div>
+          <section class="content">
+            <div class="mov_wrap">
+              <video muted autoplay loop>
+                <source src="./mov/mov1.mp4" />
+              </video>
+            </div>
+            <div class="info_wrap">
+              <div class="box">
+                <p class="title">Second Trading Makret</p>
+                <h2>
+                  <a href="#">
+                    <img src="./images/Pala_logo.png" alt="pala logo" />
+                  </a>
+                </h2>
+              </div>
+              <div class="box flex">
+                <div class="box_inner">
+                  <p class="title">Price</p>
+                  <p class="text p1">
+                    <span class="price">0</span>
+                    <span class="unit">KLAY</span>
+                  </p>
+                </div>
+                <div class="box_inner">
+                  <p class="title">Per Transaction</p>
+                  <p class="text">
+                    최대
+                    <span class="price">2</span><span class="unit">개</span>
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <p class="title noto">NFT 판매 수량</p>
+                <div class="text progress_wrap">
+                  <span>1,111</span>
+                  <div class="progress">
+                    <span class="percent"></span>
+                  </div>
+                  <span>0</span>
+                </div>
+              </div>
+              <div class="box">
+                <p class="title">Amount</p>
+                <div class="count_wrap">
+                  <!-- <button type="button" class="minus_icon"><span class="visually_hidden">빼기</span></button> -->
+                  <span class="count">1</span>
+                  <!-- <button type="button" class="plus_icon"><span class="visually_hidden">더하기</span></button> -->
+                </div>
+              </div>
+              <div class="link_wrap">
+                <button type="button">MINTING</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- on 클래스 추가시 모달 블럭 -->
+      <div class="modal">
+        <div class="background"></div>
+        <div class="modal_inner">
+          <p class="title">지갑 연결하기</p>
+          <ul class="list">
+            <li>
+              <a href="#" class="link_btn">
+                <img src="./images/klay_icon.png" alt="클라이튼" class="unit_icon" />
+                <p class="unit">카이카스</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mobile_infomation">
+      PC버전에서만<br />
+      사용 가능합니다.
+    </div>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

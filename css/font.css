@@ -1,0 +1,62 @@
+@font-face {
+  src: url(../font/NotoSansKR-Black.otf);
+  font-family: "Noto_black";
+}
+@font-face {
+  src: url(../font/NotoSansKR-Bold.otf);
+  font-family: "Noto_bold";
+}
+@font-face {
+  src: url(../font/NotoSansKR-Light.otf);
+  font-family: "Noto_light";
+}
+@font-face {
+  src: url(../font/NotoSansKR-Medium.otf);
+  font-family: "Noto_medium";
+}
+@font-face {
+  src: url(../font/NotoSansKR-Regular.otf);
+  font-family: "Noto_regular";
+}
+@font-face {
+  src: url(../font/NotoSansKR-Thin.otf);
+  font-family: "Noto_thin";
+}
+@font-face {
+  src: url(../font/Montserrat-Black.ttf);
+  font-family: "Mont_black";
+}
+@font-face {
+  src: url(../font/Montserrat-Bold.ttf);
+  font-family: "Mont_bold";
+}
+@font-face {
+  src: url(../font/Montserrat-ExtraBold.ttf);
+  font-family: "Mont_extra_bold";
+}
+@font-face {
+  src: url(../font/Montserrat-ExtraLight.ttf);
+  font-family: "Mont_extra_light";
+}
+@font-face {
+  src: url(../font/Montserrat-Light.ttf);
+  font-family: "Mont_light";
+}
+@font-face {
+  src: url(../font/Montserrat-Medium.ttf);
+  font-family: "Mont_medium";
+}
+@font-face {
+  src: url(../font/Montserrat-Regular.ttf);
+  font-family: "Mont_regular";
+}
+@font-face {
+  src: url(../font/Montserrat-SemiBold.ttf);
+  font-family: "Mont_semi";
+}
+@font-face {
+  src: url(../font/Montserrat-Thin.ttf);
+  font-family: "Mont_thin";
+}
+
+/*# sourceMappingURL=font.css.map */
