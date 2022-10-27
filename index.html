@@ -9,7 +9,8 @@
     <meta property="og:image" content="./images/logo.png" />
     <meta property="og:description" content="Royal NFT Club" />
     <title>Royal NFT Club</title>
-
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="./images/android-icon-96x96.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -43,7 +44,7 @@
               <div class="box">
                 <p class="title">Second Trading Makret</p>
                 <h2>
-                  <a href="#">
+                  <a href="https://pala.io/square">
                     <img src="./images/Pala_logo.png" alt="pala logo" />
                   </a>
                 </h2>
@@ -69,6 +70,7 @@
                 <div class="text progress_wrap">
                   <span class="amount">1,111</span>
                   <div class="progress">
+                    <!-- width값 퍼센트로 조절 -->
                     <span class="percent"></span>
                   </div>
                   <span>0</span>
@@ -77,19 +79,20 @@
               <div class="box">
                 <p class="title">Amount</p>
                 <div class="count_wrap">
-                  <!-- <button type="button" class="minus_icon"><span class="visually_hidden">빼기</span></button> -->
+                  <button type="button" class="minus_icon"><span class="visually_hidden">빼기</span></button>
                   <span class="count">1</span>
-                  <!-- <button type="button" class="plus_icon"><span class="visually_hidden">더하기</span></button> -->
+                  <button type="button" class="plus_icon"><span class="visually_hidden">더하기</span></button>
                 </div>
               </div>
               <div class="link_wrap">
                 <button type="button">MINTING</button>
               </div>
+              <!-- 구글 리캡차, 클래스 on 추가시 display -->
+              <div class="g-recaptcha" data-sitekey="6Lf_aLciAAAAADHF3annxTC-80gvA1EjbMnenie4" data-callback="recaptcha"></div>
             </div>
           </section>
         </div>
       </main>
-
       <!-- on 클래스 추가시 모달 블럭 -->
       <div class="modal">
         <div class="background"></div>
@@ -111,5 +114,20 @@
       사용 가능합니다.
     </div>
     <script src="./js/common.js"></script>
+
+    <!-- 구글 리캡차 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      const mintingButton = document.querySelector('.link_wrap button');
+      const recaptchaElement = document.querySelector('.g-recaptcha');
+
+      mintingButton.addEventListener('click', function () {
+        // 클릭시 리캡챠 display
+        recaptchaElement.classList.add('on');
+      });
+
+      // 리캡차 엘리먼트 data-callback 이름과 함수명이 같아야 함.
+      function recaptcha(token) {}
+    </script>
   </body>
 </html>

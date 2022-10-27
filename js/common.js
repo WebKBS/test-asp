@@ -1,7 +1,6 @@
 const container = document.querySelector('.container');
 const modal = document.querySelector('.modal');
 const modalBackground = document.querySelector('.modal .background');
-const mintingButton = document.querySelector('.link_wrap button');
 const connectButton = document.querySelector('.connect_btn');
 const klayButton = document.querySelector('.klay_btn');
 

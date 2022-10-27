@@ -193,6 +193,8 @@ body {
       border-radius: 10px;
       height: 9px;
       overflow: hidden;
+      display: flex;
+      justify-content: flex-end;
 
       .percent {
         display: block;
@@ -208,7 +210,7 @@ body {
     width: 100%;
     margin: 0 auto 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     button {
@@ -317,6 +319,19 @@ body {
         margin-right: 16px;
       }
     }
+  }
+}
+
+// 리캡차
+.g-recaptcha {
+  display: none;
+
+  &.on {
+    display: block;
+  }
+
+  > div {
+    margin: 30px auto 0;
   }
 }
 
