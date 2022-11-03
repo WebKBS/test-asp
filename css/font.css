@@ -1,62 +1,52 @@
+/* noto */
 @font-face {
-  src: url(../font/NotoSansKR-Black.otf);
-  font-family: "Noto_black";
+  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Black.otf) format("OpenType");
+  font-family: "noto_black";
 }
 @font-face {
-  src: url(../font/NotoSansKR-Bold.otf);
-  font-family: "Noto_bold";
+  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Bold.otf) format("OpenType");
+  font-family: "noto_bold";
 }
 @font-face {
-  src: url(../font/NotoSansKR-Light.otf);
-  font-family: "Noto_light";
+  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-DemiLight.otf) format("OpenType");
+  font-family: "noto_demi_light";
 }
 @font-face {
-  src: url(../font/NotoSansKR-Medium.otf);
-  font-family: "Noto_medium";
+  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Light.otf) format("OpenType");
+  font-family: "noto_light";
 }
 @font-face {
-  src: url(../font/NotoSansKR-Regular.otf);
-  font-family: "Noto_regular";
+  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Medium.otf) format("OpenType");
+  font-family: "noto_medium";
 }
 @font-face {
-  src: url(../font/NotoSansKR-Thin.otf);
-  font-family: "Noto_thin";
+  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Regular.otf) format("OpenType");
+  font-family: "noto_regular";
 }
 @font-face {
-  src: url(../font/Montserrat-Black.ttf);
-  font-family: "Mont_black";
+  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Thin.otf) format("OpenType");
+  font-family: "noto_thin";
+}
+/* spoqa */
+@font-face {
+  src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.otf) format("OpenType");
+  font-family: "spoqa_bold";
 }
 @font-face {
-  src: url(../font/Montserrat-Bold.ttf);
-  font-family: "Mont_bold";
+  src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.otf) format("OpenType");
+  font-family: "spoqa_light";
 }
 @font-face {
-  src: url(../font/Montserrat-ExtraBold.ttf);
-  font-family: "Mont_extra_bold";
+  src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.otf) format("OpenType");
+  font-family: "spoqa_medium";
 }
 @font-face {
-  src: url(../font/Montserrat-ExtraLight.ttf);
-  font-family: "Mont_extra_light";
+  src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.otf) format("OpenType");
+  font-family: "spoqa_regular";
 }
 @font-face {
-  src: url(../font/Montserrat-Light.ttf);
-  font-family: "Mont_light";
-}
-@font-face {
-  src: url(../font/Montserrat-Medium.ttf);
-  font-family: "Mont_medium";
-}
-@font-face {
-  src: url(../font/Montserrat-Regular.ttf);
-  font-family: "Mont_regular";
-}
-@font-face {
-  src: url(../font/Montserrat-SemiBold.ttf);
-  font-family: "Mont_semi";
-}
-@font-face {
-  src: url(../font/Montserrat-Thin.ttf);
-  font-family: "Mont_thin";
+  src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.otf) format("OpenType");
+  font-family: "spoqa_thin";
 }
 
 /*# sourceMappingURL=font.css.map */

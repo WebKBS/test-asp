@@ -2,11 +2,13 @@
 
 html,
 body {
-  //min-width: 100%;
-  //min-height: 100%;
-  width: 100%;
-  height: 100%;
-  //overflow: hidden;
+  &.on {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 html,
@@ -100,16 +102,16 @@ video {
 }
 
 body {
-  line-height: normal;
+  line-height: 1;
   word-break: keep-all;
-  color: #030101;
+  color: #222;
   background: #fff;
-  font-family: 'Noto_medium', 'Mont_medium';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, 'Segoe UI Emoji', 'Segoe UI Symbol';
   letter-spacing: normal;
 }
 
 a {
-  color: #030101;
+  color: #222;
   text-decoration: none;
 }
 
@@ -159,9 +161,9 @@ i {
 button {
   border: none;
   background: none;
-  font-family: 'Noto_medium', 'Mont_medium';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, 'Segoe UI Emoji', 'Segoe UI Symbol';
   cursor: pointer;
-  color: #030101;
+  color: #222;
   display: block;
   box-sizing: border-box;
   margin: 0;
@@ -179,7 +181,7 @@ select {
   background-color: #fff;
   -webkit-appearance: none;
   appearance: none;
-  color: #030101;
+  color: #222;
 }
 
 table {
