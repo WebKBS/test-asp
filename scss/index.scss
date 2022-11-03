@@ -381,7 +381,7 @@
       background: #777;
       border-radius: 50%;
       position: absolute;
-      top: 6px;
+      top: 13px;
       left: 0;
     }
 
@@ -776,7 +776,7 @@
     &.on {
       opacity: 1;
       transform: translateX(0);
-      touch-action: pan-x;
+      touch-action: pan-y;
     }
 
     .side_close_btn {

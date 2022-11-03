@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html,
+body {
+  touch-action: pan-y;
+}
 html.on,
 body.on {
   min-width: 100%;

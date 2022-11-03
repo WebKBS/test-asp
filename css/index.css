@@ -378,7 +378,7 @@
   background: #777;
   border-radius: 50%;
   position: absolute;
-  top: 6px;
+  top: 13px;
   left: 0;
 }
 .cont3 .info_text .en {
@@ -706,7 +706,7 @@
   .side_menu.on {
     opacity: 1;
     transform: translateX(0);
-    touch-action: pan-x;
+    touch-action: pan-y;
   }
   .side_menu .side_close_btn {
     width: 24px;
