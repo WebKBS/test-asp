@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+/* font color */
+$fc000: #000;
+$fc333: #333;
+$fc444: #444;
+$fc777: #777;
+$fff: #fff;
+$blue_main: #1273eb;
+$blue_sub: #798ca8;
+
+/* family */
 $noto_black: 'noto_black';
 $noto_bold: 'noto_bold';
 $noto_demi: 'noto_demi_light';
@@ -16,52 +26,59 @@ $spoqa_thin: 'spoqa_thin';
 
 /* noto */
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Black.otf) format('OpenType');
+  src: url(../font/NotoSansKR/NotoSansKR-Black.otf) format('OpenType');
   font-family: 'noto_black';
+  font-display: swap;
 }
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Bold.otf) format('OpenType');
+  src: url(../font/NotoSansKR/NotoSansKR-Bold.otf) format('OpenType');
   font-family: 'noto_bold';
+  font-display: swap;
 }
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-DemiLight.otf) format('OpenType');
-  font-family: 'noto_demi_light';
-}
-@font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Light.otf) format('OpenType');
+  src: url(../font/NotoSansKR/NotoSansKR-Light.otf) format('OpenType');
   font-family: 'noto_light';
+  font-display: swap;
 }
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Medium.otf) format('OpenType');
+  src: url(../font/NotoSansKR/NotoSansKR-Medium.otf) format('OpenType');
   font-family: 'noto_medium';
+  font-display: swap;
 }
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Regular.otf) format('OpenType');
+  src: url(../font/NotoSansKR/NotoSansKR-Regular.otf) format('OpenType');
   font-family: 'noto_regular';
+  font-display: swap;
 }
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Thin.otf) format('OpenType');
+  src: url(../font/NotoSansKR/NotoSansKR-Thin.otf) format('OpenType');
   font-family: 'noto_thin';
+  font-display: swap;
 }
 
 /* spoqa */
 @font-face {
   src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.otf) format('OpenType');
   font-family: 'spoqa_bold';
+  font-display: swap;
 }
 @font-face {
   src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.otf) format('OpenType');
   font-family: 'spoqa_light';
+  font-display: swap;
 }
 @font-face {
   src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.otf) format('OpenType');
   font-family: 'spoqa_medium';
+  font-display: swap;
 }
 @font-face {
   src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.otf) format('OpenType');
   font-family: 'spoqa_regular';
+  font-display: swap;
 }
 @font-face {
   src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.otf) format('OpenType');
   font-family: 'spoqa_thin';
+  font-display: swap;
 }

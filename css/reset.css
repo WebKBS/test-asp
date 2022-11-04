@@ -1,4 +1,63 @@
 @charset "UTF-8";
+/* font color */
+/* family */
+/* noto */
+@font-face {
+  src: url(../font/NotoSansKR/NotoSansKR-Black.otf) format("OpenType");
+  font-family: "noto_black";
+  font-display: swap;
+}
+@font-face {
+  src: url(../font/NotoSansKR/NotoSansKR-Bold.otf) format("OpenType");
+  font-family: "noto_bold";
+  font-display: swap;
+}
+@font-face {
+  src: url(../font/NotoSansKR/NotoSansKR-Light.otf) format("OpenType");
+  font-family: "noto_light";
+  font-display: swap;
+}
+@font-face {
+  src: url(../font/NotoSansKR/NotoSansKR-Medium.otf) format("OpenType");
+  font-family: "noto_medium";
+  font-display: swap;
+}
+@font-face {
+  src: url(../font/NotoSansKR/NotoSansKR-Regular.otf) format("OpenType");
+  font-family: "noto_regular";
+  font-display: swap;
+}
+@font-face {
+  src: url(../font/NotoSansKR/NotoSansKR-Thin.otf) format("OpenType");
+  font-family: "noto_thin";
+  font-display: swap;
+}
+/* spoqa */
+@font-face {
+  src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.otf) format("OpenType");
+  font-family: "spoqa_bold";
+  font-display: swap;
+}
+@font-face {
+  src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.otf) format("OpenType");
+  font-family: "spoqa_light";
+  font-display: swap;
+}
+@font-face {
+  src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.otf) format("OpenType");
+  font-family: "spoqa_medium";
+  font-display: swap;
+}
+@font-face {
+  src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.otf) format("OpenType");
+  font-family: "spoqa_regular";
+  font-display: swap;
+}
+@font-face {
+  src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.otf) format("OpenType");
+  font-family: "spoqa_thin";
+  font-display: swap;
+}
 html,
 body {
   touch-action: pan-y;
@@ -100,6 +159,8 @@ video {
   font: inherit;
   vertical-align: baseline;
   word-break: break-all;
+  letter-spacing: -0.01rem;
+  /* letter space */
 }
 
 body {
@@ -107,7 +168,7 @@ body {
   word-break: keep-all;
   color: #222;
   background: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "noto_medium";
   letter-spacing: normal;
 }
 
@@ -162,7 +223,7 @@ i {
 button {
   border: none;
   background: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "noto_medium";
   cursor: pointer;
   color: #222;
   display: block;

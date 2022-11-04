@@ -1,53 +1,62 @@
 @charset "UTF-8";
+/* font color */
+/* family */
 /* noto */
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Black.otf) format("OpenType");
+  src: url(../font/NotoSansKR/NotoSansKR-Black.otf) format("OpenType");
   font-family: "noto_black";
+  font-display: swap;
 }
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Bold.otf) format("OpenType");
+  src: url(../font/NotoSansKR/NotoSansKR-Bold.otf) format("OpenType");
   font-family: "noto_bold";
+  font-display: swap;
 }
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-DemiLight.otf) format("OpenType");
-  font-family: "noto_demi_light";
-}
-@font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Light.otf) format("OpenType");
+  src: url(../font/NotoSansKR/NotoSansKR-Light.otf) format("OpenType");
   font-family: "noto_light";
+  font-display: swap;
 }
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Medium.otf) format("OpenType");
+  src: url(../font/NotoSansKR/NotoSansKR-Medium.otf) format("OpenType");
   font-family: "noto_medium";
+  font-display: swap;
 }
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Regular.otf) format("OpenType");
+  src: url(../font/NotoSansKR/NotoSansKR-Regular.otf) format("OpenType");
   font-family: "noto_regular";
+  font-display: swap;
 }
 @font-face {
-  src: url(../font/NotoSansCJKKR/NotoSansCJKkr-Thin.otf) format("OpenType");
+  src: url(../font/NotoSansKR/NotoSansKR-Thin.otf) format("OpenType");
   font-family: "noto_thin";
+  font-display: swap;
 }
 /* spoqa */
 @font-face {
   src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.otf) format("OpenType");
   font-family: "spoqa_bold";
+  font-display: swap;
 }
 @font-face {
   src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.otf) format("OpenType");
   font-family: "spoqa_light";
+  font-display: swap;
 }
 @font-face {
   src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.otf) format("OpenType");
   font-family: "spoqa_medium";
+  font-display: swap;
 }
 @font-face {
   src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.otf) format("OpenType");
   font-family: "spoqa_regular";
+  font-display: swap;
 }
 @font-face {
   src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.otf) format("OpenType");
   font-family: "spoqa_thin";
+  font-display: swap;
 }
 /* pc */
 .side_open_btn {
@@ -102,8 +111,7 @@
 .gnb li a {
   display: block;
   font-size: 22px;
-  line-height: 36px;
-  letter-spacing: -0.22px;
+  line-height: 34px;
   color: #fff;
   font-family: "spoqa_medium";
 }
@@ -120,7 +128,6 @@
   border-radius: 30px;
   text-align: center;
   font-size: 16px;
-  letter-spacing: -0.16px;
   padding: 0 20px;
   line-height: 38px;
   font-family: "noto_regular";
@@ -153,14 +160,14 @@
 }
 .main_slider li .sub_title {
   color: #fff;
-  font-size: 20.5px;
-  letter-spacing: -0.21px;
+  font-size: 20px;
+  line-height: 32px;
   font-family: "spoqa_medium";
 }
 .main_slider li h2 {
   color: #fff;
-  font-size: 45.5px;
-  letter-spacing: -0.46px;
+  font-size: 45px;
+  line-height: 57px;
   font-family: "noto_bold";
 }
 
@@ -187,10 +194,9 @@
   align-items: center;
   font-size: 36px;
   font-family: "noto_bold";
-  letter-spacing: -0.36px;
   color: #000;
   margin-bottom: 45px;
-  line-height: 1.5;
+  line-height: 48px;
 }
 .cont1 .text_wrap h2 p {
   word-break: keep-all;
@@ -207,9 +213,9 @@
   padding: 39px 37px;
   color: #fff;
   line-height: 1.5;
-  font-size: 23.5px;
+  font-size: 24px;
+  line-height: 36px;
   word-break: keep-all;
-  letter-spacing: -0.24px;
   position: relative;
   font-family: "noto_medium";
 }
@@ -236,19 +242,19 @@
   background: #f1f5fb;
 }
 .cont2 h2 {
-  font-size: 45.5px;
+  font-size: 45px;
+  line-height: 57px;
   font-family: "spoqa_bold";
-  letter-spacing: -1.14px;
   text-align: center;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   color: #000;
 }
 .cont2 h2 .blue_color {
   color: #1273eb;
 }
 .cont2 .sub_title {
-  font-size: 19px;
-  letter-spacing: -0.19px;
+  font-size: 18px;
+  line-height: 30px;
   color: #444;
   font-family: "noto_regular";
   text-align: center;
@@ -276,16 +282,15 @@
   left: -61px;
 }
 .cont2 .box_wrap .title {
-  font-size: 29.5px;
+  font-size: 30px;
+  line-height: 42px;
   font-family: "spoqa_bold";
-  letter-spacing: -0.3px;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 .cont2 .box_wrap .text {
-  font-size: 19px;
-  letter-spacing: -0.19px;
+  font-size: 18px;
   color: #444;
-  line-height: 29.5px;
+  line-height: 30px;
   word-break: keep-all;
   font-family: "noto_regular";
 }
@@ -294,26 +299,26 @@
 }
 .cont2 .info_wrap {
   background-color: rgba(121, 140, 168, 0.08);
-  max-width: 1023px;
+  max-width: 1138px;
   margin: 0 auto;
   border-radius: 35px;
-  padding: 22px 32px 22px 76px;
+  padding: 20px 0 20px 76px;
   display: flex;
   align-items: center;
   color: #798ca8;
-  font-size: 20px;
-  letter-spacing: -0.24px;
   font-family: "noto_medium";
 }
 .cont2 .info_wrap p {
+  font-size: 24px;
+  line-height: 30px;
   position: relative;
-  line-height: 1.3;
   word-break: keep-all;
 }
 .cont2 .info_wrap i {
   position: absolute;
-  top: 0;
+  top: 60%;
   left: -36px;
+  transform: translateY(-50%);
 }
 
 .cont3 .inner {
@@ -327,16 +332,14 @@
 }
 .cont3 h2 {
   font-size: 36px;
-  line-height: 45.5px;
-  letter-spacing: -0.36px;
+  line-height: 45px;
   font-family: "spoqa_bold";
   margin-bottom: 57px;
 }
 .cont3 .text {
   max-width: 543px;
-  line-height: 1.5;
-  letter-spacing: -0.18px;
   font-size: 18px;
+  line-height: 30px;
   font-family: "noto_regular";
   color: #333;
   word-break: keep-all;
@@ -350,12 +353,11 @@
   max-width: 400px;
   text-align: center;
   font-size: 20px;
-  letter-spacing: -0.2px;
-  line-height: 20px;
+  line-height: 30px;
   color: #fff;
   background-color: #1273eb;
   border-radius: 40px;
-  padding: 25px 0;
+  padding: 20px 0;
   font-family: "noto_bold";
   margin-bottom: 60px;
 }
@@ -367,9 +369,9 @@
   padding-left: 10px;
   font-family: "noto_regular";
   color: #777;
-  font-size: 19px;
+  font-size: 18px;
+  line-height: 30px;
   word-break: keep-all;
-  line-height: 1.5;
 }
 .cont3 .info_text .icon {
   display: block;
@@ -385,9 +387,8 @@
   font-family: "spoqa_regular";
 }
 .cont3 .minting_btn {
-  font-size: 19px;
-  line-height: 29.5px;
-  letter-spacing: -0.19px;
+  font-size: 18px;
+  line-height: 30px;
   color: #1273eb;
   font-family: "noto_bold";
 }
@@ -402,8 +403,7 @@
 }
 .cont4 .box h2 {
   font-size: 36px;
-  line-height: 45.5px;
-  letter-spacing: -0.36px;
+  line-height: 45px;
   font-family: "noto_bold";
   margin-bottom: 30px;
 }
@@ -413,7 +413,6 @@
 .cont4 .box .sub_title {
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: -0.18px;
   font-family: "noto_regular";
   margin-bottom: 60px;
 }
@@ -432,19 +431,19 @@
 }
 .cont4 .box .info_list .step {
   width: 86px;
-  padding: 12px 0;
+  padding: 3px 0;
   border-radius: 40px;
   background: linear-gradient(281.74deg, #5912eb 0%, #1273eb 61.98%);
   color: #fff;
   text-align: center;
   font-family: "spoqa_bold";
   font-size: 16px;
+  line-height: 30px;
   margin-right: 20px;
 }
 .cont4 .box .info_list .title {
   font-size: 30px;
   line-height: 30px;
-  letter-spacing: -0.3px;
   font-family: "noto_bold";
   margin-right: 30px;
 }
@@ -452,7 +451,6 @@
   font-size: 18px;
   line-height: 30px;
   color: #333;
-  letter-spacing: -0.18px;
   font-family: "noto_regular";
 }
 .cont4 .box .info_list .dot {
@@ -485,8 +483,7 @@
 
 .cont5 h2 {
   font-size: 36px;
-  line-height: 45.5px;
-  letter-spacing: -0.36px;
+  line-height: 48px;
   text-align: center;
   font-family: "noto_bold";
   margin-bottom: 80px;
@@ -514,16 +511,15 @@
   left: 30px;
 }
 .cont5 .card_list .title {
-  font-size: 26.5px;
+  font-size: 26px;
+  line-height: 38px;
   color: #333;
-  letter-spacing: -0.27px;
   margin-bottom: 29px;
   font-family: "noto_bold";
 }
 .cont5 .card_list .text {
-  font-size: 19px;
-  line-height: 29.5px;
-  letter-spacing: -0.19px;
+  font-size: 18px;
+  line-height: 30px;
   color: #777;
   font-family: "noto_regular";
   word-break: keep-all;
@@ -542,9 +538,8 @@
 .cont6 .box .text {
   max-width: 400px;
   font-family: "noto_regular";
-  font-size: 23.5px;
+  font-size: 24px;
   line-height: 36px;
-  letter-spacing: -0.24px;
   color: #fff;
   margin-bottom: 30px;
   word-break: keep-all;
@@ -563,9 +558,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20.5px;
-  line-height: 36px;
-  letter-spacing: -0.21px;
+  font-size: 20px;
+  line-height: 34px;
   font-family: "noto_regular";
   padding: 12px 0;
   color: #fff;
@@ -590,7 +584,6 @@
   border-radius: 10px;
   font-size: 20px;
   line-height: 23px;
-  letter-spacing: -0.2px;
   font-family: "noto_regular";
 }
 .cont6 .box .input_wrap .email_input::placeholder {
@@ -607,9 +600,8 @@
   border-radius: 10px;
   border: 1px solid #fafde8;
   color: #fff;
-  font-size: 20.5px;
+  font-size: 20px;
   line-height: 36px;
-  letter-spacing: -0.21px;
   font-family: "noto_regular";
 }
 
@@ -639,13 +631,13 @@
   margin-bottom: 20px;
   color: #fff;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-family: "noto_bold";
 }
 .footer .box1 li a {
   font-size: 16px;
   font-family: "noto_medium";
-  line-height: 1.5;
+  line-height: 24px;
   color: #777;
 }
 .footer .box2 {
@@ -658,7 +650,7 @@
 .footer .box2 .copy {
   color: #777;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   word-break: keep-all;
 }
 .footer .box2 ul {
@@ -668,7 +660,7 @@
 .footer .box2 li a {
   color: #777;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-family: "noto_regular";
 }
 
@@ -686,7 +678,7 @@
     display: block;
     margin-bottom: 40px;
     font-size: 28px !important;
-    line-height: 1.3;
+    line-height: 1.3 !important;
   }
 
   .side_menu {
@@ -803,9 +795,11 @@
   }
   .main_slider li .sub_title {
     font-size: 18px;
+    line-height: 1.5;
   }
   .main_slider li h2 {
     font-size: 32px;
+    line-height: 1.3;
   }
 
   .cont1 .inner {
@@ -825,6 +819,7 @@
     text-align: center;
     font-size: 14px;
     min-height: auto;
+    line-height: 1.5;
   }
 
   .cont2 .inner {
@@ -875,11 +870,13 @@
   }
   .cont2 .info_wrap p {
     padding-left: 22px;
+    font-size: 14px;
+    line-height: 1.5;
   }
   .cont2 .info_wrap i {
     width: 16px;
     left: 0;
-    top: 2px;
+    top: 14px;
   }
 
   .cont3 .mobi_br {
@@ -909,6 +906,7 @@
     max-width: 100%;
     font-size: 14px;
     margin-bottom: 40px;
+    line-height: 1.5;
   }
   .cont3 .generator_btn {
     padding: 16px 0;
@@ -922,6 +920,7 @@
   }
   .cont3 .info_text p {
     font-size: 14px;
+    line-height: 1.5;
   }
   .cont3 .info_text p .icon {
     top: 9px;
