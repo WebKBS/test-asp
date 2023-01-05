@@ -57,18 +57,38 @@
 
       btn[0].addEventListener('click', (e) => {
         e.preventDefault();
+        btn.forEach((ev) => {
+          ev.querySelector('svg').style.fill = 'black';
+        });
+        target = e.currentTarget;
+        target.querySelector('svg').style.fill = 'green';
         document.querySelector('iframe').src = 'https://nftvalley.io/';
       });
       btn[1].addEventListener('click', (e) => {
         e.preventDefault();
+        btn.forEach((ev) => {
+          ev.querySelector('svg').style.fill = 'black';
+        });
+        target = e.currentTarget;
+        target.querySelector('svg').style.fill = 'blue';
         document.querySelector('iframe').src = 'https://etherbucks.io/';
       });
       btn[2].addEventListener('click', (e) => {
         e.preventDefault();
+        btn.forEach((ev) => {
+          ev.querySelector('svg').style.fill = 'black';
+        });
+        target = e.currentTarget;
+        target.querySelector('svg').style.fill = 'purple';
         document.querySelector('iframe').src = 'https://digtoc.com/';
       });
       btn[3].addEventListener('click', (e) => {
         e.preventDefault();
+        btn.forEach((ev) => {
+          ev.querySelector('svg').style.fill = 'black';
+        });
+        target = e.currentTarget;
+        target.querySelector('svg').style.fill = 'red';
         document.querySelector('iframe').src = 'https://mintway.net/';
       });
     </script>
