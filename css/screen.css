@@ -1,0 +1,78 @@
+html, body, #wrap {
+  height: 100%;
+}
+
+#container {
+  background: #fff;
+  height: 100%;
+}
+
+.inner {
+  padding: 28px 22px;
+}
+
+nav {
+  width: 100px;
+  height: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 30px;
+}
+nav span {
+  display: block;
+  width: 26px;
+  height: 5px;
+  background: #D7DBE0;
+  border-radius: 10px;
+}
+nav span.on {
+  background: #CC1C0A;
+}
+
+.img_wrap {
+  max-width: 326px;
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+.bubble_text {
+  width: 276px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto 38px;
+  background-color: #262626;
+  position: relative;
+}
+.bubble_text::after {
+  content: "";
+  display: block;
+  border-bottom: 30px solid transparent;
+  border-top: 29px solid #262626;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.ad_title {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.next_btn {
+  text-align: center;
+  display: block;
+  width: 78px;
+  line-height: 28px;
+  border: 1px solid #262626;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=screen.css.map */

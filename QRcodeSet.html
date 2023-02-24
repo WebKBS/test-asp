@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=2.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="keyword" content=""> -->
+    <!-- <meta name="format-detection" content="telephone=no,address=no,email=no"> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="apple-mobile-web-app-title" content="" /> -->
+
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta property="og:title" content="" /> -->
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+    <title>Kiosk</title>
+
+    <!-- <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="" /> -->
+    <!-- <link rel="apple-touch-icon" href="" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/QRcodeSet.css" />
+
+    <script src="./js/QRcodeSet.js" type="module"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <main id="container">
+        <!-- display class on off -->
+        <div class="inner set_input on">
+          <div>
+            <h2 class="ft_title2">QR코드 인증번호 설정</h2>
+            <p class="sub_text ft_sub_txt2">안전한 앱사용을 위한 절차입니다.</p>
+            <div class="input_wrap">
+              <input type="password" maxlength="6" class="normal ft_body2" id="set_input" pattern="/d*" placeholder="인증번호 6자리를 입력해주세요." />
+            </div>
+          </div>
+          <div class="button_wrap">
+            <button type="button" class="join_btn ft_title2" id="setConfirm">확인</button>
+            <button type="button" class="cancel_btn ft_title2" onclick="window.location.href='./index.html'">취소</button>
+          </div>
+        </div>
+        <!-- display class on off -->
+        <div class="inner confrim_input">
+          <div>
+            <h2 class="ft_title2">인증번호 확인</h2>
+            <p class="sub_text ft_sub_txt2">안전한 앱사용을 위한 절차입니다.</p>
+            <div class="input_wrap">
+              <input type="password" maxlength="6" class="normal ft_body2" id="confrim_input" pattern="/d*" placeholder="인증번호 6자리를 입력해주세요." />
+              <button class="position ft_sub_txt2">인증번호 재설정</button>
+            </div>
+          </div>
+          <div class="button_wrap">
+            <button type="button" class="join_btn ft_title2" id="confirm">확인</button>
+            <button type="button" class="cancel_btn ft_title2" onclick="window.location.href='./index.html'">취소</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- wrap -->
+  </body>
+</html>

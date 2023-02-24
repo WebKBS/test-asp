@@ -1,0 +1,75 @@
+html, body, #wrap {
+  height: 100%;
+}
+
+#wrap {
+  background-color: #000;
+}
+
+#container {
+  background-color: #000;
+  height: 100%;
+}
+
+.inner {
+  padding: 30px 38px;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.sub_text {
+  text-align: center;
+  color: #8F9399;
+  margin-bottom: 14px;
+}
+
+.button_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cancel_btn {
+  background-color: #000;
+  border: 1px solid #fff;
+}
+
+.set_input {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.set_input.on {
+  display: flex;
+}
+
+.confrim_input {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.confrim_input.on {
+  display: flex;
+}
+
+.position {
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  color: #fff;
+}
+
+.input_wrap {
+  margin-bottom: 52px;
+  position: relative;
+}
+
+/*# sourceMappingURL=QRcodeSet.css.map */

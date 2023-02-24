@@ -1,96 +1,406 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AppNaviTest</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=2.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="keyword" content=""> -->
+    <!-- <meta name="format-detection" content="telephone=no,address=no,email=no"> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="apple-mobile-web-app-title" content="" /> -->
+
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta property="og:title" content="" /> -->
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+    <title>Kiosk</title>
+
+    <!-- <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="" /> -->
+    <!-- <link rel="apple-touch-icon" href="" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <script src="./js/load.js"></script>
+    <script src="./lib/swiper.js"></script>
+    <script src="./lib/swiperUse.js" defer></script>
+    <script src="./js/index.js" type="module"></script>
   </head>
   <body>
-    <div id="wrap">
-      <header>Header!!</header>
-      <main>
-        <iframe src="https://nftvalley.io/" frameborder="0"></iframe>
-      </main>
-      <footer>
-        <ul>
-          <li>
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                <path d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                <path
-                  d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </footer>
+    <div id="load">
+      <div class="sk-three-bounce">
+        <div class="sk-child sk-bounce1"></div>
+        <div class="sk-child sk-bounce2"></div>
+        <div class="sk-child sk-bounce3"></div>
+      </div>
     </div>
-    <script>
-      const btn = document.querySelectorAll('footer li a');
+    <div id="wrap">
+      <header id="header">
+        <div class="inner">
+          <button type="button" class="side_btn">
+            <span></span>
+          </button>
+          <h1 class="logo">
+            <img src="./images/icon/logo_white.svg" alt="오더나인" />
+          </h1>
+          <button type="button" class="alarm" onclick="window.location.href='./Notification.html'"></button>
+          <!-- alarm active 추가시 아이콘 변경 -->
+        </div>
+      </header>
+      <main id="container">
+        <!-- 사용가능 적립금 박스 -->
+        <div class="inner">
+          <div class="earned_amount_wrap">
+            <p class="title ft_sub_t3">사용가능 적립금</p>
+            <p class="price_wrap">
+              <span class="price ft_title1">10</span>
+              <span class="unit">원</span>
+            </p>
+            <!-- 거래소 연동시 나타나는 영역 -->
+            <div class="user_assets_wrap">
+              <div class="box">
+                <p class="user_assets">
+                  <span class="assets ft_body2">99,999.99999</span>
+                  <span class="coin_name ft_body2">THE9</span>
+                </p>
+                <p class="change_assets">
+                  <span class="assets ft_sub_txt1">9,999,999</span>
+                  <span class="unit ft_sub_txt1">원</span>
+                </p>
+                <button type="button" class="small_btn_black ft_sub_t4">가상자산 사용</button>
+              </div>
+              <p class="coin_price ft_sub_txt2">
+                <span class="coin_name">빗썸 0.1BTC =</span>
+                <span class="price">3,161,194</span>
+                <span>KRW/수수료</span>
+                <span class="commission">0,000</span>
+                <span>KRW</span>
+              </p>
+            </div>
+            <!-- 거래소 연동시 나타나는 영역 끝 -->
+            <div class="sub_wrap">
+              <!-- 거래소 연동시 텍스트만 교체 "포블게이트 연동중입니다." -->
+              <p class="guide_text on ft_sub_txt2">보유 가상자산 적립금으로 사용하기</p>
+              <button type="button" class="small_btn_black ft_sub_t4 interlock">거래소 연동</button>
+              <button type="button" class="small_btn_black ft_sub_t4 unlock">연동 해제</button>
+            </div>
+          </div>
+        </div>
+        <!-- 전환 예정 포인트 -->
+        <div class="inner">
+          <div class="expected_wrap">
+            <p class="title ft_sub_txt1">전환 예정 적립금</p>
+            <p>
+              <span class="price ft_sub_t2">9,999,999</span>
+              <span class="unit ft_body2">원</span>
+            </p>
+          </div>
+        </div>
+        <!-- 링크 클릭 -->
+        <div class="inner">
+          <div class="link_wrap">
+            <a href="./QRcodeSet.html" class="qrcode">
+              <img src="./images/icon/qr_code_icon.svg" alt="QR코드" />
+              <span class="ft_sub_t3">QR코드</span>
+            </a>
+            <a href="./EarnedAmount.html" class="earning">
+              <img src="./images/icon/earnings_icon.svg" alt="적립금" />
+              <span class="ft_sub_t3">적립금</span>
+            </a>
+            <a href="./FindStore.html" class="find_store">
+              <img src="./images/icon/search_market_icon.svg" alt="매장 찾기" />
+              <span class="ft_sub_t3">매장찾기</span>
+            </a>
+          </div>
+        </div>
+        <!-- 슬라이드 박스 -->
+        <div class="inner">
+          <div class="slide_box swiper mySwiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="./ViewDetails.html">
+                  <img src="./images/main/banner1.png" alt="배너 이미지1" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner2.png" alt="배너 이미지2" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner3.png" alt="배너 이미지3" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner4.png" alt="배너 이미지4" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner5.png" alt="배너 이미지5" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner6.png" alt="배너 이미지6" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner7.png" alt="배너 이미지7" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner8.png" alt="배너 이미지8" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner9.png" alt="배너 이미지9" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/main/banner10.png" alt="배너 이미지10" />
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="recommended_store">
+          <div class="inner">
+            <p class="title ft_sub_t1">Order9 추천 매장</p>
+            <select name="" id="" class="ft_sub_txt1">
+              <option value="">전체</option>
+              <option value="">한식</option>
+              <option value="">양식</option>
+              <option value="">일식</option>
+              <option value="">분식</option>
+              <option value="">피자</option>
+              <option value="">치킨</option>
+            </select>
+          </div>
+          <div class="store_list">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="./images/market/market_menu1.jpg" alt="메뉴1" />
+                  </div>
+                  <div class="info_wrap">
+                    <p class="menu_title ft_sub_t3">불맛나는 족발</p>
+                    <p class="sub_text ft_sub_txt2">
+                      <span>야식 / 고기류</span>
+                      <span>적립률: 2%</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="./images/market/market_menu2.jpg" alt="메뉴2" />
+                  </div>
+                  <div class="info_wrap">
+                    <p class="menu_title ft_sub_t3">불타는 돈까스</p>
+                    <p class="sub_text ft_sub_txt2">
+                      <span>외식 / 경양식</span>
+                      <span>적립률: 2%</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="./images/market/market_menu3.jpg" alt="메뉴3" />
+                  </div>
+                  <div class="info_wrap">
+                    <p class="menu_title ft_sub_t3">불타는 닭발</p>
+                    <p class="sub_text ft_sub_txt2">
+                      <span>야식 / 고기류</span>
+                      <span>적립률: 2%</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="./images/market/market_menu4.jpg" alt="메뉴4" />
+                  </div>
+                  <div class="info_wrap">
+                    <p class="menu_title ft_sub_t3">불지옥 떡볶이</p>
+                    <p class="sub_text ft_sub_txt2">
+                      <span>분식 / 떡볶이류</span>
+                      <span>적립률: 2%</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="bottom_gnb">
+          <ul>
+            <li>
+              <a href="./index.html">
+                <img src="./images/icon/footer_icon1.svg" alt="메인으로" />
+                <span class="ft_sub_t4">메인으로</span>
+              </a>
+            </li>
+            <li>
+              <a href="./EarnedAmount.html">
+                <img src="./images/icon/footer_icon2.svg" alt="적립금" />
+                <span class="ft_sub_t4">적립금</span>
+              </a>
+            </li>
+            <li>
+              <a href="./FindStore.html">
+                <img src="./images/icon/footer_icon3.svg" alt="매장찾기" />
+                <span class="ft_sub_t4">매장찾기</span>
+              </a>
+            </li>
+            <li>
+              <a href="./InformationManagement.html">
+                <img src="./images/icon/footer_icon4.svg" alt="내정보" />
+                <span class="ft_sub_t4">내정보</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </main>
 
-      btn[0].addEventListener('click', (e) => {
-        e.preventDefault();
-        btn.forEach((ev) => {
-          ev.querySelector('svg').style.fill = 'black';
-        });
-        target = e.currentTarget;
-        target.querySelector('svg').style.fill = 'green';
-        document.querySelector('iframe').src = 'https://nftvalley.io/';
-      });
-      btn[1].addEventListener('click', (e) => {
-        e.preventDefault();
-        btn.forEach((ev) => {
-          ev.querySelector('svg').style.fill = 'black';
-        });
-        target = e.currentTarget;
-        target.querySelector('svg').style.fill = 'blue';
-        document.querySelector('iframe').src = 'https://etherbucks.io/';
-      });
-      btn[2].addEventListener('click', (e) => {
-        e.preventDefault();
-        btn.forEach((ev) => {
-          ev.querySelector('svg').style.fill = 'black';
-        });
-        target = e.currentTarget;
-        target.querySelector('svg').style.fill = 'purple';
-        document.querySelector('iframe').src = 'https://digtoc.com/';
-      });
-      btn[3].addEventListener('click', (e) => {
-        e.preventDefault();
-        btn.forEach((ev) => {
-          ev.querySelector('svg').style.fill = 'black';
-        });
-        target = e.currentTarget;
-        target.querySelector('svg').style.fill = 'red';
-        document.querySelector('iframe').src = 'https://mintway.net/';
-      });
-    </script>
+      <!-- confrim 모달 -->
+      <div class="confirm_modal_wrap">
+        <div class="overlay"></div>
+        <div class="modal">
+          <div class="icon"></div>
+          <p class="modal_title ft_sub_t1">서비스 준비중입니다.</p>
+          <div class="modal_box">
+            <p class="ft_sub_txt1">
+              <span>🞄</span>
+              제휴 서비스 연동 준비중으로 적립금은 00월 이후 사용 가능합니다.
+            </p>
+            <p class="ft_sub_txt1">
+              <span>🞄</span>
+              오더나인 키오스크로 결제시 적립금은 정상 적립됩니다.
+            </p>
+          </div>
+          <div class="button_wrap">
+            <button type="button" class="cancel_btn ft_sub_t1">취소</button>
+            <button type="button" class="join_btn ft_sub_t1">확인</button>
+          </div>
+        </div>
+      </div>
+      <!-- confrim 끝 모달 -->
+
+      <!-- 거래소 연동 모달 -->
+      <div class="exchange_modal">
+        <div class="overlay"></div>
+        <div class="modal">
+          <p class="modal_title ft_sub_t2">연동할 거래소를 선택해주세요.</p>
+          <div class="exchange_list">
+            <ul>
+              <!-- 선택 활성화시 on 클래스 추가 -->
+              <li class="on">
+                <img src="./images/main/foblgate_logo.png" alt="포블 게이트" />
+              </li>
+              <li>
+                <span class="ft_sub_t3">거래소 추가 예정입니다.</span>
+              </li>
+              <li>
+                <span class="ft_sub_t3">거래소 추가 예정입니다.</span>
+              </li>
+              <li>
+                <span class="ft_sub_t3">거래소 추가 예정입니다.</span>
+              </li>
+              <li>
+                <span class="ft_sub_t3">거래소 추가 예정입니다.</span>
+              </li>
+              <li>
+                <span class="ft_sub_t3">거래소 추가 예정입니다.</span>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="cancel_btn ft_sub_t1">돌아가기</button>
+        </div>
+      </div>
+      <!-- 거래소 연동 모달 끝 -->
+      <div class="side_menu">
+        <div class="side_overlay"></div>
+        <div class="side_box">
+          <div class="top_box">
+            <h3 class="ft_title2">Order 9 Point</h3>
+            <p class="ft_body2"><span class="user_id">홍길동</span>님, 오늘도 좋은 하루 되세요.</p>
+          </div>
+          <div class="side_menu_list">
+            <ul>
+              <li>
+                <a href="./Splash/screen1.html" class="ft_body2">적립금 이용안내</a>
+              </li>
+              <li>
+                <a href="./QRcodeGet.html" class="ft_body2">QR코드 활성화</a>
+              </li>
+              <li>
+                <a href="./EarnedAmount.html" class="ft_body2">적립금 내역</a>
+              </li>
+              <li>
+                <a href="./FindStore.html" class="ft_body2">오더나인 매장찾기</a>
+              </li>
+              <li>
+                <a href="./EventPage.html" class="ft_body2">이벤트</a>
+              </li>
+              <li>
+                <a href="./NoticePage.html" class="ft_body2">공지사항</a>
+              </li>
+              <li>
+                <a href="./QuestionsPage.html" class="ft_body2">자주하는 질문</a>
+              </li>
+              <li>
+                <a href="./Preferences.html" class="ft_body2">환경설정</a>
+              </li>
+            </ul>
+          </div>
+          <div class="side_bottom ft_sub_txt2">
+            <p>* 적립금 관련 문의 : 070-1234-4321</p>
+            <p>* 결제 및 상품 문의 : 이용 가맹점에 개별 문의</p>
+            <p class="ft_sub_t3 select">
+              <span>더9컴퍼니코리아</span>
+            </p>
+            <div class="info">
+              <p>
+                상호 : The9CompanyKorea<br />
+                대표자 : 홍길동<br />
+                사업자번호 : 101-81-60120<br />
+                통신판매업 신고 : 서울 종로구 제 015231호<br />
+                주소 : 서울시 금천구 가산디지털1로 181,<br />
+                W센터 312호
+              </p>
+            </div>
+            <p class="copy">
+              COPYRIGHTThe9 ⓒ CompanyKorea,<br />
+              All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- wrap -->
+    </div>
   </body>
 </html>

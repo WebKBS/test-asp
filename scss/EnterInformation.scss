@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import "./setting.scss";
+
+#wrap{
+  background-color: $gray0;
+}
+
+#container{
+  background: $gray0;
+}
+
+.top_box{
+  padding: 30px 0;
+  border-bottom: 1px solid $gray4;
+}
+
+.logo{
+  width: 130px;
+  margin: 0 auto 23px;
+}
+
+
+.line_wrap{
+  min-width: 236px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 0 24px;
+
+  span{
+    display: block;
+    background: $gray5;
+
+    &.on{
+      background: $primary;
+    }
+  }
+
+  .circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+  }
+
+  .line{
+    flex-grow: 1;
+    height: 1px;
+  }
+}
+
+.navi{
+  padding: 0 24px;
+  
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.inner{
+  padding: 30px 22px;
+}
+
+// 여기까지 상단 네비
+
+form{
+
+  > div {
+    margin-bottom: 36px;
+    
+    > p{
+      margin-bottom: 8px;
+    }
+  }
+}
+
+
+.id_wrap,
+.pw_wrap{
+  position: relative;  
+}
+.error_msg{
+  display: none;
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  color: $primary_light;
+}
+
+
+.pw_wrap input:nth-of-type(1){
+  margin-bottom: 10px;
+}
+
+.flex{
+  display: flex;
+}
+
+.birth_wrap{
+
+  .flex{
+    gap: 16px;
+  }
+}
+
+.sexuality{
+  display: flex;
+  gap: 7px;
+  
+  input{
+    display: none;
+
+    &:checked + label{
+      background: $secondary;
+      color: #fff;
+    }
+  }
+  
+  label{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: $gray2;
+    color: $gray5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    
+  }
+}
+
+.address_wrap{
+
+  .flex{
+    margin-bottom: 10px;
+    gap: 16px;
+  }
+
+  > input:nth-of-type(1){
+    margin-bottom: 10px;
+   }
+  
+  .find_btn{
+    display: block;
+    width: 87px;
+    line-height: 40px;
+    border-radius: 10px;
+    background: $secondary;
+    color: #fff;
+    padding: 0 16px;
+    min-width: 90px;
+  }
+  
+  
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=2.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="keyword" content=""> -->
+    <!-- <meta name="format-detection" content="telephone=no,address=no,email=no"> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="apple-mobile-web-app-title" content="" /> -->
+
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta property="og:title" content="" /> -->
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+    <title>Kiosk</title>
+
+    <!-- <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="" /> -->
+    <!-- <link rel="apple-touch-icon" href="" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/FindStore.css" />
+
+    <script src="./js/FindStore.js" type="module"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="inner">
+          <a href="./index.html">
+            <img src="./images/icon/header_back_btn.svg" alt="이전버튼" />
+          </a>
+          <p class="ft_body1">적립금</p>
+        </div>
+      </header>
+      <main id="container">
+        <div class="inner">
+          <div class="tab_box">
+            <p class="ft_sub_t2 on">리스트</p>
+            <p class="ft_sub_t2">지도</p>
+          </div>
+        </div>
+        <div class="content_inner tab_content">
+          <div class="menu_list">
+            <ul>
+              <li class="on">
+                <div class="img_wrap ft_sub_t3">All</div>
+                <p class="ft_sub_t3">전체</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">한식</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">치킨</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">분식</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">돈까스</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">족발/보쌈</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">찜/탕</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">구이</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">피자</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">중식</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">일식</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">회/해물</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">양식</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">커피/차</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">디저트</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">간식</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">아시안</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">샌드위치</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">샐러드</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">버거</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">멕시칸</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">도시락</p>
+              </li>
+              <li>
+                <div class="img_wrap"></div>
+                <p class="ft_sub_t3">죽</p>
+              </li>
+            </ul>
+          </div>
+          <div class="store_list">
+            <div class="inner">
+              <div class="title">
+                <p class="ft_sub_t1">오더나인 매장찾기</p>
+                <select name="" id="" class="ft_sub_txt1">
+                  <option value="">적립순</option>
+                  <option value="">거리순</option>
+                  <option value="">이동순</option>
+                </select>
+              </div>
+              <!-- 정보가 없을때 텍스트 -->
+              <p class="info_text ft_sub_t3">매장정보가 검색되지 않습니다</p>
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="./StoreIntroduction.html">
+                      <h3 class="ft_sub_t2">불맛나는 족발</h3>
+                      <div class="store_info ft_sub_txt2">
+                        <div class="address_wrap">
+                          <p class="address">서울시 동작구 노량진로 4</p>
+                          <p class="distance">1km 이내</p>
+                        </div>
+                        <div class="type_wrap">
+                          <p class="type">야식 / 고기류</p>
+                          <p class="percent">적립률 : 3%</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./StoreIntroduction.html">
+                      <h3 class="ft_sub_t2">불맛나는 족발</h3>
+                      <div class="store_info ft_sub_txt2">
+                        <div class="address_wrap">
+                          <p class="address">서울시 동작구 노량진로 4</p>
+                          <p class="distance">1km 이내</p>
+                        </div>
+                        <div class="type_wrap">
+                          <p class="type">야식 / 고기류</p>
+                          <p class="percent">적립률 : 3%</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./StoreIntroduction.html">
+                      <h3 class="ft_sub_t2">불맛나는 족발</h3>
+                      <div class="store_info ft_sub_txt2">
+                        <div class="address_wrap">
+                          <p class="address">서울시 동작구 노량진로 4</p>
+                          <p class="distance">1km 이내</p>
+                        </div>
+                        <div class="type_wrap">
+                          <p class="type">야식 / 고기류</p>
+                          <p class="percent">적립률 : 3%</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./StoreIntroduction.html">
+                      <h3 class="ft_sub_t2">불맛나는 족발</h3>
+                      <div class="store_info ft_sub_txt2">
+                        <div class="address_wrap">
+                          <p class="address">서울시 동작구 노량진로 4</p>
+                          <p class="distance">1km 이내</p>
+                        </div>
+                        <div class="type_wrap">
+                          <p class="type">야식 / 고기류</p>
+                          <p class="percent">적립률 : 3%</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="no_map tab_content">
+          <div class="content">
+            <img src="./images/icon/no_data_icon.svg" alt="알림내역 없음 아이콘" />
+            <p class="ft_sub_t2">서비스 준비중입니다.</p>
+          </div>
+        </div>
+        <nav class="bottom_gnb">
+          <ul>
+            <li>
+              <a href="./index.html">
+                <img src="./images/icon/footer_icon1.svg" alt="메인으로" />
+                <span class="ft_sub_t4">메인으로</span>
+              </a>
+            </li>
+            <li>
+              <a href="./EarnedAmount.html">
+                <img src="./images/icon/footer_icon2.svg" alt="적립금" />
+                <span class="ft_sub_t4">적립금</span>
+              </a>
+            </li>
+            <li>
+              <a href="./FindStore.html">
+                <img src="./images/icon/footer_icon3.svg" alt="매장찾기" />
+                <span class="ft_sub_t4">매장찾기</span>
+              </a>
+            </li>
+            <li>
+              <a href="./InformationManagement.html">
+                <img src="./images/icon/footer_icon4.svg" alt="내정보" />
+                <span class="ft_sub_t4">내정보</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </main>
+    </div>
+    <!-- wrap -->
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=2.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="keyword" content=""> -->
+    <!-- <meta name="format-detection" content="telephone=no,address=no,email=no"> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="apple-mobile-web-app-title" content="" /> -->
+
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta property="og:title" content="" /> -->
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+    <title>Kiosk</title>
+
+    <!-- <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="" /> -->
+    <!-- <link rel="apple-touch-icon" href="" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/QRcodeScan.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <main id="container">
+        <div class="inner">
+          <div class="box">
+            <h2 class="ft_title2">QR코드 스캔</h2>
+            <p class="sub_text ft_sub_txt2">키오스크 하단 리더기에 QR코드를 인식시켜 주세요.</p>
+            <div class="price_wrap">
+              <div>
+                <p class="title ft_sub_t3">사용가능 적립금</p>
+                <p>
+                  <span class="price ft_title2">9,999,999</span>
+                  <span class="unit ft_body2">원</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="inner_box">
+            <div class="qr_code_box">
+              <div class="qr_code">
+                <p class="code">
+                  <img src="./images/icon/qr_code.png" alt="qr코드" />
+                </p>
+                <p class="text ft_sub_txt1">유효시간</p>
+                <p class="time ft_title2">27m 44s</p>
+              </div>
+            </div>
+            <button type="button" class="cancel_btn" onclick="window.location.href='./index.html'">취소</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- wrap -->
+  </body>
+</html>
