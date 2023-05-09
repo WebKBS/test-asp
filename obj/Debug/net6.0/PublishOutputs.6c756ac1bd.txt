@@ -1,0 +1,7 @@
+D:\git\test\bin\Debug\net6.0\publish\test.exe
+D:\git\test\bin\Debug\net6.0\publish\appsettings.Development.json
+D:\git\test\bin\Debug\net6.0\publish\appsettings.json
+D:\git\test\bin\Debug\net6.0\publish\test.dll
+D:\git\test\bin\Debug\net6.0\publish\test.deps.json
+D:\git\test\bin\Debug\net6.0\publish\test.runtimeconfig.json
+D:\git\test\bin\Debug\net6.0\publish\test.pdb
